@@ -13,7 +13,7 @@ export default class Home extends Component {
         </Head>
         <article>
 
-
+          this is my site
 
         </article>
       </>
