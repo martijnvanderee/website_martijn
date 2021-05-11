@@ -9,14 +9,14 @@ publish_mode: editorial_workflow
 collections:
   - name: auteurs
     label: Auteurs
-    folder: "src/auteurs"
+    folder: "content/auteurs"
     create: true
     fields:
       - {name: naam, label: Naam}
 
   - name: tags
     label: Tags
-    folder: "src/tags"
+    folder: "content/tags"
     create: true
     fields:
       - {name: naam, label: Naam}
@@ -24,7 +24,7 @@ collections:
 
   - name: posts
     label: Posts
-    folder: "src/posts"
+    folder: "content/posts"
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "post.template"}

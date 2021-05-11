@@ -4,13 +4,13 @@ import { BlogPost } from "../../components/blogPost";
 //typescript
 import { PostData } from "../../typescript"
 //functions
-import { importPosts, importPostSlugs } from "../../functions/importPosts";
+import { importPosts } from "../../functions/importPosts";
 
 type Props = {
-  posts: any[];
+  blog: any[];
 };
 
-const Blog: React.FunctionComponent<Props> = ({ posts }) => {
+const Blog: React.FunctionComponent<Props> = ({ blog }) => {
 
   return (
     <div className="relative">
@@ -25,7 +25,7 @@ const Blog: React.FunctionComponent<Props> = ({ posts }) => {
 
         <div className="grid md:grid-cols-3 gap-4 max-w-6xl mx-auto ">
 
-          {posts.map((blogPost, index) => (
+          {blog.map((blogPost, index) => (
             <BlogPost blogPost={blogPost} key={index} />
           ))}
         </div>
@@ -35,10 +35,10 @@ const Blog: React.FunctionComponent<Props> = ({ posts }) => {
 };
 
 export async function getStaticProps() {
-  const posts1: PostData[] = await importPosts();
-  const posts: PostData = JSON.parse(JSON.stringify(posts1));
+  const posts: PostData[] = await importPosts();
+  const blog: PostData = JSON.parse(JSON.stringify(posts));
 
-  return { props: { posts } }
+  return { props: { blog } }
 }
 
 

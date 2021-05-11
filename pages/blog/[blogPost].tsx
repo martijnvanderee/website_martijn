@@ -1,5 +1,3 @@
-
-
 import Nav from "../../components/nav";
 
 import { importPostSlugs, importPost } from "../../functions/importPosts"
@@ -23,7 +21,7 @@ const customLink = (props: any) => {
 
 
 const BlogPost = (props: any) => {
-  console.log("props", props)
+
   const renderers = {
     image: customImage,
     link: customLink,

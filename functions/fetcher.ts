@@ -1,9 +1,6 @@
 
 
 
-
-
-
 const addTwoStrings = (accumulator: string, currentValue: any) =>
   `${accumulator}/${currentValue}`;
 
