@@ -26,6 +26,9 @@ type Values = {
   subject: "";
 };
 
+
+type SelectOptions = { value: string; label: string };
+
 export interface IFormItems {
   label: string;
   name: string;

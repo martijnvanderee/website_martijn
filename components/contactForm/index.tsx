@@ -16,9 +16,8 @@ export const ContactForm = () => {
     <Formik
       onSubmit={onSubmit}
       initialValues={initialValues}
-      validate={validate}
-    >
 
+    >
 
       {(props: any) => (
 

@@ -37,10 +37,10 @@ const extractInputProps: React.FunctionComponent<any> = (
   return props;
 };
 
-const SelectInput: React.FunctionComponent<IFormItems> = (props) => (
+const SelectInput: React.FunctionComponent<IFormItems> = (props: any) => (
   <select {...extractInputProps(props)}>
     <option value="">Select a value</option>
-    {props.options.map((o) => (
+    {props.options.map((o: any) => (
       <option key={o.value} value={o.value}>
         {o.label || o.value}
       </option>
@@ -48,9 +48,9 @@ const SelectInput: React.FunctionComponent<IFormItems> = (props) => (
   </select>
 );
 
-const CheckInput: React.FunctionComponent<IFormItems> = (props) => (
+const CheckInput: React.FunctionComponent<IFormItems> = (props: any) => (
   <>
-    {props.options.map((option) => (
+    {props.options.map((option: any) => (
       <label key={option.value}>
         <input {...extractInputProps(props, option)} />
         {option.label || option.value}
@@ -59,7 +59,7 @@ const CheckInput: React.FunctionComponent<IFormItems> = (props) => (
   </>
 );
 
-const TextInput: React.FunctionComponent<IFormItems> = (props) => (
+const TextInput: React.FunctionComponent<IFormItems> = (props: any) => (
   <>
     <input
       {...extractInputProps(props)}
@@ -68,7 +68,7 @@ const TextInput: React.FunctionComponent<IFormItems> = (props) => (
   </>
 );
 
-const TextAreaInput: React.FunctionComponent<IFormItems> = (props) => (
+const TextAreaInput: React.FunctionComponent<IFormItems> = (props: any) => (
   <textarea
     {...extractInputProps(props)}
     rows={5}
@@ -76,7 +76,7 @@ const TextAreaInput: React.FunctionComponent<IFormItems> = (props) => (
   />
 );
 
-export const FormInput: React.FunctionComponent<IFormItems> = (props) => {
+export const FormInput: React.FunctionComponent<IFormItems> = (props: any) => {
   switch (props.type) {
     case "radio":
     case "checkbox":

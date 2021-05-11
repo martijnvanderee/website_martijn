@@ -6,7 +6,7 @@ type PropsType = {
   subject: string;
 };
 
-export const validate: React.FunctionComponent<PropsType> = (values) => {
+export const validate: React.FunctionComponent<PropsType> = (values: any) => {
   const errorName = !values.name && { name: "Required" };
   const errorInstantie = !values.instantie && { instantie: "Required" };
 
