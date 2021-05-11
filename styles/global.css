@@ -1,0 +1,67 @@
+@import "tailwindcss/base";
+
+
+
+
+
+@import "tailwindcss/components";
+
+.content-container {
+  @apply relative pb-16 px-8 mx-auto;
+}
+
+@screen md {
+  .content-container {
+    @apply max-w-screen-md;
+  }
+}
+
+.navbar {
+  @apply flex fixed w-full bg-color3 justify-between py-2 px-4 z-10 items-center;
+}
+
+@screen sm {
+  .navbar {
+    @apply px-12;
+  }
+}
+
+.navbar-content {
+  @apply flex items-center justify-between w-full;
+}
+
+.navlink {
+  @apply flex items-center mx-2 text-base text-gray-400;
+}
+
+@screen sm {
+  .navlink {
+    @apply text-xl my-2;
+  }
+}
+
+.navlink:hover {
+  @apply text-white cursor-pointer;
+}
+
+.btn {
+  @apply flex justify-center items-center rounded p-1  mx-1 border-none text-white text-base bg-color1;
+}
+
+@screen md {
+  .btn {
+    @apply text-xl p-2 mx-2;
+  }
+}
+
+/* .overlay-background-image {
+  @apply object-cover h-full min-h-screen w-full absolute top-0;
+} */
+
+@import "tailwindcss/utilities";
+
+@layer base {
+  p {
+    @apply my-2;
+  }
+}

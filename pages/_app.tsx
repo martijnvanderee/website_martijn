@@ -2,6 +2,9 @@ import React from 'react';
 // Modules
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+
+import 'tailwindcss/tailwind.css'
+
 // MUI Core
 //import CssBaseline from '@material-ui/core/CssBaseline';
 //import { ThemeProvider } from '@material-ui/core/styles';
@@ -19,6 +22,8 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <>
+
+
       <Head>
         <title>Website Dennis stassen</title>
         <meta name="description" content="Meta descriptions can have a surprisingly large impact on your search marketing campaigns; find out how..." />
@@ -26,8 +31,11 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       </Head>
       {/* <ThemeProvider theme={theme}>
         <CssBaseline /> */}
+
+
       <Component {...pageProps} />
       {/* </ThemeProvider> */}
+
     </>
   );
 };

@@ -1,3 +1,5 @@
+const fs = require('fs');
+const blogPostsFolder = './content';
 const withPWA = require('next-pwa')
 
 
@@ -6,17 +8,40 @@ module.exports = withPWA({
     webpack5: true,
   },
   pwa: { dest: 'public' },
-  webpack: (cfg) => {
-    cfg.module.rules.push(
-      {
-        test: /\.md$/,
-        loader: 'frontmatter-markdown-loader',
-        options: { mode: ['react-component'] }
-      }
-    )
-    return cfg;
-  }
+  webpack: configuration => {
+    configuration.module.rules.push({
+      test: /\.md$/,
+      use: 'frontmatter-markdown-loader',
+    });
+    return configuration;
+  }, async exportPathMap(defaultPathMap) {
+    return {
+      ...defaultPathMap,
+      ...getPathsForPosts(),
+    };
+  },
 })
+
+
+
+const getPathsForPosts = () => {
+  return fs
+    .readdirSync(blogPostsFolder)
+    .map(blogName => {
+      const trimmedName = blogName.substring(0, blogName.length - 3);
+      return {
+        [`/posts/${trimmedName}`]: {
+          page: '/posts/[slug]',
+          query: {
+            slug: trimmedName,
+          },
+        },
+      };
+    })
+    .reduce((acc, curr) => {
+      return { ...acc, ...curr };
+    }, {});
+};
 
 
 
