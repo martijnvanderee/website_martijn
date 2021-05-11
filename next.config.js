@@ -17,7 +17,7 @@ module.exports = withPWA({
   }, async exportPathMap(defaultPathMap) {
     return {
       ...defaultPathMap,
-      ...getPathsForPosts(),
+      // ...getPathsForPosts(),
     };
   },
 })
@@ -30,8 +30,8 @@ const getPathsForPosts = () => {
     .map(blogName => {
       const trimmedName = blogName.substring(0, blogName.length - 3);
       return {
-        [`/posts/${trimmedName}`]: {
-          page: '/posts/[slug]',
+        [`/blog/${trimmedName}`]: {
+          page: '/blog/[slug]',
           query: {
             slug: trimmedName,
           },

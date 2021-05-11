@@ -14,10 +14,10 @@ import { importPosts } from "../functions/importPosts";
 import { PostData } from "../typescript"
 
 type HomeProps = {
-  posts: PostData[],
+  blog: PostData[],
 }
 
-const Home: FunctionComponent<HomeProps> = ({ posts }) => {
+const Home: FunctionComponent<HomeProps> = ({ blog }) => {
   return (
     <>
       <Head>
@@ -35,7 +35,7 @@ const Home: FunctionComponent<HomeProps> = ({ posts }) => {
           />
           <>
             <Header />
-            <BlogPosts blogPosts={posts} />
+            <BlogPosts blogPosts={blog} />
           </>
         </main>
       </div>
@@ -45,9 +45,9 @@ const Home: FunctionComponent<HomeProps> = ({ posts }) => {
 
 export async function getStaticProps() {
   const posts1: PostData[] = await importPosts();
-  const posts: PostData = JSON.parse(JSON.stringify(posts1));
+  const blog: PostData = JSON.parse(JSON.stringify(posts1));
 
-  return { props: { posts } }
+  return { props: { blog } }
 }
 
 

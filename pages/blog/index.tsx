@@ -41,5 +41,5 @@ export async function getStaticProps() {
   return { props: { blog } }
 }
 
-
 export default Blog;
+
