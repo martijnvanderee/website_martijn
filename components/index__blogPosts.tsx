@@ -1,6 +1,7 @@
 import { BlogPost } from "./blogPost"
 
 export const BlogPosts = ({ blogPosts }: any) => {
+
   const numberOfBlogPostOnPage = 3
   return (<>
     <div className="relative p-6 shadow-offsetHover" >

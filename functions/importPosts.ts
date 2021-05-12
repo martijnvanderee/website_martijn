@@ -28,3 +28,34 @@ export const importPost = async (path: string) => {
 
   return markdown
 };
+
+
+export const importPost1 = async () => {
+  const PostPathAndDate: any = await getPostPathAndDate()
+  const Sorted = sortingPost(PostPathAndDate)
+
+  return Promise.all(
+    Sorted.map(async (path: any) => {
+      const markdown = await import(`../content/posts/${path.path}`);
+      return { ...markdown, slug: path.path.substring(0, path.length - 3) };
+    })
+  );
+}
+
+const sortingPost = (PostPathAndDate: any) => {
+  return PostPathAndDate.sort((a: any, b: any) => (a.date < b.date ? 1 : -1))
+}
+
+const getPostPathAndDate = () => {
+  const markdownFiles = require.context('../content/posts', false, /\.md$/).keys()
+    .map(relativePath => relativePath.substring(2));
+
+  return Promise.all(
+    markdownFiles.map(async path => {
+      const markdown = await import(`../content/posts/${path}`);
+      const date = await markdown.attributes.date
+      return { date, path };
+    })
+  );
+}
+

@@ -6,7 +6,7 @@ export const BlogPost = ({ blogPost }: any) => {
 
   const urlLink = blogPost.slug
   return (
-    <Link href="/blog/[id]" as={`/blog/${urlLink}`}>
+    <Link href={`/blog/${urlLink}`} as={`/blog/${urlLink}`}>
       <a className="flex md:block bg-white cursor-pointer rounded h-32 md:h-auto shadow-offset hover:shadow-offsetHover rounded transition duration-500 ease-in-out">
         <div className="object-cover h-full md:h-64 w-32 md:w-full flex-none">
           <img

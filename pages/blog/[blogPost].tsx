@@ -5,6 +5,7 @@ import { Layout } from "../../components/layout"
 import { importPostSlugs, importPost } from "../../functions/importPosts"
 
 const BlogPost = (props: any) => {
+
   return (
     <Layout title={props.attributes.title}>
       <div className="relative">

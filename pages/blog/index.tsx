@@ -5,14 +5,14 @@ import { Layout } from "../../components/layout"
 //typescript
 import { PostData } from "../../typescript"
 //functions
-import { importPosts } from "../../functions/importPosts";
+import { importPost1 } from "../../functions/importPosts";
 
 type Props = {
   blog: any[];
 };
 
 const Blog: React.FunctionComponent<Props> = ({ blog }) => {
-
+  console.log(blog)
   return (
     <Layout title="blog van Dennis Stassen">
       <div className="relative">
@@ -38,8 +38,11 @@ const Blog: React.FunctionComponent<Props> = ({ blog }) => {
 };
 
 export async function getStaticProps() {
-  const posts: PostData[] = await importPosts();
+
+  const posts: any = await importPost1();
+
   const blog: PostData = JSON.parse(JSON.stringify(posts));
+
 
   return { props: { blog } }
 }
