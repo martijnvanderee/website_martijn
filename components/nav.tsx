@@ -9,7 +9,8 @@ const Nav = () => (
       <Link href="/" passHref>
         <a className="h-12 sm:h-16">
           <img
-            className="h-full cursor-pointer"
+            className="h-full cursor-pointer  h-8 w-16 sm:w-24"
+            alt="logo dennis stassen"
             src={
               "https://res.cloudinary.com/dta9vptzh/image/upload/c_scale,w_150/v1602325989/dennisStassen/logoDennis-1.png"
             }
@@ -19,15 +20,15 @@ const Nav = () => (
 
       <nav className="flex mr-4">
         <Link href="/materiaal" passHref>
-          <a className="flex items-center mx-2 text-base text-gray-400 sm:text-xl sm:my-2 hover:text-white hover:cursor-pointer">Materiaal/video's</a>
+          <a className="flex items-center mx-2 text-base text-gray-300 sm:text-xl sm:my-2 hover:text-white hover:cursor-pointer">Materiaal/video's</a>
         </Link>
 
         <Link href="/about" passHref>
-          <a className="flex items-center mx-2 text-base text-gray-400 sm:text-xl sm:my-2 hover:text-white hover:cursor-pointer">Over Mij</a>
+          <a className="flex items-center mx-2 text-base text-gray-300 sm:text-xl sm:my-2 hover:text-white hover:cursor-pointer">Over Mij</a>
         </Link>
 
         <Link href="/blog" passHref>
-          <a className="flex items-center mx-2 text-base text-gray-400 sm:text-xl sm:my-2 hover:text-white hover:cursor-pointer">Blog</a>
+          <a className="flex items-center mx-2 text-base text-gray-300 sm:text-xl sm:my-2 hover:text-white hover:cursor-pointer">Blog</a>
         </Link>
 
         <Link href="/contact" passHref>

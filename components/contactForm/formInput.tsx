@@ -63,7 +63,7 @@ const TextInput: React.FunctionComponent<IFormItems> = (props: any) => (
   <>
     <input
       {...extractInputProps(props)}
-      className={`shadow appearance-none border rounded w-full py-2 px-3 text-fontColor leading-tight focus:outline-none focus:shadow-outline `}
+      className={`shadow appearance-none border rounded w-full py-2 px-3 text-fontColor leading-tight focus:outline-none focus:shadow-outline mb-4 `}
     />
   </>
 );
@@ -72,7 +72,7 @@ const TextAreaInput: React.FunctionComponent<IFormItems> = (props: any) => (
   <textarea
     {...extractInputProps(props)}
     rows={5}
-    className="shadow appearance-none border rounded w-full py-2 px-3 text-fontColor  leading-tight focus:outline-none focus:shadow-outline"
+    className="shadow appearance-none border rounded w-full py-2 px-3 text-fontColor  leading-tight focus:outline-none focus:shadow-outline mb-4"
   />
 );
 

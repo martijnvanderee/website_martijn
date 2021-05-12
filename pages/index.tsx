@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react'
-import Head from "next/head"
 
 //components
+import { Layout } from "../components/layout"
 import Nav from "../components/nav";
 import { Title } from "../components/title";
 import { Header } from "../components/header";
@@ -19,11 +19,7 @@ type HomeProps = {
 
 const Home: FunctionComponent<HomeProps> = ({ blog }) => {
   return (
-    <>
-      <Head>
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-        <title>Homepage</title>
-      </Head>
+    <Layout title="Dennis Stassen">
       <div className="relative h-screen v-screen">
         <Nav />
         <BackgroundImage />
@@ -39,7 +35,7 @@ const Home: FunctionComponent<HomeProps> = ({ blog }) => {
           </>
         </main>
       </div>
-    </>
+    </Layout>
   )
 }
 
