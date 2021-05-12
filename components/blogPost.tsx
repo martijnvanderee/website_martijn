@@ -5,6 +5,7 @@ import { formatDate } from "../functions/formatdate"
 export const BlogPost = ({ blogPost }: any) => {
 
   const urlLink = blogPost.slug
+
   return (
     <Link href={`/blog/${urlLink}`} as={`/blog/${urlLink}`}>
       <a className="flex md:block bg-white cursor-pointer rounded h-32 md:h-auto shadow-offset hover:shadow-offsetHover rounded transition duration-500 ease-in-out">

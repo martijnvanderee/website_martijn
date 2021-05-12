@@ -12,7 +12,7 @@ type Props = {
 };
 
 const Blog: React.FunctionComponent<Props> = ({ blog }) => {
-  console.log(blog)
+
   return (
     <Layout title="blog van Dennis Stassen">
       <div className="relative">
@@ -40,6 +40,7 @@ const Blog: React.FunctionComponent<Props> = ({ blog }) => {
 export async function getStaticProps() {
 
   const posts: any = await importPost1();
+
 
   const blog: PostData = JSON.parse(JSON.stringify(posts));
 

@@ -37,7 +37,8 @@ export const importPost1 = async () => {
   return Promise.all(
     Sorted.map(async (path: any) => {
       const markdown = await import(`../content/posts/${path.path}`);
-      return { ...markdown, slug: path.path.substring(0, path.length - 3) };
+
+      return { ...markdown, slug: path.path.substring(0, path.path.length - 3) };
     })
   );
 }
