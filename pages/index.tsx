@@ -19,8 +19,9 @@ type HomeProps = {
 
 const Home: FunctionComponent<HomeProps> = ({ blog }) => {
   return (
-    <Layout title="Dennis Stassen">
-      <div className="relative h-screen v-screen">
+    <Layout title="Cognovi">
+      <div>hello</div>
+      {/* <div className="relative h-screen v-screen">
         <Nav />
         <BackgroundImage />
         <main className="relative pb-16 px-8 mx-auto md:max-w-screen-md">
@@ -34,7 +35,7 @@ const Home: FunctionComponent<HomeProps> = ({ blog }) => {
             <BlogPosts blogPosts={blog} />
           </>
         </main>
-      </div>
+      </div> */}
     </Layout>
   )
 }
