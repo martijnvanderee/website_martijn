@@ -20,7 +20,7 @@ type HomeProps = {
 const Home: FunctionComponent<HomeProps> = ({ blog }) => {
   return (
     <Layout title="Cognovi">
-      <div>hellotest</div>
+      <div>hellotedst</div>
       {/* <div className="relative h-screen v-screen">
         <Nav />
         <BackgroundImage />
