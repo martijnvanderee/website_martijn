@@ -1,1 +1,1 @@
-export const formatDate = (num: string) => num.split("T");
+export const formatDate = (date: Date) => new Date(date).toLocaleDateString()

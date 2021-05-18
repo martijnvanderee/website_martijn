@@ -29,7 +29,7 @@ const Home: FunctionComponent<HomeProps> = ({ posts }) => {
             <Link href={`/${url}`} as={`/${url}`}>
               <div className="relative w-full h-72 cursor-pointer md:h-96">
                 <div className="absolute z-10 bottom-0 m-4">
-                  <h2 className="text-shadow text-white text-3xl md:text-4xl">{post1.attributes.title}</h2>
+                  <h2 className="text-shadow text-white text-2xl">{post1.attributes.title}</h2>
                 </div>
                 <img
                   src={post1.attributes.image}
@@ -65,44 +65,14 @@ const Home: FunctionComponent<HomeProps> = ({ posts }) => {
               <div className="relative h-48">
                 <div className="text-yellow font-medium mb-2">boe daar schroke je van</div>
                 <div className="text-black font-semibold text-3xl">dit is een titel</div>
-                <div className="absolute w-24 bg-yellow h-0.5 bottom-0 right-0"></div>
-                <div className="absolute w-0.5 bg-yellow h-24 bottom-0 right-0"></div>
+                <div className="absolute w-24 bg-yellow h-1 bottom-0 right-0"></div>
+                <div className="absolute w-1 bg-yellow h-24 bottom-0 right-0"></div>
               </div>
             </div>
 
 
-
-            <div className="p-4">
-              <div className="relative h-64 ">
-                <img
-                  src={post1.attributes.image}
-                  alt="title van artikel"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-              <div className="relative h-48">
-                <div className="text-yellow font-medium mb-2">boe daar schroke je van</div>
-                <div className="text-black font-semibold text-3xl">dit is een titel</div>
-                <div className="absolute w-24 bg-yellow h-0.5 bottom-0 right-0"></div>
-                <div className="absolute w-0.5 bg-yellow h-24 bottom-0 right-0"></div>
-              </div>
-            </div>
-
-            <div className="p-4">
-              <div className="relative h-64 ">
-                <img
-                  src={post1.attributes.image}
-                  alt="title van artikel"
-                  className="absolute inset-0 w-full h-full object-cover"
-                />
-              </div>
-              <div className="relative h-48">
-                <div className="text-yellow font-medium mb-2">boe daar schroke je van</div>
-                <div className="text-black font-semibold text-3xl">dit is een titel</div>
-                <div className="absolute w-24 bg-yellow h-0.5 bottom-0 right-0"></div>
-                <div className="absolute w-0.5 bg-yellow h-24 bottom-0 right-0"></div>
-              </div>
-            </div>
+            <div>post2</div>
+            <div>post3</div>
 
           </div>
 

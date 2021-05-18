@@ -6,7 +6,7 @@ import { Layout } from "../components/layout"
 const About = () => {
   return (
     <Layout title="over Dennis Stassen">
-      <div className="relative">
+      {/* <div className="relative">
 
         <Nav />
 
@@ -148,7 +148,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 };

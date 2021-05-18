@@ -1,47 +1,69 @@
+
+import Nav from './nav';
 import Link from "next/link";
+import { FaSearch, FaBars } from 'react-icons/fa';
+import { IconContext } from "react-icons";
 
 export const Header = () => (
-  <div className="relative flex p-6 mt-16 rounded-lg mb-16 shadow-offsetHover">
-    <div className="absolute w-full h-full inset-0 opacity-75 rounded-lg bg-color3" />
-    <img
-      className="relative opacity-0 hidden h-64 w-auto my-auto mr-8 rounded  md:opacity-100 md:block"
-      src="https://res.cloudinary.com/dta9vptzh/image/upload/c_scale,w_222/v1602326002/dennisStassen/dennisCloseup.jpg"
-      alt="foto van dennis stassen"
-    />
-    <div className="relative">
-      <h4 className="text-white text-lg">
-        Ben
-        je ook benieuwd welke lessen jij kunt trekken uit de praktijk van een economiedocent?
-      </h4>
+  <header className="sticky top-0 z-20 bg-purple">
 
-      <p className="my-2 text-lg text-white">
-        Hier deel ik mijn ideeën over goed lesgeven en mijn passie voor economie.
-      </p>
-      <p className="my-2 text-lg text-white">
-        Ik ben ervan overtuigd dat veel inzichten vanuit het klaslokaal toepasbaar in alle situaties waar
-        je mensen wil boeien, enthousiasmeren of overtuigen!
-      </p>
+    <div className="max-w-6xl mx-auto">
+      <div className="grid grid-cols-3 justify-between px-4 h-16 md:h-20 ">
 
-      <div>
-        <Link href="/about" passHref>
-          <a>
-            <span className="border-solid border-b border-color1 text-lg text-white">
-              Lees wat ik doe{" "}
-            </span>
+        <div></div>
+        <Link href="/">
+          <a className="my-auto text-center">
+            <h1 className="text-4xl text-white md:text-5xl ">Cog<strong className="text-yellow">novi</strong></h1>
+            <div className="hidden md:block text-almostWhite">het beste wetenschappelijke nieuws</div>
           </a>
+
         </Link>
 
-        <p className="text-white inline-block my-2 text-lg">of</p>
 
-        <Link href="/contact" passHref>
-          <a>
-            <span className="border-solid border-b border-color1 text-lg text-white">
-              {" "}
-              neem contact met mij op!
-            </span>
-          </a>
-        </Link>
+        <div className="flex my-auto">
+          {/* <div className="text-white underline underline-yellow">blijf up to date</div>
+          <div className="text-white">stel vragen</div> */}
+          <div className="flex my-auto">
+            <IconContext.Provider value={{ color: "white", className: "mr-2 md:hidden", size: "1.5em", }}>
+              <div>
+                <FaSearch />
+              </div>
+            </IconContext.Provider>
+            <IconContext.Provider value={{ color: "white", className: "mr-2 hidden md:block", size: "1.5em", }}>
+              <div>
+                <FaSearch />
+              </div>
+            </IconContext.Provider>
+            <div className="text-white my-auto md:text mr-4">Zoeken</div>
+
+
+          </div>
+
+          <div className="flex my-auto">
+
+
+
+
+            <IconContext.Provider value={{ color: "white", className: "mr-2 md:hidden", size: "1.5em" }}>
+              <div >
+                <FaBars />
+              </div>
+            </IconContext.Provider>
+
+            <IconContext.Provider value={{ color: "white", className: "mr-2 hidden md:block", size: "1.5em" }}>
+              <div >
+                <FaBars />
+              </div>
+            </IconContext.Provider>
+
+
+            <div className="text-white my-auto md:text">Menu</div>
+          </div>
+
+
+        </div>
       </div>
-    </div>
-  </div>
+    </div >
+    <Nav />
+  </header >
 );

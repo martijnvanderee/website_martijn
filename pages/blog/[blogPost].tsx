@@ -8,7 +8,7 @@ const BlogPost = (props: any) => {
 
   return (
     <Layout title={props.attributes.title}>
-      <div className="relative">
+      {/* <div className="relative">
         <div className="overlay-background-image bg-blue-100 opacity-25" />
         <Nav />
 
@@ -29,7 +29,7 @@ const BlogPost = (props: any) => {
             <div dangerouslySetInnerHTML={{ __html: props.html }}></div>
           </div>
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 };

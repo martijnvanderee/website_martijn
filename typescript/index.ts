@@ -5,7 +5,7 @@ export interface PostData {
   default: { attributes: any, html: string }
   attributes: {
     templateKey: string;
-    titel: string;
+    title: string;
     Subtitel: string
     date: Date;
     image: string;

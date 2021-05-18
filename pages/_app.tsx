@@ -29,6 +29,12 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
         <meta name="description" content="Meta descriptions can have a surprisingly large impact on your search marketing campaigns; find out how..." />
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <link rel="icon" href="/logoDennis.ico" />
+
+
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap" rel="stylesheet" />
+
+
       </Head>
       {/* <ThemeProvider theme={theme}>
         <CssBaseline /> */}

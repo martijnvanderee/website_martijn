@@ -4,23 +4,32 @@ module.exports = {
   },
   purge: ["./components/**/*.tsx", "./pages/**/*.tsx"],
   theme: {
+    fontFamily: {
+      'nunito': ['nunito', 'sans-serif'],
+      'MyFont': ['"My Font"', 'serif'] // Ensure fonts with spaces have " " surrounding it.
+    },
+    underlineThickness: {
+      'thin': '2px',
+      'thick': '5px'
+    },
+
     boxShadow: {
       error: "0 0 0 3px rgba(255, 40, 40, 0.5)",
       offset: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
       offsetHover: "0 7px 7px rgba(0,0,0,0.25), 0 7px 7px rgba(0,0,0,0.22)",
     },
+    textShadow: { // defaults to {}
+      'default': '0 2px 5px rgba(0, 0, 0, 0.5)',
+      'lg': '0 2px 10px rgba(0, 0, 0, 0.5)',
+    },
 
     extend: {
       colors: {
-        color1: "#f78e1c",
-        hoverColor1: "#ED8936",
-        color2: "#eccf13",
-        color3: "#013f5d",
-        color4: "#1abebd",
-        color5: "#707070",
-        fontColor: "#495057",
-        headingColor: "#343a40",
-        error: "rgba(255, 40, 40, 0.8)",
+        purple: "#250352",
+        yellow: "#D79922",
+        almostWhite: "#EDEDED",
+        grey: "#707070",
+        black: "#222222"
       },
       height: {
         h128: '32rem',
@@ -34,5 +43,15 @@ module.exports = {
   variants: {
     textColor: ["responsive", "hover", "focus", "group-hover"],
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography'),
+  require('tailwindcss-typography')({
+    // all these options default to the values specified here
+    ellipsis: true,         // whether to generate ellipsis utilities
+    hyphens: true,          // whether to generate hyphenation utilities
+    kerning: true,          // whether to generate kerning utilities
+    textUnset: true,        // whether to generate utilities to unset text properties
+    componentPrefix: 'c-',  // the prefix to use for text style classes
+  }), require('tailwind-underline-utils')],
+
+
 };

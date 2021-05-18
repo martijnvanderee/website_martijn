@@ -15,7 +15,7 @@ const Blog: React.FunctionComponent<Props> = ({ blog }) => {
 
   return (
     <Layout title="blog van Dennis Stassen">
-      <div className="relative">
+      {/* <div className="relative">
 
         <Nav />
 
@@ -32,7 +32,7 @@ const Blog: React.FunctionComponent<Props> = ({ blog }) => {
             ))}
           </div>
         </div>
-      </div>
+      </div> */}
     </Layout>
   );
 };

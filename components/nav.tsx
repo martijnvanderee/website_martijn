@@ -1,51 +1,43 @@
-import React from "react";
+import React, { FunctionComponent } from 'react'
 import Link from "next/link";
+import { useRouter } from 'next/router'
 
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import { navNames, navLinks } from "../public/variables"
 
-const Nav = () => (
-  <header className="flex fixed w-full bg-color3 justify-between py-2 px-4 z-10 items-center sm:px-12">
-    <div className="flex items-center justify-between w-full">
-      <Link href="/" passHref>
-        <a className="h-12 sm:h-16">
-          <img
-            className="h-full cursor-pointer  h-8 w-16 sm:w-24"
-            alt="logo dennis stassen"
-            src={
-              "https://res.cloudinary.com/dta9vptzh/image/upload/c_scale,w_150/v1602325989/dennisStassen/logoDennis-1.png"
-            }
-          />
-        </a>
-      </Link>
+const Nav = () => {
 
-      <nav className="flex mr-4">
-        <Link href="/materiaal" passHref>
-          <a className="flex items-center mx-2 text-base text-gray-300 sm:text-xl sm:my-2 hover:text-white hover:cursor-pointer">Materiaal/video's</a>
-        </Link>
+  return (
+    <nav className="bg-white flex justify-center">
+      <div className="flex overflow-x-auto divide-x divide-almostWhite border-b bg-white h-12 font-semibold text-black  max-w-6xl mx-auto">
+        {navNames.map((navName, index) => {
+          const path: string = useRouter().asPath
+          const isRoute: boolean = path === navLinks[index]
+          return <NavItem name={navName} path={navLinks[index]} isRoute={isRoute} />
+        })}
+      </div>
+    </nav>
+  )
+}
 
-        <Link href="/about" passHref>
-          <a className="flex items-center mx-2 text-base text-gray-300 sm:text-xl sm:my-2 hover:text-white hover:cursor-pointer">Over Mij</a>
-        </Link>
 
-        <Link href="/blog" passHref>
-          <a className="flex items-center mx-2 text-base text-gray-300 sm:text-xl sm:my-2 hover:text-white hover:cursor-pointer">Blog</a>
-        </Link>
+type HomeProps = {
+  name: string,
+  path: string,
+  isRoute: boolean
+}
 
-        <Link href="/contact" passHref>
-          <a className="flex justify-center items-center rounded p-1  mx-1 border-none text-white text-base bg-color1 shadow hover:bg-hoverColor1 transition duration-500 ease-in-out
-           md:text-xl md:p-2 md:mx-2
-          ">
-            Contact
-          </a>
-        </Link>
+const NavItem: FunctionComponent<HomeProps> = ({ path, isRoute, name }) => {
+  return (
+    <Link href={path}>
+      <a className="relative grid px-4 h-full ">
+        <div className={`self-center ${isRoute && `font-medium`}`}>{name}</div>
+        {isRoute && <div className="absolute w-full h-2 bottom-0 bg-purple" />}
+      </a>
+    </Link>
+  )
+}
 
-        <a className="" href="https://nl.linkedin.com/in/dennisstassen">
-          <LinkedInIcon style={{ fontSize: 30 }} className="text-color1 ">
-            <div className="w-10 h-10 bg-white m-auto"></div></LinkedInIcon>
-        </a>
-      </nav>
-    </div>
-  </header>
-);
+
+
 
 export default Nav;
