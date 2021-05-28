@@ -53,6 +53,7 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
           </div>
 
           <div className="hidden md:block bg-almostWhite h-0.5 w-full mt-8"></div>
+
           <div className="text-2xl mt-10 ml-4 font-bold text-grey hidden md:block">
             <h2 className="inline border-b border-almostWhite ">Lees ook één van onze andere verhalen</h2>
           </div>
@@ -95,7 +96,7 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
 
 export async function getStaticProps() {
   //const amountOfPost = 10
-  const posts1: any[] = await importPost1(100, "quirky");
+  const posts1: any[] = await importPost1(100, "history");
 
   const posts: PostData = JSON.parse(JSON.stringify(posts1));
   const randomPosts = await randomPost(5)
