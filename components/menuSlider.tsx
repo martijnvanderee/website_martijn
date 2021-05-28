@@ -35,7 +35,7 @@ export const MenuSlider = () => {
             return <NavItem name={navName} path={navLinks[index]} isRoute={isRoute} />
           })}
 
-          <Link href="over-sciencegeek">
+          <Link href="/over-sciencegeek">
             <a className={` relative`}>
               <div className={`ml-4 text-2xl py-4 border-b border-almostWhite  `}>Over Cognovi</div>
 

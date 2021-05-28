@@ -61,8 +61,6 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
 
           <div className="hidden md:block md:grid  md:grid-cols-3 pb-10 mt-2">
 
-
-
             {randomPosts.map((randomPost: any) => {
               return (<div className="p-4">
                 <div className="relative h-64 ">
