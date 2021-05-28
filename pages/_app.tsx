@@ -5,6 +5,9 @@ import Head from 'next/head';
 
 import 'tailwindcss/tailwind.css'
 
+import { IsMenuOpenProvider } from '../state/isMenuOpen'
+
+
 // MUI Core
 //import CssBaseline from '@material-ui/core/CssBaseline';
 //import { ThemeProvider } from '@material-ui/core/styles';
@@ -22,13 +25,11 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <>
-
-
       <Head>
         <title>Website Dennis stassen</title>
         <meta name="description" content="Meta descriptions can have a surprisingly large impact on your search marketing campaigns; find out how..." />
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
-        <link rel="icon" href="/logoDennis.ico" />
+        <link rel="icon" href="/ico/sciencegeekLogo.ico" />
 
 
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -39,8 +40,10 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
       {/* <ThemeProvider theme={theme}>
         <CssBaseline /> */}
 
+      <IsMenuOpenProvider>
+        <Component {...pageProps} />
+      </IsMenuOpenProvider>
 
-      <Component {...pageProps} />
       {/* </ThemeProvider> */}
 
     </>

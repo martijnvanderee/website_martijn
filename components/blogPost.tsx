@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { formatDate } from "../functions/formatdate"
+import { formatDate } from "../localFunctions/formatdate"
 
 export const BlogPost = ({ blogPost }: any) => {
 

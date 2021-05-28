@@ -1,10 +1,10 @@
 
 
 
-import { importPostSlugs, importPost } from "../functions/importPosts"
+import { importPostSlugs, importPost } from "../localFunctions/importPosts"
 
 import parse from 'html-react-parser';
-import { formatDate } from "../functions/formatdate"
+import { formatDate } from "../localFunctions/formatdate"
 
 import React, { FunctionComponent } from 'react'
 import Link from "next/link";
@@ -13,7 +13,7 @@ import Link from "next/link";
 import { Layout } from "../components/layout"
 import { PostItem } from "../components/postItem"
 //functions
-import { importPosts } from "../functions/importPosts";
+import { importPosts } from "../localFunctions/importPosts";
 
 //typescript
 import { PostData } from "../typescript"
@@ -38,17 +38,20 @@ const Post: FunctionComponent<PostProps> = ({ attributes, html, posts }) => {
     <Layout title={attributes.title}>
       <div className="md:max-w-6xl  md:mx-auto">
         <div className="relative w-full h-72 md:max-w-4xl md:h-96 md:mt-10 md:mx-auto">
-          <div className="absolute z-10 bottom-0 m-4">
+          <div className="relative w-full h-full ">
+            <img
+              src={image}
+              alt={attributes.title}
+              className="absolute inset-0 w-full h-full object-cover"
+            />
           </div>
-          <img
-            src={image}
-            alt={attributes.title}
-            className="absolute inset-0 w-full h-full object-cover"
-          />
+
         </div>
 
+
         <div className="p-4 md:mb-4">
-          <h2 className="text-3xl font-bold text-black mb-2 text-center md:mt-8 md:text-4xl">{attributes.title}</h2>
+
+          <h2 className="text-3xl font-bold text-black mb-6 md:text-center md:mt-8 md:text-4xl">{attributes.title}</h2>
 
           <div className="flex mb-2 justify-center md:mb-4">
             <div className="flex mr-4">
