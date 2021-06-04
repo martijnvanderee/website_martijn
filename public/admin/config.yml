@@ -32,6 +32,10 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Image", name: "image", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Onderwerp"
+        name: "onderwerp"
+        widget: "select"
+        options: ["history","human","nature","quirky","space","tech"]
       - name: auteur
         label: Auteur
         widget: relation

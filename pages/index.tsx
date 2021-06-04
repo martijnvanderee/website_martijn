@@ -28,9 +28,7 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
           <div className="md:grid  md:grid-cols-2 md:mt-10">
             <Link href={`/${url}`} as={`/${url}`}>
 
-
-
-              <div className="relative w-full h-72 md:max-w-4xl md:h-96 md:mt-10 md:mx-auto">
+              <div className="relative w-full h-72 md:max-w-4xl md:h-96  md:mx-auto">
                 <div className="relative w-full h-full ">
 
                   <div className="absolute z-10 bottom-0 m-4">
@@ -44,23 +42,31 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
                 </div>
 
               </div>
-
-
-
-
             </Link>
 
             <div className=" md:hidden h-2 w-full bg-almostWhite"></div>
 
-            <div className="md:h-96 md:overflow-auto">
-              <div className="sticky md:static top-72 z-10 border-b-2 border-yellow p-3 md:mx-4 md:pt-0 bg-white">
-                <h3 className="text-center text-2xl text-black font-bold md:text-2xl ">Het laatste nieuws op sciencegeek!</h3>
+            <div className="mb-10 md:mb-0">
+              <div className="md:h-96 md:overflow-auto">
+
+                <div className="sticky md:static top-72 z-10 border-b-2 border-yellow p-3 md:mx-4 md:pt-0 bg-white">
+                  <h3 className="text-center text-2xl text-black font-bold md:text-2xl ">Het laatste nieuws op sciencegeek!</h3>
+                </div>
+
+                <div className="flex flex-wrap overflow-hidden my-4 sm:mx-4">
+                  {postOftheRest.map((post: PostData) => <PostItem content={post} />)}
+                </div>
+
               </div>
 
-              <div className="flex flex-wrap overflow-hidden my-4 sm:mx-4">
-                {postOftheRest.map((post: PostData) => <PostItem content={post} />)}
-              </div>
+              <Link href={`/meer-net-binnen`}>
+                <div className="text-2xl md:text-2xl font-semibold leading-tight text-grey ml-4 cursor-pointer" >Meer net binnen <span className="text-2xl md:text-xl font-semibold leading-tight text-purple">{">"}</span>  </div>
+              </Link>
             </div>
+
+
+
+
           </div>
 
           <div className="hidden md:block bg-almostWhite h-0.5 w-full mt-8"></div>
@@ -106,8 +112,8 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
 }
 
 export async function getStaticProps() {
-  //const amountOfPost = 10
-  const posts1: any[] = await importPost1();
+  const amountOfPost = 10
+  const posts1: any[] = await importPost1(amountOfPost);
 
   const posts: PostData = JSON.parse(JSON.stringify(posts1));
   const randomPosts = await randomPost(5)
