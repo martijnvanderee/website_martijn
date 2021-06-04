@@ -45,6 +45,7 @@
     "@types/webpack-env": "^1.16.0",
     "autoprefixer": "^10.2.5",
     "frontmatter-markdown-loader": "^3.6.2",
+    "netlify-cli": "^3.34.0",
     "object-path": "^0.11.5",
     "postcss": "^8.2.14",
     "postcss-preset-env": "^6.7.0",
