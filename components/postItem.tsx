@@ -18,7 +18,9 @@ export const PostItem: FunctionComponent<postProps> = ({ content }) => {
         <div className="flex h-24 border-b border-almostWhite">
           <div className="relative flex-none h-full w-32">
             <img
-              src={content.attributes.image}
+
+              src={`${content.attributes.image}/?nf_resize=fit&w=700`}
+
               alt="title van artikel"
               className="absolute inset-0 w-full h-full object-cover"
             />

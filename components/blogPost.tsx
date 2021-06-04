@@ -12,7 +12,8 @@ export const BlogPost = ({ blogPost }: any) => {
         <div className="object-cover h-full md:h-64 w-32 md:w-full flex-none">
           <img
             className="object-cover h-full w-full rounded-t"
-            src={blogPost.attributes.image}
+
+            src={`${blogPost.attributes.image}/?nf_resize=fit&w=700`}
           />
         </div>
 
