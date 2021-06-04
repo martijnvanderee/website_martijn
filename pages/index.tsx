@@ -27,16 +27,27 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
 
           <div className="md:grid  md:grid-cols-2 md:mt-10">
             <Link href={`/${url}`} as={`/${url}`}>
-              <div className="relative pb-1/2 h-0 cursor-pointer md:h-96">
-                <div className="absolute z-10 bottom-0 m-4">
-                  <h2 className="text-shadow text-white text-3xl md:text-4xl">{post.attributes.title}</h2>
+
+
+
+              <div className="relative w-full h-72 md:max-w-4xl md:h-96 md:mt-10 md:mx-auto">
+                <div className="relative w-full h-full ">
+
+                  <div className="absolute z-10 bottom-0 m-4">
+                    <h2 className="text-shadow text-white text-3xl md:text-4xl">{post.attributes.title}</h2>
+                  </div>
+                  <img
+                    src={`${post.attributes.image}/?nf_resize=fit&w=700`}
+                    alt={post.attributes.title}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
                 </div>
-                <img
-                  src={`${post.attributes.image}/?nf_resize=fit&w=700`}
-                  alt="title van artikel"
-                  className="absolute inset-0 w-full h-full "
-                />
+
               </div>
+
+
+
+
             </Link>
 
             <div className=" md:hidden h-2 w-full bg-almostWhite"></div>
