@@ -1,3 +1,3 @@
 ---
-naam: DNA
+naam: immuunsysteem
 ---
