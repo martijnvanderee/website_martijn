@@ -31,7 +31,7 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
               <div className="relative w-full h-72 md:max-w-4xl md:h-96  md:mx-auto">
                 <div className="relative w-full h-full ">
 
-                  <div className="absolute z-10 bottom-0 m-4">
+                  <div className="absolute z-10 bottom-0 m-4 cursor-pointer">
                     <h2 className="text-shadow text-white text-3xl md:text-4xl">{post.attributes.title}</h2>
                   </div>
                   <img
