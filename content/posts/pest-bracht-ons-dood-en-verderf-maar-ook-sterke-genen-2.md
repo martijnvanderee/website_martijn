@@ -12,7 +12,8 @@ tags:
   - genetisch immuunsysteem
   - pest
   - zwarte dood
-photo's: []
+photo's:
+  - /img/skelet-schedel-dood.jpg
 ---
 Eindelijk iets goed te melden over de gevolgen van de zwarte dood. Onze
 immuunsystemen zouden er een flinke boost van hebben gekregen.
