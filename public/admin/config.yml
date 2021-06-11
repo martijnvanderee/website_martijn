@@ -21,6 +21,16 @@ collections:
     fields:
       - {name: naam, label: Naam}
 
+
+  - name: photo's
+    label: Photo's
+    folder: "content/photo's"
+    create: true
+    fields:
+      - {name: naam, label: Naam}
+      - {label: "Image", name: "image", widget: "image"}
+
+
   - name: posts
     label: Posts
     folder: "content/posts"
@@ -31,6 +41,14 @@ collections:
       - {label: "Subtitle", name: "Subtitle", widget: "string", required: false}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Image", name: "image", widget: "image"}
+      - name: header
+        label: Header
+        widget: relation
+        collection: photo's
+        searchFields: [naam]
+        valueField: naam
+        required: true
+
       - {label: "Body", name: "body", widget: "markdown"}
       - label: "Onderwerp"
         name: "onderwerp"
@@ -50,6 +68,13 @@ collections:
         multiple: true
         valueField: naam
         required: false
-
+      - name: photo's
+        label: Photo's
+        widget: relation
+        collection: photo's
+        searchFields: [naam]
+        multiple: true
+        valueField: naam
+        required: false
 
 

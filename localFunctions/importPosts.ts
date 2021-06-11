@@ -13,6 +13,35 @@ export const importPosts = async (numberOfPosts: number = 100) => {
   );
 };
 
+export const getNumberOfPages = (numberOfPosts: number = 6) => {
+  const markdownFiles = require.context('../content/posts', false, /\.md$/).keys()
+    .map(relativePath => relativePath.substring(2));
+
+  console.log("here", markdownFiles.length)
+  const NumberOfPages = Math.ceil(markdownFiles.length / numberOfPosts)
+
+  return NumberOfPages
+};
+
+export const getSpecificPosts = async (start: number, end: number) => {
+  const markdownFiles = require.context('../content/posts', false, /\.md$/).keys()
+    .map(relativePath => relativePath.substring(2));
+
+  const fileNames = await markdownFiles.slice(start, end);
+
+
+
+  return Promise.all(
+    fileNames.map(async path => {
+      const markdown = await import(`../content/posts/${path}`);
+      return { ...markdown, slug: path.substring(0, path.length - 3) };
+    })
+  );
+};
+
+
+
+
 
 
 export const filterPosts = () => {

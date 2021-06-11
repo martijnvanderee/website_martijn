@@ -1,6 +1,9 @@
 import React, { FunctionComponent } from 'react'
 import Link from "next/link";
 
+import { importPostSlugs, importPost } from "../localFunctions/importPosts"
+
+
 //components
 import { Layout } from "../components/layout"
 import { PostItem } from "../components/postItem"
@@ -50,6 +53,7 @@ const MeerNetBinnen: FunctionComponent<HomeProps> = ({ posts }) => {
     </main>
   </Layout>
 }
+
 
 
 export async function getStaticProps() {
