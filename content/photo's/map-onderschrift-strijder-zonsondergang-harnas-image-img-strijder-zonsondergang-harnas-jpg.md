@@ -1,5 +1,5 @@
 ---
 onderschrift: " Strijder zonsondergang harnas"
-bron: Devenath
+bron: Pixabay.com Devenath
 image: /img/strijder-zonsondergang-harnas.jpg
 ---
