@@ -27,8 +27,9 @@ collections:
     folder: "content/photo's"
     create: true
     fields:
-      - {name: onderschrift, label: Onderschrift}
-      - {label: "Image", name: "image", widget: "image"}
+      - {name: onderschrift, label: Onderschrift,required: false}
+      - {name: bron, label: Bron,required: false}
+      - {label: "Image", name: "image", widget: "image",required: true}
 
 
   - name: posts
