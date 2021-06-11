@@ -1,9 +1,8 @@
-import React, { FunctionComponent } from 'react'
+import React from 'react'
 import Link from "next/link";
 
 //components
 import { Layout } from "../components/layout"
-
 
 
 
