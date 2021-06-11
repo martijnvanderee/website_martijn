@@ -73,7 +73,7 @@ collections:
         collection: photo's
         searchFields: [naam]
         multiple: true
-        valueField: naam
+        valueField: image
         required: false
 
 
