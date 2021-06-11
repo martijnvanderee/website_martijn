@@ -1,10 +1,16 @@
 ---
 templateKey: post.template
-title: Antwoord op Fermi-paradox? Aliens waarschijnlijker ónder dan óp oppervlakte andere planeten!
+title: Antwoord op Fermi-paradox? Aliens waarschijnlijker ónder dan óp
+  oppervlakte andere planeten!
 date: 2021-05-22T13:28:28.885Z
-image: /img/photo1.jpg
+headerPhoto: /img/16221555089965114223103991881058.png
 onderwerp: space
 auteur: Monique Siemsen
+tags:
+  - immuunsysteem
+image: /img/photo1.jpg
+photo's:
+  - /img/16221555089965114223103991881058.png
 ---
 We moeten niet naar tekenen van leven zoeken aan de oppervlakten van planeten, maar onder de oppervlakten en wel tot tientallen kilometers diep. De kans dat intelligent leven zich ondergronds bevindt, is namelijk vele malen groter dan dat het zichtbaar aan de oppervlakte rondscharrelt.
 
