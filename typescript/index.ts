@@ -8,7 +8,7 @@ export interface PostData {
     title: string;
     Subtitel: string
     date: Date;
-    image: string;
+    headerPhoto: string;
     onderwerp: string
     auteur: string;
     tags: string[]

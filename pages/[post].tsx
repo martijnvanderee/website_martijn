@@ -32,7 +32,7 @@ type PostProps = {
 const Post: FunctionComponent<PostProps> = ({ attributes, html, posts }) => {
 
 
-  const image = `${attributes.image}/?nf_resize=fit&w=700`
+  const image = `${attributes.headerPhoto}/?nf_resize=fit&w=700`
   const date: string = formatDate(attributes.date)
   return (
     <Layout title={attributes.title}>

@@ -44,7 +44,7 @@ const NetBinnen: FunctionComponent<NetBinnenProps> = ({ posts }) => {
           return (<div className="p-4">
             <div className="relative h-64 ">
               <img
-                src={`${randomPost.attributes.image}/?nf_resize=fit&w=700`}
+                src={`${randomPost.attributes.headerPhoto}/?nf_resize=fit&w=700`}
                 alt={randomPost.attributes.title}
                 className="absolute inset-0 w-full h-full object-cover"
               />

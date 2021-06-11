@@ -13,7 +13,7 @@ export const BlogPost = ({ blogPost }: any) => {
           <img
             className="object-cover h-full w-full rounded-t"
 
-            src={`${blogPost.attributes.image}/?nf_resize=fit&w=700`}
+            src={`${blogPost.attributes.headerPhoto}/?nf_resize=fit&w=700`}
           />
         </div>
 

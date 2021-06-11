@@ -32,7 +32,7 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
                   <h2 className="text-shadow text-white text-3xl md:text-4xl">{post.attributes.title}</h2>
                 </div>
                 <img
-                  src={post.attributes.image}
+                  src={post.attributes.headerPhoto}
                   alt="title van artikel"
                   className="absolute inset-0 w-full h-full "
                 />
@@ -66,7 +66,7 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
               return (<div className="p-4">
                 <div className="relative h-64 ">
                   <img
-                    src={randomPost.attributes.image}
+                    src={randomPost.attributes.headerPhoto}
                     alt={randomPost.attributes.title}
                     className="absolute inset-0 w-full h-full object-cover"
                   />
