@@ -2,7 +2,7 @@
 templateKey: post.template
 title: Pest bracht ons dood en verderf, maar ook sterke genen
 date: 2021-06-11T10:02:40.768Z
-headerPhoto: /img/aarde-meteoriet-ruimte.jpg
+headerPhoto: /img/pestmeester-tekening-pestmasker.png
 onderwerp: history
 auteur: Monique Siemsen
 tags:
@@ -12,8 +12,7 @@ tags:
   - genetisch immuunsysteem
   - pest
   - zwarte dood
-photo's:
-  - /img/bliksemschichten-nacht-hemel.jpg
+photo's: []
 ---
 Eindelijk iets goed te melden over de gevolgen van de zwarte dood. Onze
 immuunsystemen zouden er een flinke boost van hebben gekregen.
