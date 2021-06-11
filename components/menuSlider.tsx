@@ -83,7 +83,7 @@ const Zoeken: FunctionComponent<ButtonProps> = () => {
       <div className="w-full">
         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold" htmlFor="instantie">
 
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 py-3 " id="instantie" type="text" placeholder="zoek op trefwoord,titel of auteur" name="instantie" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 py-3 " id="instantie" type="text" placeholder="  zoek op trefwoord,titel of auteur" name="instantie" />
         </label>
 
       </div>
