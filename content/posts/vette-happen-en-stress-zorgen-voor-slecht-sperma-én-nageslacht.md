@@ -1,58 +1,64 @@
 ---
 templateKey: post.template
-title: Vette happen en stress zorgen voor slecht sperma én nageslacht
+title: Dipje? Ga lekker gamen of wandelen, maar stop met social media!
 date: 2021-06-11T15:48:04.497Z
-headerPhoto: /img/man-zaadcel-eicel.jpg
+headerPhoto: /img/kinderen-blij-computer.jpg
 onderwerp: human
 auteur: Monique Siemsen
 tags:
-  - mannen, bevruchting, sperma, nageslacht. epigenomen, vrouwen, stress,
-    levensstijl.
+  - videogames, onderzoek, kids, gamen, depressie, social media 3 bijlagen
 photo's:
-  - /img/vader-baby-slaap.jpg
+  - /img/kind-schermtijd-computer.jpg
 ---
-Slecht nieuws voor luie kerels die papa willen worden en een vrouw hebben, die dit leest.
-Na dit artikel, slaat ze de chips uit je fikken en jaagt zij je van de bank af en in je
-joggingbroek!
-Dat ziekten en aandoeningen genetisch van aard kunnen zijn en doorgegeven op de
-volgende generatie is bekend. Maar ook zonder DNA komt het sperma van vader een heel
-eind in de overdracht van levensstijl op zijn kind.
+Het is nog niet zo lang geleden dat de goegemeente vreesde voor allerlei psychologische
+aandoeningen bij gamende jeugd. Maar niets blijkt minder waar! Gooi het opstandige
+kroost dus gerust achter de game-computer.
+Jongens op de leeftijd van 11 jaar die meer gameden dan leeftijdsgenootjes, ontwikkelden
+later minder klachten van depressieve aard. Zo blijkt uit een internationaal onderzoek van
+universiteiten uit Zweden, Australië en Groot-Brittannië. Uit hetzelfde onderzoek bleek ook
+dat meisjes van dezelfde leeftijd die zich meer met social media bezig hielden dan
+leeftijdsgenootjes, juist meer last kregen van depressiviteit later in het leven.
 
-Epigenoom slaat data op van leven papa
-Als we denken aan erfelijkheid, denken we aan genetisch materiaal, oftewel DNA. Maar
-informatie van de ouder kan ook op andere manier worden overgedragen aan het
-nageslacht. “Omgevingsinformatie” of environmental information noemen wetenschappers
-dat en ze verwijzen daarbij naar de levensstijl van vader. Het gaat dus nadrukkelijk niet om
-genetische informatie, maar puur om je levensstijl: of je veel of weinig beweegt, de stress
-opzoekt of juist vermijdt en natuurlijk ook het eetgedrag van de potentiële papa. Die
-informatie is terug te vinden niet alleen in de fysieke gestalte van de man, maar zelfs in
-zijn sperma.
+Schermtijd kan negatieve én positieve uitwerking hebben op kinderen
+Schermtijd is dus niet zo slecht voor kinderen en jonge mensen als lange tijd gedacht
+werd, maar het is wel afhankelijk van wat er op dat scherm staat en welk geslacht er
+achter dat scherm zit. Schermtijd kan jonge mensen zowel negatief als positief
+beïnvloeden.
+De wetenschappers benadrukken dat een weinig mobiele levensstijl niet goed is voor de
+fysieke gezondheid en dat mensen die meer tijd zittend doorbrachten dan anderen, ook
+aan meer psychologische en fysieke klachten leden. Tijdens de pandemie brengt een
+extra spelletje op de console, echter, zeker voordelen met zich mee. Ondervraagd 3 jaar
+later, bleek dat jongens die op 11-jarige leeftijd de meeste van hun dagen gameden, 24%
+minder last hadden van een slecht humeur, weinig energie of zwaarmoedige gedachten,
+dan jongens die maar één keer in de maand gameden.
 
-Sperma zit vol “roddelmoleculen”
-Epigenomen zijn moleculen in het sperma, die net als DNA informatie opslaan. In het
-geval van epigenomen gaat het dus niet om genetische data, maar die van de omgeving
-en wel de omgeving van het epigenoom en zijn baasje. Dat is in het geval van luie,
-vretende, stressende piemeleigenaren van het epigenoom geen goed nieuws. Bij een
-bevruchting van de eicel geeft het epigenoom al zijn informatie over het dieet en
-temperament van papa door aan de foetus als een slechte roddeltante.
-De ongunstige informatie kan zeer kwalijke gevolgen hebben voor de ontwikkeling van de
-foetus. Canadese wetenschappers aan de McGill Universiteit in Montreal ontdekten dat
-een slecht voedingspatroon van vader alleen al, kan leiden tot geboorteafwijkingen in de
-vorming van schedel en ruggenwervels, zo bleek toen de onderzoekers het dieet van
-muizenpapa’s voor de bevruchting aanpasten.
+Games bieden kids legio vaardigheden
+Wetenschappers denken dan ook dat games een legio aan vaardigheden bij jongelui
+ontwikkelen, die op latere leeftijd belangrijk zijn. Zo neemt het probleem oplossend
+vermogen toe, moet er samengewerkt worden met avatars of andere spelers en spelen er
+mechanismen mee als escapism, oftewel het kunnen ontvluchten naar een andere,
+interessantere wereld, waardoor de speler ontspant en minder stress ervaart.
+Ook het kunnen verwerken en kanaliseren van emoties als agressie is psychologisch
+heilzaam. Bij meisjes werden geen aanzienlijke verschillen in gamende en niet-gamende
+leeftijdsgenootjes gesignaleerd, maar wetenschappers wijzen erop dat meisjes doorgaans
+minder gamen dan jongens. Het vermoeden is dat de positieve effecten van gamen ook op
+meisjes van toepassing is.
 
-Gezonde vaders, gezonde kinderen
-Toch zijn de onderzoekers blij met de resultaten. Als een negatieve verandering in vaders
-levensstijl tot een negatief effect leidt in de ontwikkeling van de foetus, is het immers
-aannemelijk dat een positieve verandering in het leven van papa, leidt tot een juist
-verbeterde ontwikkeling van zijn toekomstige kroost.
-De universiteit zal de uitkomsten van dit onderzoek dan ook gebruiken als basis voor
-toekomstig onderzoek over hoe aandoeningen vermeden of genezen kunnen worden door
-de levensstijl van vaders te verbeteren.
-In de tussentijd is het voor vrouwen in ieder geval weer een flinke reminder waarom deze
-ook al weer op sportieve en optimistische mannen vallen. Zo krijgen mensen blijkbaar
-gezondere kids!
+Meisjes op social media lopen risico
+Meisjes spenderen hun schermtijd veelal aan social media, en dát is nu weer minder goed
+voor de kinderziel. Meisjes die de meeste dagen doorbrengen op social media, gaven 3
+jaar later voor 13% meer last te hebben van psychische klachten dan leeftijdsgenootjes
+die er maar één keer in de maand op social media koekeloerden. Uitkomsten die
+overeenkomen met verschillende eerdere onderzoeken die verband legden tussen
+gevoelens van sociale isolatie en minderwaardigheid en het spenderen van tijd op social
+media.
+In het onderzoek werd alleen het aantal dagen per maand achter het scherm, gemeten,
 
-Gepubliceerd op 15.04.2021
-Bron: onderzoek Non-DNA mechanism is involved in transmitting paternal experience to offspring,
-McGill University, Montreal, Canada
+niet de tijd per dag. De onderzoekers benadrukken daarom dat het belangrijk blijft om
+jonge mensen ook te stimuleren fysiek actief te blijven en geen dagenlange
+schermsessies te houden.
+
+Gepubliceerd op 19.04.2021
+Bron: research Prospective relationships of adolescents’ screen-bases sedentary behaviour with
+depressive symptoms: The Millenium Cohort Study door University College London, Diabetes
+Institute Australia, Karolinska Institutet Sweden.
