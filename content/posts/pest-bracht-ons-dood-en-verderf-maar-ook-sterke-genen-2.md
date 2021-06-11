@@ -5,6 +5,13 @@ date: 2021-06-11T10:02:40.768Z
 headerPhoto: /img/aarde-meteoriet-ruimte.jpg
 onderwerp: history
 auteur: Monique Siemsen
+tags:
+  - builenpest
+  - immuunsysteem
+  - DNA
+  - genetisch immuunsysteem
+  - pest
+  - zwarte dood
 photo's:
   - /img/bliksemschichten-nacht-hemel.jpg
 ---
