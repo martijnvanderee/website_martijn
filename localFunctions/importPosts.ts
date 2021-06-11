@@ -17,7 +17,7 @@ export const getNumberOfPages = (numberOfPosts: number = 6) => {
   const markdownFiles = require.context('../content/posts', false, /\.md$/).keys()
     .map(relativePath => relativePath.substring(2));
 
-  console.log("here", markdownFiles.length)
+
   const NumberOfPages = Math.ceil(markdownFiles.length / numberOfPosts)
 
   return NumberOfPages

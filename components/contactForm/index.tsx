@@ -23,7 +23,7 @@ export const ContactForm = () => {
 
         <div>
           <FormConstruct />
-          <div> {console.log("props1", props)} {console.log("props1", props.isSubmitting)} {console.log("props1", props.errors)}</div>
+          <div> </div>
         </div>
       )}
 

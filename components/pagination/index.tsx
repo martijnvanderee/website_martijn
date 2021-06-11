@@ -25,8 +25,7 @@ const Pagination: FunctionComponent<PaginationProps> = () => {
   const listPages = getNumberOfPages(numberOfPosts);
   const arrayOfNumbers = Array.from(Array(listPages + 1).keys())
   const [, ...removeFirstElement] = arrayOfNumbers;
-  console.log("list", listPages)
-  console.log(pageNumber)
+
 
 
 
@@ -39,7 +38,7 @@ type PaginationProps1 = {
 
 
 const Pagination1: FunctionComponent<PaginationProps1> = ({ current, total }) => {
-  console.log("test", current, total)
+
   const paginationNumbers = whatNumbersToshow(current, total)
 
   const hover = "z-20 bg-indigo-50 border-indigo-500 text-indigo-600"

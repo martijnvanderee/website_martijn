@@ -77,7 +77,7 @@ export async function getStaticPaths() {
   const [, ...removeFirstElement] = arrayOfNumbers;
 
 
-  console.log("listofPages", arrayOfNumbers, removeFirstElement)
+
   const paths = removeFirstElement.map((slug: number) => ({
     params: { id: slug.toString() },
   }));
