@@ -1,3 +1,3 @@
 ---
-naam: dieren
+naam: partnerkeuze
 ---
