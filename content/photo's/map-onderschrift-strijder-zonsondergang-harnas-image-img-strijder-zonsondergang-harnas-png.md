@@ -1,4 +1,4 @@
 ---
 onderschrift: Ruiter Boogschutter Paardrijkunst
-image: /img/strijder-zonsondergang-harnas.png
+image: /img/ruiter-boogschutter-paardrijkunst.png
 ---
