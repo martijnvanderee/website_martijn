@@ -1,71 +1,87 @@
 ---
 templateKey: post.template
-title: Zombie-gen in ons brein leeft voort na de dood!
+title: Worden de mysteries rond Duitse “Stonehenge” ooit opgehelderd?
 date: 2021-06-11T15:52:46.196Z
-headerPhoto: /img/zombi-vrouw-eng.jpg
+headerPhoto: /img/externsteine-zonsopgang-duitsland.jpg
 onderwerp: quirky
 auteur: Monique Siemsen
 tags:
-  - zombi, genen, neuronen, brein, hersenen, dood
+  - stonehenge, externsteine, zonnewende, heidenen, druiden, sterrenpriesters,
+    rituelen, duitsland
 photo's:
-  - /img/neuronen-verbinding-hersencellen.jpg
+  - /img/externsteine-loopbrug-hoog.jpg
 ---
-Wie denkt dat je lijf na je overlijden, zich bezig gaat houden met doodnormale zaken als
-ontbinding, heeft het mis. Wetenschappers hebben een zombi-gen ontdekt, dat in de
-hoogste versnelling gaat, lang na je dood.
-Het menselijk lichaam blijft ons verbazen en het was al eerder bekend dat sommige cellen
-in ons brein nog even doorwerken, als we onze laatste adem hebben uitgeblazen. “Nog
-even doorwerken” is echter wel van een andere orde dan keihard aan de bank gaan en
-grote tentakels groeien! Én laat dat nu precies zijn wat het nieuw ontdekte zombi-gen doet.
+Een paar uur rijden van de Nederlands-Duitse grens liggen de Externsteine: 5 grillige
+rotsformaties, die al duizenden jaren werken als een magneet op heidenen, christenen en
+kunstenaars.
+Dertig meter hoge bonkige rotsen bij het Teutoburger Woud, rijzen ineens op uit het
+landschap. Ze lijken, zelfs op een zonnige dag, duister af te steken tegen het idyllische
+meer. Op het eerste gezicht en van veraf ziet de verbaasde bezoeker duidelijk dat er
+ramen en deuren in de rotsen zijn uitgehouwen. Tot welk doel?
 
-Genen van neuronen kappen wél na de dood
-De wetenschappers zijn een groep neurologen aan de universiteit van Illinois en Chicago.
-Ze bestudeerden hersenweefsel dat tijdens hersenchirurgie was verwijderd en
-simuleerden het sterven door het onder meer te verstoken van zuurstof. Een deel van de
-genen van hersencellen bleken zich voor het grote deel te gedragen naar verwachting van
-de wetenschappers.
-Deze baseerden zich op vorige studies en gingen ervan uit dat de hersenen stopten met
-activiteit te vertonen na de dood. En de genen van de hersencellen dus ook. De genen
-van de cellen aanwezig in neuronen bleken inderdaad snel na het overlijden inactief te
-worden. Dit vonden de wetenschappers niet heel verbazingwekkend, want neuronen zijn
-de hersencellen die betrokken zijn bij het denken en het geheugen van mensen. En als er
-geen mens meer is die die cellen gebruikt om te denken of zich dingen te herinneren, is
-het niet zo gek dat de genen van die neuronen dan maar stoppen met activiteit.
+Externsteine vol geheime gangen en grotten
+De bonkige zandstenen zitten vol grotten, gangen en geheime ruimten. Van sommigen
+weten onderzoekers inmiddels waartoe ze dienden, maar van andere elementen hebben
+we nog geen idee, waarom zij daar zijn aangebracht en door wie. Waarom zou iemand
+traptreden aanleggen, die vervolgens nergens heen leiden? Vreemd gevormde platforms
+en nissen maken of nog bizarder: een doodskist uithakken in de rotsen?
+Wel weten we dat volgens de lokale overlevering de plek al duizenden jaren geleden
+geassocieerd werd met magie en mythevorming. De stenen zouden in één nacht door
+reuzen zijn neergezet en daarna door een boze geest in brand gestoken zijn, wat hun
+verwrongen en onheilspellende uiterlijk verklaart.
 
-Huishoudelijke genen en opruim genen na de dood nog lekker aan de bak
-Verrassender vonden de wetenschappers het, dat maar liefst 80% van de genen in de
-hersencellen gewoon nog lekker aan het werk bleken, zo niet heel ijverig. De
-wetenschappers noemen deze genen de zogenaamde huishoudelijke genen en hun taak
-is de kwaliteit van het hersenweefsel goed te houden. De activiteit van deze genen bleek
-nog uren stabiel te blijven.
-Domweg stomverbaasd waren de wetenschappers echter, toen ze de activiteit van een
-derde groep genen bekeken. Deze genen horen bij de zogeheten ‘glial cellen’ en komen
-super op dreef als jijzelf het hoekje om bent. De cellen groeien uit tot gigantische
-proporties en ze ontspruiten lange tentakel-achtige armen uit de cellen, tot wel 24 uur na
-het intreden van de dood. Waarom doen die cellen dat?
+Mensenoffers door heidenen?
+Ook zijn er sterke aanwijzingen dat heidense volkeren de plek gebruikten om er hun rites
+uit te voeren. De rites waren belangrijk om het alledaagse leven te stroomlijnen, geboortes
+goed te laten verlopen, gunstig weer af te dwingen en de heidense goden gunstig te
+stemmen door bijvoorbeeld offers te brengen.
+Hoewel er inmiddels geen wetenschappelijke discussie is dat mensenoffers in deze tijd
+wel plaatsvonden in Scandinavië door de Vikingen en in Amerika door onder meer de
+Maya’s en de Inca’s, is het nog niet vastgesteld dat de platforms van Externsteine ook
+sinistere offers hebben gekend dan slechts gewassen of dieren.
 
-Hersencellen die opruimen groeien en krijgen tentakels. Ná je dood.
-Daar hebben de onderzoekers wel een antwoord op. Glial cellen zijn de cellen die de
-gezondheid van het hersenen in de gaten houden. Als er koorts of andere aanvallen
-dreigen, komen de glial cellen in actie. Zij moeten de hersenen schoon houden en de boel
-opruimen na een infectie of zuurstof te kort. En als je dood bent gegaan, is er natuurlijk
-wel een ernstig zuurstoftekort in de hersenen. De glial cellen gaan dus aan de slag en dat
-betekent dat de genen van de cellen natuurlijk net zo actief worden.
-Of de zombi-genen nog andere effecten teweeg kunnen brengen in ons brein is niet zeker.
-Zo zou de vergrootte hersenactiviteit kunnen verklaren waarom sommige mensen bijna-
+Prehistorische heiligdommen vereerde midzomerzon
+De gebeurtenissen aan de sterrenhemel waren in ieder geval belangrijk voor de oude
+Germaanse stammen. Het rotsencomplex is op een aantal punten dusdanig aangepast dat
+astronomisch belangrijke gebeurtenissen gevierd konden worden. Zo is er boven in één
+van de rotsen een kleine kapel gebouwd, die alleen maar te bereiken is via in de rotsen
+uitgehouwen treden en een hoge voetbrug.
+De kapel heeft geen dak en aan de oostkant bevindt zich een ronde nis met een zuil-
+altaar, die nu niet bepaald conventioneel kerks aan doet. Recht boven het altaar heeft men
+een kleine ronde uitsparing gemaakt van zo’n 50 centimeter doorsnee. Het ziet er
+mysterieus uit, maar wetenschappers hebben wel al ontdekt waarvoor dit “kajuitgat” dient.
 
-dood-ervaringen krijgen, als hun brein geen zuurstof meer krijgt, zoals bij een verdrinking
-of een ernstig ongeval. De hyperactiviteit van de zombi-genen zou mogelijk de oorzaak
-zijn van het gegeven dat mensen zeer intens kleuren, geuren en gevoelens ervaren.
+Externsteine en Stonehenge vereerden midzomerzon
 
-Dichter bij oplossingen voor neurologische problemen?
-De wetenschappers zijn verrast én blij met de bevindingen. Begrijpen hoe menselijke
-genen zich gedragen na onze dood, staat hoog op het verlanglijstje van wetenschappers
-die zich specialiseren in het onderzoek en de behandeling van een heel scala aan
-aandoeningen waarin de hersenen een grote rol spelen zoals autisme, dementie en
-epilepsi.
+Het geeft uitzicht op twee, voor de oude stammen, belangrijke events. De midzomerzon
+komt er op en schijnt er door heen én het is ook het noordelijkste punt waar de maan
+opkwam. In veel prehistorische heiligdommen werden deze natuurgebeurtenissen met
+veel ceremonie gevierd en we nemen dan ook aan dat dit ook het geval was voor de
+eerste mensen die bij de Externsteine hun ceremonies hielden.
+In dit verband kan de volgende ontdekking dan ook geen toeval zijn: zowel Stonehenge
+als de Externsteine liggen op dezelfde geografische breedte, zodat de richting vanwaar de
+midzomerzon opkomt, op beide plaatsen hetzelfde is. En dat was belangrijk voor
+Europese sterrenpriesters.
 
-Gepubliceerd op 12.5.2021
-Bron: F. Dachet, J.B. Brown, T. Valyi-Nagi, K. D. Narayan, A. Serafini, N. Boley, Th. R. Gingeras,
-S.E. Celniker, G. Mohapatra, J.A. Loeb - Selective time-dependent changes in activity and cell-
-specific gene expression in human postmortem brain.
+Heidenen en christelijken streden om Externsteine
+Met het intreden en het integreren van het christendom in Duitsland, raakten de heidense
+rites en gewoontes in verval. Zo rond 722 na Christus verving het nieuwe geloof, het oude.
+En om het nieuwe geloof goed te laten vatten, maakte de religieuze leiders er een
+gewoonte van de oude heidense heiligdommen in te lijven en voor christelijke ceremonies
+te gaan gebruiken.
+Dat dit niet zonder slag of stoot ging, is nog steeds te zien in het bijzondere
+natuurmonument. Dan weer vernielden de verstoorde heidenen de christelijke symboliek,
+dan weer was het andersom en zorgden vroege monniken ervoor dat er wat heidense
+symboliek werd verwoest. In de middeleeuwen werd het een retraite voor religieuze
+kluizenaars. Uit die tijd stamt dan ook een prachtige reliëfvoorstelling op de rotsen, die nog
+steeds goed te zien is.
+Na de middeleeuwen deden de Externsteine ook nog eens dienst als fort, plezieroord en
+gevangenis. In de 19 e eeuw werden de rotsen opnieuw ontdekt door kunstenaars, die
+geen genoeg kregen van de indrukwekkende en geheimzinnige rotsen. Of we eens alles
+zullen weten over de Externsteine, valt nog te betwijfelen. Maar het mysterie staat de
+rotsen goed, ze worden in ieder geval nog tot op de dag van vandaag bewonderd en door
+één ieder die ze bezoekt, zelfs nog steeds een klein beetje aanbeden.
+
+Gepubliceerd op 10.5.2021
+Bron: wollsackverwitterung, Reallexikon der germanischen Altertumskunde door H. Beck en J.
+Udolph.
