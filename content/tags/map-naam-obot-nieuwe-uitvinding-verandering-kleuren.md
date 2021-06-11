@@ -1,3 +1,3 @@
 ---
-naam: obot, nieuwe uitvinding, verandering kleuren
+naam: Robot, nieuwe uitvinding, verandering kleuren
 ---
