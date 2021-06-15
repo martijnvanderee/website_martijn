@@ -8,6 +8,13 @@ import { useIsMenuOpen } from '../state/isMenuOpen'
 
 export const Header = () => {
   const { dispatch, state } = useIsMenuOpen()
+
+
+
+
+  const isMenuOpen = state.isMenuOpen
+  const menuAction = isMenuOpen ? "close" : "open"
+
   return (
     <header className="sticky top-0 z-20 bg-purple">
       <div className="mx-auto">
@@ -42,7 +49,7 @@ export const Header = () => {
 
             </div>
 
-            <div className="flex my-auto cursor-pointer " onClick={() => dispatch({ type: 'open' })}>
+            <div className="flex my-auto cursor-pointer " onClick={() => dispatch({ type: menuAction })}>
 
 
               <IconContext.Provider value={{ color: "white", className: "mr-1 md:hidden", size: "1.5em" }}>

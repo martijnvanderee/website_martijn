@@ -20,9 +20,11 @@ const Pagination: FunctionComponent<PaginationProps> = () => {
   //const test = pageNumber1.search("/")
 
 
-
   const numberOfPosts = 5
   const listPages = getNumberOfPages(numberOfPosts);
+
+
+
   const arrayOfNumbers = Array.from(Array(listPages + 1).keys())
   const [, ...removeFirstElement] = arrayOfNumbers;
 
@@ -64,17 +66,7 @@ const Pagination1: FunctionComponent<PaginationProps1> = ({ current, total }) =>
     </a>
       </div>
       <div className="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
-        <div>
-          <p className="text-sm text-gray-700">
-            Showing
-        <span className="font-medium">1</span>
-        to
-        <span className="font-medium">2</span>
-        of
-        <span className="font-medium">{total}</span>
-        results
-      </p>
-        </div>
+
         <div>
           <nav className="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
 
@@ -101,7 +93,7 @@ const Pagination1: FunctionComponent<PaginationProps1> = ({ current, total }) =>
             {current !== 1 &&
               <Link href={{
                 pathname: '/net-binnen/[slug]',
-                query: { slug: back10.toString() },
+                query: { slug: back1.toString() },
               }}>
                 <a href="#" className="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
                   <span className="sr-only">Previous</span>
@@ -119,7 +111,7 @@ const Pagination1: FunctionComponent<PaginationProps1> = ({ current, total }) =>
                 pathname: '/net-binnen/[slug]',
                 query: { slug: "1" },
               }}>
-                <a href="#" aria-current="page" className={`z-10   relative inline-flex items-center px-4 py-2 border text-sm font-medium`}>
+                <a href="#" aria-current="page" className={`z-10   bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium`}>
                   1
         </a>
               </Link>
@@ -139,7 +131,7 @@ const Pagination1: FunctionComponent<PaginationProps1> = ({ current, total }) =>
             })}
 
 
-            {total - current > 3 && <a href="#" className="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
+            {total - current >= 3 && <a href="#" className="bg-white border-gray-300 text-gray-500 hover:bg-gray-50 relative inline-flex items-center px-4 py-2 border text-sm font-medium">
               ...
         </a>}
 

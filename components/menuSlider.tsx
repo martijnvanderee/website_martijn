@@ -12,14 +12,14 @@ import Link from "next/link";
 export const MenuSlider = () => {
   const { state, dispatch } = useIsMenuOpen()
 
+
+
   const switchClass = state.isMenuOpen ? "w-96 right-0" : "w-96 -right-96"
 
-
   return (
-    <div className={`fixed right-0 top-16 md:top-20 h-screen bg-white z-30 ${switchClass} transition-all duration-1000 border-l border-almostWhite`}>
+    <div className={`fixed right-0 top-16 md:top-20 h-screen bg-white z-30 ${switchClass} transition-all duration-500 border-l border-almostWhite`}>
 
       <div className={``}>
-
         <IconContext.Provider value={{ color: "", className: "", size: "1.5em", }}>
           <button className="float-right mr-4 mt-4" onClick={() => dispatch({ type: 'close' })}><CgClose /></button>
 
@@ -35,9 +35,9 @@ export const MenuSlider = () => {
             return <NavItem name={navName} path={navLinks[index]} isRoute={isRoute} />
           })}
 
-          <Link href="/over-sciencegeek">
-            <a className={` relative`}>
-              <div className={`ml-4 text-2xl py-4 border-b border-almostWhite  `}>Over Cognovi</div>
+          <Link href="/over-sciencegeek" >
+            <a onClick={() => dispatch({ type: 'close' })} className={` relative`} >
+              <div className={`ml-4 text-2xl py-4 border-b border-almostWhite  `}>Over ScienceGeek</div>
 
 
             </a>
@@ -61,9 +61,10 @@ type NavProps = {
 
 
 const NavItem: FunctionComponent<NavProps> = ({ path, isRoute, name }) => {
+  const { state, dispatch } = useIsMenuOpen()
   return (
     <Link href={path}>
-      <a className={` relative ${isRoute && `bg-almostWhite flex`}`}>
+      <a onClick={() => dispatch({ type: 'close' })} className={` relative ${isRoute && `bg-almostWhite flex`}`}>
         <div className={`ml-4 text-2xl py-4 border-b border-almostWhite  ${isRoute && `font-bold `}`}>{name}</div>
         {isRoute && <div className="absolute h-full w-2 left-0 bg-purple" />}
 

@@ -18,6 +18,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ title, children }) => {
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
 
+
       <div className="relative">
         <Header />
         <div className="relative overflow-hidden">
@@ -27,6 +28,7 @@ export const Layout: FunctionComponent<LayoutProps> = ({ title, children }) => {
             {children}
           </div>
         </div>
+
       </div>
     </>
   )

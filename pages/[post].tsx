@@ -3,18 +3,16 @@
 
 import { importPostSlugs, importPost } from "../localFunctions/importPosts"
 
-import parse from 'html-react-parser';
 import { formatDate } from "../localFunctions/formatdate"
 
 import React, { FunctionComponent } from 'react'
-import Link from "next/link";
 
 //components
 import { Layout } from "../components/layout"
 import { PostItem } from "../components/postItem"
 //functions
 import { importPosts } from "../localFunctions/importPosts";
-
+import { modifyTags } from "../localFunctions/modifyTags";
 //typescript
 import { PostData } from "../typescript"
 
@@ -29,11 +27,19 @@ type PostProps = {
   posts: PostData[]
 }
 
+
+
+
 const Post: FunctionComponent<PostProps> = ({ attributes, html, posts }) => {
 
 
   const image = `${attributes.headerPhoto}/?nf_resize=fit&w=700`
   const date: string = formatDate(attributes.date)
+
+  const tags = modifyTags(attributes.tags)
+
+
+
   return (
     <Layout title={attributes.title}>
       <div className="md:max-w-6xl  md:mx-auto">
@@ -79,7 +85,7 @@ const Post: FunctionComponent<PostProps> = ({ attributes, html, posts }) => {
 
 
           {attributes.tags && <ul className="flex mb-6">
-            {attributes.tags.map((tag: string) => {
+            {tags.map((tag: string) => {
               return (<li className="text-purple font-bold p-2 border-2 border-purple rounded-md mr-4">{tag}</li>)
             })}
           </ul>}

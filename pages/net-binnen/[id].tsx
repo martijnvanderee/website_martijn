@@ -19,10 +19,6 @@ import { importPosts } from "../../localFunctions/importPosts";
 //typescript
 import { PostData } from "../../typescript"
 
-import { BsPencil } from 'react-icons/bs';
-import { BiTimeFive } from 'react-icons/bi';
-import { IconContext } from "react-icons";
-
 
 
 type NetBinnenProps = {
@@ -34,30 +30,35 @@ const NetBinnen: FunctionComponent<NetBinnenProps> = ({ posts }) => {
   return (<Layout title="meer net binnen">
     <main>
 
-      <div className="mx-4 mt-10 mb-10 text-4xl font-bold underline text-black">
+      <div className="mx-4 mt-10 mb-10 text-4xl font-bold underline text-grey">
         <h1>Net binnen</h1>
       </div>
 
       <div className=" grid  sm:grid-cols-2 md:grid-cols-3 pb-10 mt-2 ">
 
         {posts.map((randomPost: any) => {
-          return (<div className="p-4">
-            <div className="relative h-64 ">
-              <img
-                src={`${randomPost.attributes.headerPhoto}/?nf_resize=fit&w=700`}
-                alt={randomPost.attributes.title}
-                className="absolute inset-0 w-full h-full object-cover"
-              />
-            </div>
-            <div className="relative h-36 p-2 ">
-              <div>
-                <div className="text-yellow font-medium mb-2">{randomPost.attributes.onderwerp}</div>
-                <div className="text-black font-semibold text-2xl">{randomPost.attributes.title}</div>
+          const url = randomPost.slug
+          return (
+
+            <Link href={`/${url}`} as={`/${url}`}>
+              <div className="p-4 cursor-pointer">
+                <div className="relative h-64 ">
+                  <img
+                    src={`${randomPost.attributes.headerPhoto}/?nf_resize=fit&w=700`}
+                    alt={randomPost.attributes.title}
+                    className="absolute inset-0 w-full h-full object-cover"
+                  />
+                </div>
+                <div className="relative h-36 p-2 ">
+                  <div>
+                    <div className="text-yellow font-medium mb-2">{randomPost.attributes.onderwerp}</div>
+                    <div className="text-black font-semibold text-2xl">{randomPost.attributes.title}</div>
+                  </div>
+                  <div className="absolute w-12 bg-yellow h-0.5 bottom-0 right-0"></div>
+                  <div className="absolute w-0.5 bg-yellow h-12 bottom-0 right-0"></div>
+                </div>
               </div>
-              <div className="absolute w-12 bg-yellow h-0.5 bottom-0 right-0"></div>
-              <div className="absolute w-0.5 bg-yellow h-12 bottom-0 right-0"></div>
-            </div>
-          </div>
+            </Link>
           )
         })}
 
@@ -91,8 +92,10 @@ export async function getStaticPaths() {
 // params will contain the id for each generated page.
 export async function getStaticProps({ params }: any) {
   const numberOfPosts = 5
-  const numberOfPostsStart = Number(params.id) * numberOfPosts
-  const numberOfPostsStartEnd = Number(params.id) * numberOfPosts + 5
+  const numberOfPostsStart = Number(params.id) * numberOfPosts - 5
+  const numberOfPostsStartEnd = Number(params.id) * numberOfPosts
+
+
 
 
   const posts1: PostData[] = await getSpecificPosts(numberOfPostsStart, numberOfPostsStartEnd)

@@ -8,12 +8,19 @@ import { Layout } from "../components/layout"
 
 
 export default function About() {
-  return <Layout title="Er ging iets mis">
+  return <Layout title="Over ScienceGeek">
     <main>
 
       <div className="p-4 text-black mb-20 mt-8">
         <h1 className="text-3xl mb-8 font-bold">Over sciencegeek</h1>
-        <p className="text-xl mb-4">Iedere dag wil Cognovi de wereld beter begrijpen en je de beste, leukste en interessantste wetenschappelijke nieuwsfeiten brengen. Bij Cognovi vinden we wetenschap zo belangrijk dat we doelbewust gekozen hebben voor een gratis site, zonder abonnementen of dure hard copy glossy uitgave. Kennis moet vrij toegankelijk zijn voor iedereen.</p>
+        <p className="text-xl mb-4">ScienceGeek is dé nieuwssite voor iedereen die van wetenschappelijke feitjes en weetjes
+houdt, iedere dag weer.</p>
+
+        <p className="text-xl mb-4">Iedere dag wil ScienceGeek de wereld beter begrijpen en je de beste, leukste en
+        interessantste wetenschappelijke nieuwsfeiten brengen. Bij ScienceGeek vinden we
+        wetenschap zo belangrijk dat we doelbewust gekozen hebben voor een gratis site, zonder
+        abonnementen of dure hard copy glossy uitgave. Kennis moet vrij toegankelijk zijn voor
+iedereen.</p>
 
         <p className="text-xl mb-4">We zijn een 100% onafhankelijk mediabedrijf en niet gerelateerd aan enige filosofische,
         religieuze of politieke stroming. We baseren onze artikelen op wetenschappelijke
@@ -24,19 +31,10 @@ ons nieuws verifieerbaar en betrouwbaar.</p>
         Dan horen we heel graag van je. Email ons een persbericht, contactgegevens en
 beeldmateriaal en we nemen binnen 24 uur contact met je op.</p>
 
-        <p className="text-xl mb-4">Emailadres: redactie@cognovi.nl</p>
-
-        <p className="text-xl mb-4">Heb je andere vragen aan onze redactie of zou je graag een artikel zien verschijnen over
-        een bepaald onderwerp? Ook dan ben je van harte uitgenodigd om je idee te delen met
-onze redactie.</p >
-
-
-        <p className="text-xl mb-4">We wensen je een interessante en leuke dag toe!</p>
-
-        <p className="text-xl mb-4">Monique Siemsen</p>
-
-        <p className="text-xl mb-4">Hoofdredacteur Cognovi</p>
-        <p className="text-xl">Cognovi is een uitgave van ICS Media, gevestigd te Duiven, Van Goghstraat 4, 6921 NJ</p>
+        <p className="text-xl mb-4">We wensen je een interessante en leuke dag toe!</p >
+        <p className="text-xl mb-4">Monique de Leeuw</p>
+        <p className="text-xl mb-4">Hoofdredacteur ScienceGeek</p>
+        <p className="text-xl">Sciencegeek is een uitgave van ICS Media, gevestigd te Duiven, Van Goghstraat 4, 6921 NJ</p>
 
       </div>
     </main>

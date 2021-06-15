@@ -10,6 +10,9 @@ import { importPost1, randomPost } from "../localFunctions/importPosts";
 //typescript
 import { PostData } from "../typescript"
 
+
+
+
 type HomeProps = {
   posts: PostData[],
   randomPosts: PostData[]
@@ -20,6 +23,8 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
   const url = post.slug
   const [, ...postOftheRest] = posts;
 
+
+
   return (
     <Layout title="Sciencegeek">
       <main>
@@ -28,10 +33,10 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
           <div className="md:grid  md:grid-cols-2 md:mt-10">
             <Link href={`/${url}`} as={`/${url}`}>
 
-              <div className="relative w-full h-72 md:max-w-4xl md:h-96  md:mx-auto">
+              <div className="relative w-full h-72 md:max-w-4xl md:h-96  md:mx-auto cursor-pointer">
                 <div className="relative w-full h-full ">
 
-                  <div className="absolute z-10 bottom-0 m-4 cursor-pointer">
+                  <div className="absolute z-10 bottom-0 m-4">
                     <h2 className="text-shadow text-white text-3xl md:text-4xl">{post.attributes.title}</h2>
                   </div>
                   <img
@@ -59,7 +64,7 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
 
               </div>
 
-              <Link href={`/meer-net-binnen`}>
+              <Link href={`/net-binnen/1`}>
                 <div className="text-2xl md:text-2xl font-semibold leading-tight text-grey ml-4 cursor-pointer" >Meer net binnen <span className="text-2xl md:text-xl font-semibold leading-tight text-purple">{">"}</span>  </div>
               </Link>
             </div>
@@ -78,24 +83,30 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
           <div className="hidden md:block md:grid  md:grid-cols-3 pb-10 mt-2">
 
 
-            {randomPosts.map((randomPost: any) => {
-              return (<div className="p-4">
-                <div className="relative h-64 ">
-                  <img
-                    src={`${randomPost.attributes.headerPhoto}/?nf_resize=fit&w=700`}
-                    alt={randomPost.attributes.title}
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                </div>
-                <div className="relative h-36 p-2 ">
-                  <div>
-                    <div className="text-yellow font-medium mb-2">{randomPost.attributes.onderwerp}</div>
-                    <div className="text-black font-semibold text-2xl">{randomPost.attributes.title}</div>
+            {randomPosts.map((randomPost: PostData) => {
+
+
+              const url = randomPost.slug
+              return (
+                <Link href={`/${url}`} as={`/${url}`}>
+                  <div className="m-4 cursor-pointer">
+                    <div className="relative h-64">
+                      <img
+                        src={`${randomPost.attributes.headerPhoto}/?nf_resize=fit&w=700`}
+                        alt={randomPost.attributes.title}
+                        className="absolute inset-0 w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="relative h-36 p-2 ">
+                      <div>
+                        <div className="text-yellow font-medium mb-2">{randomPost.attributes.onderwerp}</div>
+                        <div className="text-black font-semibold text-2xl">{randomPost.attributes.title}</div>
+                      </div>
+                      <div className="absolute w-12 bg-yellow h-0.5 bottom-0 right-0"></div>
+                      <div className="absolute w-0.5 bg-yellow h-12 bottom-0 right-0"></div>
+                    </div>
                   </div>
-                  <div className="absolute w-12 bg-yellow h-0.5 bottom-0 right-0"></div>
-                  <div className="absolute w-0.5 bg-yellow h-12 bottom-0 right-0"></div>
-                </div>
-              </div>
+                </Link>
               )
             })}
 
