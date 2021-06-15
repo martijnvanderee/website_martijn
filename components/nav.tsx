@@ -11,6 +11,8 @@ const Nav = () => {
         {navNames.map((navName, index) => {
           const path: string = useRouter().asPath
           const isRoute: boolean = path === navLinks[index]
+
+          console.log("here", navName, navLinks[index], isRoute)
           return <NavItem name={navName} path={navLinks[index]} isRoute={isRoute} />
         })}
       </div>
