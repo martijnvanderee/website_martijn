@@ -30,7 +30,6 @@ collections:
       - {name: onderschrift, label: Onderschrift,required: false}
       - {name: bron, label: Bron,required: false}
       - {label: "Image", name: "image", widget: "image",required: true}
-
   - name: posts
     label: Posts
     folder: "content/posts"
@@ -73,7 +72,7 @@ collections:
         collection: photo's
         searchFields: [onderschrift]
         multiple: true
-        value_field: "{{slug}}"
+        valueField: "{{slug}}"
         required: false
 
 
