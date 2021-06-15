@@ -14,19 +14,19 @@ type HomeProps = {
 
 }
 
-const Home: FunctionComponent<HomeProps> = () => {
+const History: FunctionComponent<HomeProps> = () => {
 
 
   return (
     <Layout title="Sciencegeek">
-      test
+      <main>
+        test
+      </main>
     </Layout>
   )
 }
 
-export async function getStaticProps() {
-
-}
 
 
-export default Home;
+
+export default History;
