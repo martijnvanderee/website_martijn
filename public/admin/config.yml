@@ -73,7 +73,7 @@ collections:
         collection: photo's
         searchFields: [onderschrift]
         multiple: true
-        valueField: onderschrift
+        value_field: "{{slug}}"
         required: false
 
 
