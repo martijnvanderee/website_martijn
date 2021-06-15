@@ -73,7 +73,7 @@ collections:
         collection: photo's
         searchFields: [onderschrift]
         multiple: true
-        valueField: {{fields.photo's.onderschrift}} - {{fields.photo's.image}} - {{fields.photo's.bron}}
+        valueField: onderschrift
         required: false
 
 
