@@ -44,8 +44,9 @@ collections:
         widget: relation
         collection: photo's
         searchFields: [onderschrift]
-        valueField: image
         required: true
+        display_fields: onderschrift
+        valueField: "{{slug}}"
 
       - {label: "Body", name: "body", widget: "markdown"}
       - label: "Onderwerp"
@@ -71,6 +72,7 @@ collections:
         widget: relation
         collection: photo's
         searchFields: [onderschrift]
+        display_fields: onderschrift
         multiple: true
         valueField: "{{slug}}"
         required: false
