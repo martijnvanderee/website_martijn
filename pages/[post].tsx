@@ -102,7 +102,7 @@ const Post: FunctionComponent<PostProps> = ({ attributes, html, posts, dataPhoto
             </div>
 
             <div className="flex flex-wrap overflow-hidden my-4">
-              {posts.map((post: PostData) => <PostItem content={post} />)}
+              {posts.map((post: PostData) => <PostItem post={post} photo={dataPhotos} />)}
             </div>
           </div>
 

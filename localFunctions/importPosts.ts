@@ -177,6 +177,8 @@ export const randomPost = async (numberOfPost: number = 1): Promise<PostData[]> 
 
   const randomPostNumbers = await getRandomPostNumbers(length, array)
 
+
+
   const DatePathOnderwerp = await randomPostNumbers.map((num: number) => PostPathDateOnderwerp[num])
 
 
@@ -210,11 +212,7 @@ export const getRandomPosts = async (numberOfPost: number = 1) => {
 
 function recurse(length: number, array: number[]) {
   const randomInt = getRandomInt(length)
-  if (array.includes(randomInt)) {
-    recurse(length, array);
-  } else {
-    return randomInt
-  }
+  return randomInt
 }
 
 const getRandomPostNumbers = (length: number, numberOfPost: number[]): number[] => {

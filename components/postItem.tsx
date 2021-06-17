@@ -2,12 +2,12 @@ import React, { FunctionComponent } from 'react'
 import Link from "next/link";
 
 //typescript
-import { PostData, DataPhotosTotal } from "../typescript"
+import { PostData, DataPhotos } from "../typescript"
 import { formatDate } from "../localFunctions/formatdate"
 
 type postProps = {
   post: PostData,
-  photo: DataPhotosTotal
+  photo: DataPhotos
 }
 
 export const PostItem: FunctionComponent<postProps> = ({ post, photo }) => {
@@ -20,7 +20,7 @@ export const PostItem: FunctionComponent<postProps> = ({ post, photo }) => {
           <div className="relative flex-none h-full w-32">
             <img
 
-              src={`${photo.headerData.image}/?nf_resize=fit&w=700`}
+              src={`${photo.image}/?nf_resize=fit&w=700`}
 
               alt="title van artikel"
               className="absolute inset-0 w-full h-full object-cover"
