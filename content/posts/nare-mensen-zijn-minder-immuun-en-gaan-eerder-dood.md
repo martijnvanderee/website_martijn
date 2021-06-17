@@ -2,14 +2,14 @@
 templateKey: post.template
 title: Nare mensen zijn minder immuun en gaan eerder dood
 date: 2021-06-11T15:51:28.448Z
-headerPhoto: /img/man-kater-alcohol.jpg
+headerPhoto: map-onderschrift-man-kater-alcohol-bron-pixabay-com-image-img-man-kater-alcohol-jpg
 onderwerp: human
 auteur: Monique Siemsen
 tags:
   - persoonlijkheid, dood, immuunsysteem, verantwoordelijk, keuzes, vroegtijdige
     dood.
 photo's:
-  - /img/man-springend-gelukkig.jpg
+  - map-onderschrift-gelukkige-verantwoordelijke-mensen-beschikken-over-minder-cellen-die-hun-immuunsysteem-aanvallen-bron-pixabay-com-image-img-man-springend-gelukkig-jpg
 ---
 We krijgen het met religie en met kinderverhalen met de paplepel ingegoten: een goed
 mens zijn. Wat we toen nog slechts konden vermoeden, hebben wetenschappers nu

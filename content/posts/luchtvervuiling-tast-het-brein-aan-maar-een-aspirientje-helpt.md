@@ -2,14 +2,14 @@
 templateKey: post.template
 title: Luchtvervuiling tast het brein aan, maar een aspirientje helpt
 date: 2021-06-11T15:55:40.549Z
-headerPhoto: /img/fabriek-schoorstenen-rook.jpg
+headerPhoto: map-bron-pixabay-com-jwvein-onderschrift-fabriek-schoorstenen-rook-image-img-fabriek-schoorstenen-rook-jpg
 onderwerp: quirky
 auteur: Monique Siemsen
 tags:
   - brand, vervuiling, rook, luchtvervuiling, aspirine, hersenschade,
     hersenbeschadiging
 photo's:
-  - /img/brand-brandweermannen-lussen.jpg
+  - map-bron-pixabay-com-12019-onderschrift-bosbranden-kunnen-voor-zoveel-rook-zorgen-dat-het-binnen-de-kortste-keren-de-hersenfuncties-aantast-gelukkig-helpt-een-aspirientje-image-img-brand-brandweermannen-lussen-jpg
 ---
 Blootstelling aan luchtvervuiling, al is het maar voor een paar weken, tast het cognitieve
 vermogen aan van onze hersenen. Gelukkig helpt het nemen van aspirine.

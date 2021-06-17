@@ -2,13 +2,13 @@
 templateKey: post.template
 title: Nieuwe batterij van cement waarmee gebouwd kan worden
 date: 2021-06-11T15:15:00.904Z
-headerPhoto: /img/flatgebouw-zonsondergang-paars.jpg
+headerPhoto: map-onderschrift-flatgebouw-zonsondergang-paars-bron-pixabay-com-fotoblend-image-img-flatgebouw-zonsondergang-paars-jpg
 onderwerp: tech
 auteur: Monique Siemsen
 tags:
   - wonen, toekomst, batterij, cement, flatgebouw
 photo's:
-  - /img/batterijen-verzameling-divers.jpg
+  - map-onderschrift-reguliere-batterijen-hebben-meer-capaciteit-dan-de-nieuwe-cementen-batterijen-waarin-mensen-kunnen-wonen-bron-pixabay-com-fotoblend-image-img-batterijen-verzameling-divers-jpg
 ---
 De wetenschappelijke jacht naar duurzame energie en bouwmaterialen heeft geleid tot
 een unieke uitvinding: een batterij van cement waarmee gebouwd kan worden. En die nog

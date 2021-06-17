@@ -2,13 +2,13 @@
 templateKey: post.template
 title: Mensen met hoog EQ beter in het herkennen van fake news
 date: 2021-06-11T15:46:55.393Z
-headerPhoto: /img/typemachine-papier-fake-news.jpeg
+headerPhoto: map-bron-pixabay-com-imageo-onderschrift-typemachine-papier-fake-news-image-img-typemachine-papier-fake-news-jpeg
 onderwerp: human
 auteur: Monique Siemsen
 tags:
   - onderzoek, fake news, EQ
 photo's:
-  - /img/students-1807505_1280.webp
+  - map-onderschrift-mensen-met-een-hoog-eq-zijn-beter-in-het-herkennen-van-fake-news-berichten-bron-pixabay-com-image-img-students-1807505_1280-webp
 ---
 Fake news is een nieuwe zorg voor de mensheid. Op grote schaal kunnen mensen vals
 worden geïnformeerd en opgeruid. Of toch niet?

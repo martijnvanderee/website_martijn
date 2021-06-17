@@ -2,14 +2,14 @@
 templateKey: post.template
 title: Risico op verwoestende tsunami’s veel hoger dan aangenomen
 date: 2021-06-11T15:03:45.146Z
-headerPhoto: /img/tsunami-verwoesting-huizen.jpg
+headerPhoto: map-onderschrift-tsunami-verwoesting-huizen-image-img-tsunami-verwoesting-huizen-jpg
 onderwerp: nature
 auteur: Monique Siemsen
 tags:
   - tsunami´s, breuklijnen, tektonische platen, zeebeving, aardbeving, risico´s,
     onderzoek
 photo's:
-  - /img/tsunami-kustlijn-overspoeld.jpg
+  - map-onderschrift-tsunami-kustlijn-overspoeld-image-img-tsunami-kustlijn-overspoeld-jpg-4
 ---
 De kans dat een gevaarlijke tsunami de bewoonde wereld snel zal treffen, is veel groter
 dan gedacht. Die onthulling blijkt uit nieuw onderzoek.

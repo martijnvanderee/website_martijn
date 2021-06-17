@@ -2,7 +2,7 @@
 templateKey: post.template
 title: Gevreesde Scythen verenigden zich tegen klassieke beschavingen
 date: 2021-06-11T11:14:39.015Z
-headerPhoto: /img/strijder-zonsondergang-harnas.jpg
+headerPhoto: map-onderschrift-strijder-zonsondergang-harnas-image-img-strijder-zonsondergang-harnas-jpg
 onderwerp: history
 auteur: Monique Siemsen
 tags:
@@ -15,7 +15,7 @@ tags:
   - strijders
   - ruiters
 photo's:
-  - /img/ruiter-boogschutter-paardrijkunst.png
+  - map-onderschrift-strijder-zonsondergang-harnas-image-img-strijder-zonsondergang-harnas-jpg
 ---
 De Scythen waren een strijdlustig nomadisch ruitervolk, waarvan lange tijd werd
 aangenomen dat zij uit het huidige Iran kwamen. Maar dat blijkt helemaal niet zo te zijn!

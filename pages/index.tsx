@@ -5,25 +5,24 @@ import Link from "next/link";
 import { Layout } from "../components/layout"
 import { PostItem } from "../components/postItem"
 //functions
-import { importPost1, randomPost } from "../localFunctions/importPosts";
-
+import { getPosts, getRandomPosts } from "../localFunctions/importPosts";
 //typescript
-import { PostData } from "../typescript"
-
-
-
+import { PostData, DataPhotosTotal } from "../typescript"
+//variables
+import { amountOfPostFrontPage } from "../public/variables"
 
 type HomeProps = {
-  posts: PostData[],
-  randomPosts: PostData[]
+  posts: { posts: PostData[], photos: DataPhotosTotal[] },
+  randomPosts: { posts: PostData[], photos: DataPhotosTotal[] }
 }
 
 const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
-  const post = posts[0]
+
+  const post = posts.posts[0]
+  const photo = posts.photos[0]
   const url = post.slug
-  const [, ...postOftheRest] = posts;
-
-
+  const [, ...postOftheRest] = posts.posts;
+  const [, ...photosOftheRest] = posts.photos;
 
   return (
     <Layout title="Sciencegeek">
@@ -40,7 +39,7 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
                     <h2 className="text-shadow text-white text-3xl md:text-4xl">{post.attributes.title}</h2>
                   </div>
                   <img
-                    src={`${post.attributes.headerPhoto}/?nf_resize=fit&w=700`}
+                    src={`${photo.headerData.image}/?nf_resize=fit&w=700`}
                     alt={post.attributes.title}
                     className="absolute inset-0 w-full h-full object-cover"
                   />
@@ -59,7 +58,7 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
                 </div>
 
                 <div className="flex flex-wrap overflow-hidden my-4 sm:mx-4">
-                  {postOftheRest.map((post: PostData) => <PostItem content={post} />)}
+                  {postOftheRest.map((post: PostData, index) => <PostItem post={post} photo={photosOftheRest[index]} />)}
                 </div>
 
               </div>
@@ -68,8 +67,6 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
                 <div className="text-2xl md:text-2xl font-semibold leading-tight text-grey ml-4 cursor-pointer" >Meer net binnen <span className="text-2xl md:text-xl font-semibold leading-tight text-purple">{">"}</span>  </div>
               </Link>
             </div>
-
-
 
 
           </div>
@@ -83,8 +80,7 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
           <div className="hidden md:block md:grid  md:grid-cols-3 pb-10 mt-2">
 
 
-            {randomPosts.map((randomPost: PostData) => {
-
+            {randomPosts.posts.map((randomPost: PostData, index) => {
 
               const url = randomPost.slug
               return (
@@ -92,7 +88,7 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
                   <div className="m-4 cursor-pointer">
                     <div className="relative h-64">
                       <img
-                        src={`${randomPost.attributes.headerPhoto}/?nf_resize=fit&w=700`}
+                        src={`${randomPosts.photos[index].headerData.image}/?nf_resize=fit&w=700`}
                         alt={randomPost.attributes.title}
                         className="absolute inset-0 w-full h-full object-cover"
                       />
@@ -113,8 +109,6 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
 
 
 
-
-
           </div>
         </div>
       </main>
@@ -123,13 +117,11 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
 }
 
 export async function getStaticProps() {
-  const amountOfPost = 10
-  const posts1: any[] = await importPost1(amountOfPost);
+  const posts = await getPosts(amountOfPostFrontPage)
+  const randomPosts = await getRandomPosts(6)
 
-  const posts: PostData = JSON.parse(JSON.stringify(posts1));
-  const randomPosts = await randomPost(5)
   return { props: { posts, randomPosts } }
-}
 
+}
 
 export default Home;

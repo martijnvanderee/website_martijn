@@ -2,14 +2,14 @@
 templateKey: post.template
 title: Plastic afval binnen een uur gerecycled tot jet-brandstof
 date: 2021-06-11T15:13:31.197Z
-headerPhoto: /img/vliegtuig-zonsondergang-oranje.jpg
+headerPhoto: map-onderschrift-vliegtuig-zonsondergang-oranje-bron-pixabay-com-the-pixelman-image-img-vliegtuig-zonsondergang-oranje-jpg
 onderwerp: tech
 auteur: Monique Siemsen
 tags:
   - milieuvervuiling, brandstof, vliegtuigbrandstof, vliegtuig, ruthenium,
     plastic.
 photo's:
-  - /img/plastic-flesjes-blauw.jpg
+  - map-bron-pixabay-com-pasja-1000-onderschrift-plastic-afval-is-een-groot-milieuprobleem-wetenschappers-kunnen-deze-flesjes-voortaan-binnen-een-uur-omtoveren-tot-brandstof-image-img-plastic-flesjes-blauw-jpg
 ---
 Er is een nieuwe manier bedacht om ons plastic te recyclen. Wetenschappers hebben een
 manier gevonden om er vliegtuigbrandstof van te maken en nog razend snel ook.

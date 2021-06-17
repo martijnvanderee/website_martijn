@@ -2,13 +2,13 @@
 templateKey: post.template
 title: Nasa op jacht naar radio-signalen uit verre sterrenstelsels
 date: 2021-06-11T15:35:42.249Z
-headerPhoto: /img/sterrenhemel-nacht-donker.jpg
+headerPhoto: map-bron-pixabay-com-ajs1-onderschrift-sterrenhemel-nacht-donke-image-img-sterrenhemel-nacht-donker-jpg
 onderwerp: space
 auteur: Monique Siemsen
 tags:
   - FRB, lichtjaar, radiosignalen, signalen, sterrenstelsel, magnetar, ster
 photo's:
-  - /img/spiraal-sterrenstelsel-ruimte.jpg
+  - map-onderschrift-de-snelle-radio-golven-met-gigantische-energie-waren-afkomstig-uit-een-spiraal-vormig-sterrenstelsel-op-miljarden-lichtjaren-afstand-bron-pixabay-com-spirit-111-image-img-spiraal-sterrenstelsel-ruimte-jpg
 ---
 Voor het eerst hebben wetenschappers 5 signalen uit de ruimte kunnen traceren. De
 signalen komen uit sterrenstelsels die maar liefst 7 miljard jaar geleden bestonden.

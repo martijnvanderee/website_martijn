@@ -2,13 +2,13 @@
 templateKey: post.template
 title: Enkele vingerafdruk op plaats delict onthult drugsgebruik
 date: 2021-06-11T15:17:41.810Z
-headerPhoto: /img/speurneus-vergrootglas-vingerafdruk.png
+headerPhoto: map-bron-pixabay-com-422737-onderschrift-speurneus-vergrootglas-vingerafdruk-image-img-speurneus-vergrootglas-vingerafdruk-png
 onderwerp: tech
 auteur: Monique Siemsen
 tags:
   - onderzoek drugsgebruik, misdaad, vingerafdruk, cocaïne, politie 3 bijlagen
 photo's:
-  - /img/drugsverslaafde-injectienaald-hoody.jpg
+  - map-bron-pixabay-com-rebcenter_moscow-onderschrift-vingerafdrukken-laten-voortaan-zien-of-een-drugsgebruiker-nog-zijn-handen-heeft-gewassen-voordat-hij-een-misdaad-pleegde-image-img-drugsverslaafde-injectienaald-hoody-jpg
 ---
 Voortaan hebben analisten maar één vingerafdruk nodig om te zien of de dader coke heeft
 genomen, heeft aangeraakt of zelfs zijn handen heeft gewassen, nadat hij de drugs

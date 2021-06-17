@@ -2,13 +2,13 @@
 templateKey: post.template
 title: Kunststof kleding vergiftigt vissen. Al 70 jaar!
 date: 2021-06-11T15:11:20.714Z
-headerPhoto: /img/snoek-onderwater-rivier.jpg
+headerPhoto: map-onderschrift-snoek-onderwater-rivier-bron-pixabay-com-bjoisten-image-img-snoek-onderwater-rivier-jpg
 onderwerp: nature
 auteur: Monique Siemsen
 tags:
   - vervuiling, zoetwatervissen, plastic, vergiftiging, polyester kleding
 photo's:
-  - /img/kind-park-herfst.jpg
+  - map-onderschrift-polyester-kleding-vergiftigt-al-70-jaar-onze-zoetwatervissen-en-dat-alles-via-de-wasmachine-en-de-droger-bron-pixabay-com-free-photos-image-img-kind-park-herfst-jpg
 ---
 Nieuw onderzoek bewijst dat plastic afval al veel langer dan aangenomen ons milieu
 vervuilt. Zo krijgen zoetwatervissen al 70 jaar lang plastic binnen.

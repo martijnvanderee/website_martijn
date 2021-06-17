@@ -2,7 +2,7 @@
 templateKey: post.template
 title: Dieren vermijden incest niet of nauwelijks
 date: 2021-06-11T16:00:43.063Z
-headerPhoto: /img/wolven-intiem-stel.jpg
+headerPhoto: map-bron-pixabay-com-4931604-image-img-wolven-intiem-stel-jpg-onderschrift-van-bonobos-weten-we-al-langer-dat-zij-niet-aan-incestmijding-doen-wetenschappers-vermoeden-dat-de-bonobo-daarmee-niet-bepaald-de-enige-diersoort-is
 onderwerp: quirky
 auteur: Monique Siemsen
 tags:
@@ -10,7 +10,7 @@ tags:
   - partnerkeuze
   - inteelt
 photo's:
-  - /img/bonobo-sociaal-partner.jpg
+  - map-bron-pixabay-com-sasint-onderschrift-van-bonobos-weten-we-al-langer-dat-zij-niet-aan-incestmijding-doen-wetenschappers-vermoeden-dat-de-bonobo-daarmee-niet-bepaald-de-enige-diersoort-is-image-img-bonobo-sociaal-partner-jpg
 ---
 Dieren maken lang niet zo’n probleem van inteelt als biologen tientallen jaren beweerd
 hebben. Sterker nog: als rechtgeaard zoogdier heeft de mens zelf waarschijnlijk ook niet al

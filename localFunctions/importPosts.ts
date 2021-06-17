@@ -1,6 +1,55 @@
 
-export const importPosts1 = async (PathPosts: string[]) => {
+//typescript
+import { DataPhotosTotal, PostData } from "../typescript"
+//variables
+import { numberOfPostsOnPage } from "../public/variables"
 
+
+
+
+
+export const getImagePaths = (posts: PostData[]): GetSpecificPhotos => {
+  const imagePaths = posts.map((post) => {
+    return { headerPath: post.attributes.headerPhoto, photosPath: post.attributes["photo's"] }
+  })
+  return imagePaths
+}
+
+
+export const getPropsFromPaths = async (slug: string) => {
+  const numberOfPostsStart = Number(slug) * numberOfPostsOnPage - numberOfPostsOnPage
+  const numberOfPostsStartEnd = Number(slug) * numberOfPostsOnPage
+
+  const posts1: PostData[] = await getSpecificPosts(numberOfPostsStart, numberOfPostsStartEnd)
+  const posts: PostData[] = JSON.parse(JSON.stringify(posts1));
+
+  const imagePaths = getImagePaths(posts)
+
+  const photosData = await getSpecificPhotos(imagePaths)
+  return { photos: photosData, posts }
+}
+
+
+
+export const getUrlPaths = async () => {
+  const listPages = getNumberOfPages(numberOfPostsOnPage);
+  const arrayOfNumbers = Array.from(Array(listPages + 1).keys())
+  const [, ...removeFirstElement] = arrayOfNumbers;
+
+  return removeFirstElement.map((slug: number) => ({
+    params: { id: slug.toString() },
+  }));
+}
+
+
+
+export const getDataPhotos = async (path: string) => {
+  const markdown = await import(`../content/photo's/${path}.md`);
+  return markdown.attributes
+}
+
+
+export const importPosts1 = async (PathPosts: string[]) => {
   return Promise.all(
     PathPosts.map(async path => {
       const markdown = await import(`../content/posts/${path}`);
@@ -8,9 +57,6 @@ export const importPosts1 = async (PathPosts: string[]) => {
     })
   );
 };
-
-
-
 
 export const importPosts = async (numberOfPosts: number = 100) => {
   // https://medium.com/@shawnstern/importing-multiple-markdown-files-into-a-react-component-with-webpack-7548559fce6f
@@ -43,8 +89,6 @@ export const getSpecificPosts = async (start: number, end: number) => {
 
   const fileNames = await markdownFiles.slice(start, end);
 
-
-
   return Promise.all(
     fileNames.map(async path => {
       const markdown = await import(`../content/posts/${path}`);
@@ -53,6 +97,39 @@ export const getSpecificPosts = async (start: number, end: number) => {
   );
 };
 
+type GetSpecificPhotos = {
+  headerPath: string;
+  photosPath: string[]
+}[]
+
+export const getSpecificPhotos = async (ImagePaths: GetSpecificPhotos): Promise<DataPhotosTotal[]> => {
+  const dataPhotos: any = await Promise.all(ImagePaths.map(async ({ headerPath, photosPath }) => {
+    const headerDataFull = await import(`../content/photo's/${headerPath}.md`);
+
+    const photosData = await Promise.all(photosPath.map(async (photoPath) => {
+      const photoDataFull = await import(`../content/photo's/${photoPath}.md`);
+      return photoDataFull.attributes
+    }))
+
+    const headerData = headerDataFull.attributes
+    return { headerData, photosData }
+  }))
+
+  return dataPhotos
+
+};
+
+
+
+
+
+
+export const getFileNames = () => {
+  const markdownFiles = require.context('../content/posts', false, /\.md$/).keys()
+    .map(relativePath => relativePath.substring(2));
+
+  return markdownFiles
+}
 
 
 
@@ -92,42 +169,68 @@ export const importPost = async (path: string) => {
   return markdown
 };
 
-export const randomPost = async (numberOfPost: number = 1) => {
-  const PostPathDateOnderwerp: any = await getPostPathAndDate()
+export const randomPost = async (numberOfPost: number = 1): Promise<PostData[]> => {
+  const PostPathDateOnderwerp = await getPostPathAndDate()
 
   const length = await PostPathDateOnderwerp.length
   const array = await Array.from(Array(numberOfPost).keys())
 
-  const random1 = await random(length, array)
+  const randomPostNumbers = await getRandomPostNumbers(length, array)
 
-
-  const test1 = random1.map((num: number) => PostPathDateOnderwerp[num])
+  const DatePathOnderwerp = await randomPostNumbers.map((num: number) => PostPathDateOnderwerp[num])
 
 
   return Promise.all(
-    test1.map(async (path: any) => {
-      const markdown = await import(`../content/posts/${path.path}`);
-
-      return { ...markdown, slug: path.path.substring(0, path.path.length - 3) };
+    DatePathOnderwerp.map(async (obj: any) => {
+      const markdown = await import(`../content/posts/${obj.path}`);
+      return { ...markdown, slug: obj.path.substring(0, obj.path.length - 3) };
     })
   );
-
 }
 
-const random = (length: number, numberOfPost: number[]) => {
+export const getPosts = async (amountOfPostFrontPage: number, sortSubject: string = "all") => {
+  const posts1: PostData[] = await importPost1(amountOfPostFrontPage, sortSubject);
+  const posts: PostData[] = await JSON.parse(JSON.stringify(posts1));
 
-  const test = numberOfPost.map(() => getRandomInt(length))
-  return test
+  const imagePaths = getImagePaths(posts)
+  const photosData = await getSpecificPhotos(imagePaths)
+
+
+  return { posts, photos: photosData }
 }
 
-function getRandomInt(max: number) {
+export const getRandomPosts = async (numberOfPost: number = 1) => {
+  const posts = await randomPost(numberOfPost)
+
+  const imagePaths = getImagePaths(posts)
+  const photosData = await getSpecificPhotos(imagePaths)
+
+  return { posts, photos: photosData }
+}
+
+function recurse(length: number, array: number[]) {
+  const randomInt = getRandomInt(length)
+  if (array.includes(randomInt)) {
+    recurse(length, array);
+  } else {
+    return randomInt
+  }
+}
+
+const getRandomPostNumbers = (length: number, numberOfPost: number[]): number[] => {
+  const array: any = []
+  numberOfPost.map(() => { return array.push(recurse(length, array)) })
+
+  return array
+}
+
+const getRandomInt = (max: number) => {
   return Math.floor(Math.random() * max);
 }
 
 export const importPost1 = async (numberOfPosts: number = 100, sortSubject: string = "all") => {
 
   const PostPathDateOnderwerp: any = await getPostPathAndDate()
-
 
   const a = sortSubject === "all" ? PostPathDateOnderwerp : sortingPostOnSubject(PostPathDateOnderwerp, sortSubject)
 
@@ -155,10 +258,13 @@ const sortingPostOnSubject = (PostPathAndDate: any, subject: any) => {
 
 
 
-const getPostPathAndDate = () => {
+const getPostPathAndDate = (): Promise<{
+  date: any;
+  path: string;
+  onderwerp: any;
+}[]> => {
   const markdownFiles = require.context('../content/posts', false, /\.md$/).keys()
     .map(relativePath => relativePath.substring(2));
-
 
   return Promise.all(
     markdownFiles.map(async path => {

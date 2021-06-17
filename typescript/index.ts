@@ -12,11 +12,22 @@ export interface PostData {
     onderwerp: string
     auteur: string;
     tags: string[]
+    ["photo's"]: string[]
   }
   html: string
   slug: string
 }
 
+export interface DataPhotos {
+  onderschrift: string
+  bron: string
+  image: string
+}
+
+export interface DataPhotosTotal {
+  headerData: DataPhotos
+  photosData: DataPhotos[]
+}
 
 type Values = {
   email: "";

@@ -2,13 +2,15 @@
 templateKey: post.template
 title: Bemanning maanmissie Artemis in groot gevaar bij vertraagd vertrek
 date: 2021-06-11T15:37:30.633Z
-headerPhoto: /img/maan-zee-maanlicht.jpg
+headerPhoto: map-bron-pixabay-com-photo-graphe-onderschrift-maan-zee-maanlicht-image-img-maan-zee-maanlicht-jpg
 onderwerp: space
 auteur: Monique Siemsen
 tags:
   - Artemis, maanmissie, maan, zonnevlammen, zonnestormen
 photo's:
-  - /img/zon-zonnevlam-zonnestorm.jpg
+  - map-onderschrift-over-een-paar-jaar-zijn-er-zo-veel-zonnevlammen-dat-de-bemanning-van-de-artemis-missie-ernstig-in-gevaar-zal-zijn-bron-pixabay-com-nasa_imagery-image-img-zon-zonnevlam-zonnestorm-jpg
+
+
 ---
 Extreme weerverschijnselen in de ruimte brengen de bemanning van maanmissies ernstig
 in gevaar, zeggen wetenschappers. Een vertraging kan dodelijk zijn.

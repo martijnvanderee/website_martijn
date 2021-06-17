@@ -2,7 +2,7 @@
 templateKey: post.template
 title: Mensheid dankt zijn bestaan aan bliksem!
 date: 2021-06-11T11:29:45.061Z
-headerPhoto: /img/bliksemschichten-nacht-hemel.jpg
+headerPhoto: map-onderschrift-bliksemschichten-nachthemel-image-img-bliksemschichten-nacht-hemel-jpg
 onderwerp: history
 auteur: Monique Siemsen
 tags:
@@ -15,7 +15,7 @@ tags:
   - leven
   - fosfor
 photo's:
-  - /img/aarde-meteoriet-ruimte.jpg
+  - map-image-img-aarde-meteoriet-ruimte-jpg-onderschrift-aarde-meteoriet-ruimte
 ---
 Wie vroeger een kinderbijbel had, wist het al langer. En ook space-nerds vermoedden het
 reeds: de afbeeldingen van een door bliksem geteisterde aarde in den beginne zijn niet

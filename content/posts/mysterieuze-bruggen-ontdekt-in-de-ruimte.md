@@ -2,13 +2,13 @@
 templateKey: post.template
 title: Mysterieuze bruggen ontdekt in de ruimte
 date: 2021-06-11T15:34:20.704Z
-headerPhoto: /img/planeten-verbinding-lichtstraal.jpg
+headerPhoto: map-bron-pixabay-com-eli007-image-img-planeten-verbinding-lichtstraal-jpg-onderschrift-planeten-verbinding-lichtstraal
 onderwerp: space
 auteur: Monique Siemsen
 tags:
   - donkere materie, plattegrond heelal, ruimte, ruimtebruggen, bruggen
 photo's:
-  - /img/sterrenstelsel-nevel-ruimte.jpg
+  - map-bron-pixabay-com-geralt-onderschrift-om-meer-te-leren-van-het-skelet-van-ons-heelal-maakten-wetenschappers-een-plattegrond-van-de-donkere-materie-image-img-sterrenstelsel-nevel-ruimte-jpg
 ---
 Geheimzinnige bruggen die sterrenstelsels met elkaar verbinden. Het klinkt als iets uit een
 sci-fi film, maar ze blijken echt te bestaan. En de wetenschap staat paf.

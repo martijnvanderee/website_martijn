@@ -2,14 +2,14 @@
 templateKey: post.template
 title: High tech hologrammen van Star Wars maken interactie mogelijk
 date: 2021-06-11T15:27:58.821Z
-headerPhoto: /img/star-wars-actiepoppen-laserzwaard.jpg
+headerPhoto: map-onderschrift-star-wars-actiepoppen-laserzwaard-bron-pixabay-com-image-img-star-wars-actiepoppen-laserzwaard-jpg
 onderwerp: tech
 auteur: Monique Siemsen
 tags:
   - StarWars, Star Wars, Yoda, Klingon, Enterprise, hologram, techniek,
     lichtzwaarden
 photo's:
-  - /img/vrouw-hologram-stad.jpg
+  - map-bron-pixabay-com-coxinhafotos-onderschrift-een-hologram-die-voor-iedereen-op-straat-te-zien-is-en-waarmee-interactie-mogelijk-is-vanaf-nu-bestaat-het-image-img-vrouw-hologram-stad-jpg
 ---
 Star Wars-fans opgelet! Ook altijd al een potje willen mee knokken met Yoda tegen Darth
 Vader? Dat kan nu! Wetenschappers zijn erin geslaagd hologrammen te creëren die

@@ -2,14 +2,14 @@
 templateKey: post.template
 title: Worden de mysteries rond Duitse “Stonehenge” ooit opgehelderd?
 date: 2021-06-11T15:52:46.196Z
-headerPhoto: /img/externsteine-zonsopgang-duitsland.jpg
+headerPhoto: map-bron-pixabay-com-inextremo96-onderschrift-externsteine-zonsopgang-duitsland-image-img-externsteine-zonsopgang-duitsland-jpg
 onderwerp: quirky
 auteur: Monique Siemsen
 tags:
   - stonehenge, externsteine, zonnewende, heidenen, druiden, sterrenpriesters,
     rituelen, duitsland
 photo's:
-  - /img/externsteine-loopbrug-hoog.jpg
+  - map-bron-pixabay-com-babette-1966-onderschrift-de-externsteine-werden-net-als-stonehenge-gebruikt-voor-heidense-riten-maar-anders-dan-stonehenge-kent-de-rotspartij-mysterieuze-bruggetjes-en-altaars-image-img-externsteine-loopbrug-hoog
 ---
 Een paar uur rijden van de Nederlands-Duitse grens liggen de Externsteine: 5 grillige
 rotsformaties, die al duizenden jaren werken als een magneet op heidenen, christenen en

@@ -2,13 +2,13 @@
 templateKey: post.template
 title: Maken kleren van algen de man in de toekomst?
 date: 2021-06-11T15:56:58.630Z
-headerPhoto: /img/algen-heuvels-groen.jpg
+headerPhoto: map-bron-pixabay-com-hugo-ob-onderschrift-algen-heuvels-groen-image-img-algen-heuvels-groen-jpg
 onderwerp: quirky
 auteur: Monique Siemsen
 tags:
   - algenstof, kleding van algen, materiaal printen, cellulose
 photo's:
-  - /img/hand-bloed-wond.jpg
+  - map-bron-pixabay-com-so-fuego-onderschrift-de-algenstof-zal-ook-worden-ingezet-om-huidwonden-te-genezen-image-img-hand-bloed-wond-jpg
 ---
 Het is niet bekend of grote winkelketens hun eerste bestellingen al geplaatst hebben, maar
 wie weet hoe snel ze in de rekken hangen: jurken en pakken gemaakt van algen. Levende

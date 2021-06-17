@@ -2,13 +2,13 @@
 templateKey: post.template
 title: Hoezo irritant? Wesp bestrijdt kanker en beschermt gewassen!
 date: 2021-06-11T15:07:44.488Z
-headerPhoto: /img/wesp-tak-dichtbij.jpg
+headerPhoto: map-bron-pixabay-com-capri23-auto-onderschrift-wesp-tak-dichtbij-image-img-wesp-tak-dichtbij-jpg
 onderwerp: nature
 auteur: Monique Siemsen
 tags:
   - wesp, bij, bestuiving, gewassen, insectenbestrijding
 photo's:
-  - /img/wesp-bloem-paars.jpg
+  - map-bron-pixabay-com-capri23-auto-onderschrift-wesp-tak-dichtbij-image-img-wesp-tak-dichtbij-jpg
 ---
 Wetenschappers trekken aan de bel en nemen het op voor de wesp. We moeten het
 beestje heel snel gaan koesteren, want ons eigen welzijn en voortbestaan is van hem

@@ -2,13 +2,13 @@
 templateKey: post.template
 title: Nieuw ontdekte kometen laten meteorietenregens los bij onze aarde
 date: 2021-06-11T15:29:47.693Z
-headerPhoto: /img/ruimte-horizon-meteorieten.jpg
+headerPhoto: map-onderschrift-ruimte-horizon-meteorieten-bron-pixabay-com-coolvid-shows-image-img-ruimte-horizon-meteorieten-jpg
 onderwerp: space
 auteur: Monique Siemsen
 tags:
   - "meteoriet, komeet, inslag, krater, "
 photo's:
-  - /img/krater-arizona-meteorietinslag.jpg
+  - map-bron-pixabay-com-sasint-onderschrift-van-bonobos-weten-we-al-langer-dat-zij-niet-aan-incestmijding-doen-wetenschappers-vermoeden-dat-de-bonobo-daarmee-niet-bepaald-de-enige-diersoort-is-image-img-bonobo-sociaal-partner-jpg
 ---
 Tot nu toe onopgemerkte meteorietenregens scheren frequent rakelings langs de aarde, of
 natuurlijk óp de aarde.

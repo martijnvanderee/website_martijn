@@ -2,13 +2,13 @@
 templateKey: post.template
 title: Fossielen onthullen bestaan reuze sabeltandtijger
 date: 2021-06-11T15:01:17.188Z
-headerPhoto: /img/schedel-sabeltandtijger-uitgestorven.jpg
+headerPhoto: map-image-img-skelet-schedel-dood-jpg-onderschrift-skelet-schedel-dood
 onderwerp: nature
 auteur: Monique Siemsen
 tags:
   - sabeltandtijger, leeuw, reuze sabeltandtijger, onderzoek
 photo's:
-  - /img/mannetjesleeuw-landschap-leeuwenmanen.jpg
+  - map-onderschrift-mannetjesleeuw-landschap-leeuwenmanen-image-img-mannetjesleeuw-landschap-leeuwenmanen-jpg
 ---
 Er was eens, in een land niet zo heel ver hier vandaan, een bijzondere sabeltandtijger. Het
 dier was gigantisch vergeleken met Smilodon en verschalkte prooien van duizenden kilo’s.

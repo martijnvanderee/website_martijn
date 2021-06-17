@@ -3,13 +3,13 @@ templateKey: post.template
 title: Antwoord op Fermi-paradox? Aliens waarschijnlijk onder aardoppervlak
   andere planeten!
 date: 2021-06-11T15:31:14.914Z
-headerPhoto: /img/alien-rugzakje-landschap.jpg
+headerPhoto: map-onderschrift-aliens-bevinden-zich-waarschijnlijk-op-planeten-die-ook-over-ondergronds-water-beschikken-bron-pixabay-com-image1-image-img-alien-rugzakje-landschap-jpg
 onderwerp: space
 auteur: Monique Siemsen
 tags:
   - aliens, IWOW, planeten, onderzoek
 photo's:
-  - /img/grot-water-blauw.jpeg
+  - map-bron-pixabay-com-onderschrift-grot-water-blauw-image-img-grot-water-blauw-jpeg
 ---
 We moeten niet naar tekenen van leven zoeken aan de oppervlakten van planeten, maar
 onder de oppervlakten en wel tot tientallen kilometers diep. De kans dat intelligent leven

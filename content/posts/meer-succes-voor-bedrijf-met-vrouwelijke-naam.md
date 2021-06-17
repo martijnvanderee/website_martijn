@@ -3,13 +3,13 @@ templateKey: post.template
 title: Meer succes voor bedrijf met vrouwelijke naam
 Subtitle: ""
 date: 2021-06-11T15:58:11.490Z
-headerPhoto: /img/terrassen-nacht-druk.jpg
+headerPhoto: map-bron-pixabay-com-skitterphoto-onderschrift-terrassen-nacht-druk-image-img-terrassen-nacht-druk-jpg
 onderwerp: quirky
 auteur: Monique Siemsen
 tags:
   - McDonalds, bedrijfsnaam, succes, succesvolle onderneming, consument, branding
 photo's:
-  - /img/vrouw-afrekenen-verkoopbon.jpg
+  - map-onderschrift-zowel-vrouwelijke-als-mannelijke-consumenten-hebben-een-duidelijke-voorkeur-voor-brands-met-een-vrouwelijke-naam-bron-pixabay-com-islandworks-image-img-vrouw-afrekenen-verkoopbon-jpg
 ---
 Wie er over denkt een eigen onderneming te starten, doet er verstandig aan het volgende
 aandachtig te lezen. Hoe jij je bedrijft noemt, bepaalt voor een groot gedeelte jouw succes.

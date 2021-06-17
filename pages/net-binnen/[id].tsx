@@ -1,110 +1,58 @@
-
-
-
-import { getNumberOfPages, getSpecificPosts } from "../../localFunctions/importPosts"
-
-import parse from 'html-react-parser';
-import { formatDate } from "../../localFunctions/formatdate"
-
 import React, { FunctionComponent } from 'react'
-import Link from "next/link";
-
 //components
 import { Layout } from "../../components/layout"
-import { PostItem } from "../../components/postItem"
 import Pagination from '../../components/pagination/index';
+import { Post } from '../../components/postHeaderBig';
 //functions
-import { importPosts } from "../../localFunctions/importPosts";
-
+import { getUrlPaths, getPropsFromPaths } from "../../localFunctions/importPosts"
 //typescript
-import { PostData } from "../../typescript"
-
-
+import { PostData, DataPhotosTotal } from "../../typescript"
 
 type NetBinnenProps = {
   posts: PostData[],
+  photos: DataPhotosTotal[]
 }
 
-const NetBinnen: FunctionComponent<NetBinnenProps> = ({ posts }) => {
+const NetBinnen: FunctionComponent<NetBinnenProps> = ({ posts, photos }) => {
+  return (
+    <Layout title="meer net binnen">
+      <main>
+        {/* net binnen */}
+        <div className="mx-4 mt-10 mb-10 text-4xl font-bold underline text-grey">
+          <h1>Net binnen</h1>
+        </div>
 
-  return (<Layout title="meer net binnen">
-    <main>
+        {/* posts */}
+        <div className=" grid  sm:grid-cols-2 md:grid-cols-3 pb-10 mt-2 ">
+          {posts.map((post: PostData, index) => {
+            const url = post.slug
+            return (<Post url={url} post={post} photo={photos[index]} />)
+          })}
+        </div>
 
-      <div className="mx-4 mt-10 mb-10 text-4xl font-bold underline text-grey">
-        <h1>Net binnen</h1>
-      </div>
+        <Pagination />
 
-      <div className=" grid  sm:grid-cols-2 md:grid-cols-3 pb-10 mt-2 ">
-
-        {posts.map((randomPost: any) => {
-          const url = randomPost.slug
-          return (
-
-            <Link href={`/${url}`} as={`/${url}`}>
-              <div className="p-4 cursor-pointer">
-                <div className="relative h-64 ">
-                  <img
-                    src={`${randomPost.attributes.headerPhoto}/?nf_resize=fit&w=700`}
-                    alt={randomPost.attributes.title}
-                    className="absolute inset-0 w-full h-full object-cover"
-                  />
-                </div>
-                <div className="relative h-36 p-2 ">
-                  <div>
-                    <div className="text-yellow font-medium mb-2">{randomPost.attributes.onderwerp}</div>
-                    <div className="text-black font-semibold text-2xl">{randomPost.attributes.title}</div>
-                  </div>
-                  <div className="absolute w-12 bg-yellow h-0.5 bottom-0 right-0"></div>
-                  <div className="absolute w-0.5 bg-yellow h-12 bottom-0 right-0"></div>
-                </div>
-              </div>
-            </Link>
-          )
-        })}
-
-
-
-      </div>
-      <Pagination />
-
-    </main>
-  </Layout>)
+      </main>
+    </Layout>)
 }
 
 export async function getStaticPaths() {
-  const numberOfPosts = 5
-  const listPages = getNumberOfPages(numberOfPosts);
-  const arrayOfNumbers = Array.from(Array(listPages + 1).keys())
-  const [, ...removeFirstElement] = arrayOfNumbers;
-
-
-
-  const paths = removeFirstElement.map((slug: number) => ({
-    params: { id: slug.toString() },
-  }));
-
-
-
+  const paths = await getUrlPaths()
 
   return { paths, fallback: false };
 }
 
-// params will contain the id for each generated page.
-export async function getStaticProps({ params }: any) {
-  const numberOfPosts = 5
-  const numberOfPostsStart = Number(params.id) * numberOfPosts - 5
-  const numberOfPostsStartEnd = Number(params.id) * numberOfPosts
-
-
-
-
-  const posts1: PostData[] = await getSpecificPosts(numberOfPostsStart, numberOfPostsStartEnd)
-  const posts: PostData = JSON.parse(JSON.stringify(posts1));
-
-  return {
-    props: { posts }
-  };
+type Params = {
+  params: { id: string }
 }
 
+// params will contain the id for each generated page.
+export async function getStaticProps({ params }: Params) {
+  const props = await getPropsFromPaths(params.id)
+
+  return {
+    props
+  };
+}
 
 export default NetBinnen;

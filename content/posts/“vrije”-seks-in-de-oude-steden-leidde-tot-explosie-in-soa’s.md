@@ -2,7 +2,7 @@
 templateKey: post.template
 title: “Vrije” seks in de oude steden leidde tot explosie in SOA’s
 date: 2021-06-11T11:20:50.470Z
-headerPhoto: /img/londen-tekening-big-ben.jpg
+headerPhoto: map-onderschrift-londen-tekening-big-ben-image-img-londen-tekening-big-ben-jpg
 onderwerp: history
 auteur: Monique Siemsen
 tags:
@@ -13,7 +13,7 @@ tags:
   - kwik
   - syfilis
 photo's:
-  - /img/schilderij-samuel-johnson.jpg
+  - map-onderschrift-schilderij-samuel-johnson-image-img-schilderij-samuel-johnson-jpg
 ---
 Onze overgrootouders in de grote steden van 250 jaar geleden, lustten er wel pap van en
 waren seksueel niet bepaald terughoudend, De SOA’s tierden er dan ook welig. Met alle

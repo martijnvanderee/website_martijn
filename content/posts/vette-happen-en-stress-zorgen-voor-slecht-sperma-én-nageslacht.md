@@ -2,13 +2,13 @@
 templateKey: post.template
 title: Dipje? Ga lekker gamen of wandelen, maar stop met social media!
 date: 2021-06-11T15:48:04.497Z
-headerPhoto: /img/kinderen-blij-computer.jpg
+headerPhoto: map-bron-pixabay-com-startupstockphotos-onderschrift-kinderen-blij-computer-image-img-kinderen-blij-computer-jpg
 onderwerp: human
 auteur: Monique Siemsen
 tags:
   - videogames, onderzoek, kids, gamen, depressie, social media 3 bijlagen
 photo's:
-  - /img/kind-schermtijd-computer.jpg
+  - map-onderschrift-talentenjachten-geven-jongeren-een-egoïstische-boodschap-mee-zo-blijkt-uit-onderzoek-bron-pixabay-com-image-img-kind-schermtijd-computer-jpg
 ---
 Het is nog niet zo lang geleden dat de goegemeente vreesde voor allerlei psychologische
 aandoeningen bij gamende jeugd. Maar niets blijkt minder waar! Gooi het opstandige

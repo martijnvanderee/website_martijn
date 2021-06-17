@@ -2,16 +2,17 @@ import React, { FunctionComponent } from 'react'
 import Link from "next/link";
 
 //typescript
-import { PostData } from "../typescript"
-
+import { PostData, DataPhotosTotal } from "../typescript"
 import { formatDate } from "../localFunctions/formatdate"
+
 type postProps = {
-  content: PostData,
+  post: PostData,
+  photo: DataPhotosTotal
 }
 
-export const PostItem: FunctionComponent<postProps> = ({ content }) => {
-  const date: string = formatDate(content.attributes.date)
-  const url = content.slug
+export const PostItem: FunctionComponent<postProps> = ({ post, photo }) => {
+  const date: string = formatDate(post.attributes.date)
+  const url = post.slug
   return (
     <Link href={`/${url}`} as={`/${url}`}>
       <div className="w-full mb-4 cursor-pointer">
@@ -19,7 +20,7 @@ export const PostItem: FunctionComponent<postProps> = ({ content }) => {
           <div className="relative flex-none h-full w-32">
             <img
 
-              src={`${content.attributes.headerPhoto}/?nf_resize=fit&w=700`}
+              src={`${photo.headerData.image}/?nf_resize=fit&w=700`}
 
               alt="title van artikel"
               className="absolute inset-0 w-full h-full object-cover"
@@ -27,12 +28,12 @@ export const PostItem: FunctionComponent<postProps> = ({ content }) => {
           </div>
           <div className="relative px-2">
             <span className="text-sm font-thin text-yellow">
-              {content.attributes.onderwerp}
+              {post.attributes.onderwerp}
             </span>
 
 
             <h4 className="text-lg font-medium leading-6">
-              {content.attributes.title}
+              {post.attributes.title}
             </h4>
             <div className="absolute bottom-1 text-xs text-grey"> {date}</div>
           </div>

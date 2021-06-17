@@ -6,11 +6,11 @@ import { getNumberOfPages } from "../../localFunctions/importPosts"
 import { whatNumbersToshow } from "../../localFunctions/paginationLogic"
 import { useRouter } from 'next/router'
 
+
+import { numberOfPostsOnPage } from "../../public/variables"
 type PaginationProps = {
 
 }
-
-
 const Pagination: FunctionComponent<PaginationProps> = () => {
 
   const router = useRouter()
@@ -20,15 +20,11 @@ const Pagination: FunctionComponent<PaginationProps> = () => {
   //const test = pageNumber1.search("/")
 
 
-  const numberOfPosts = 5
-  const listPages = getNumberOfPages(numberOfPosts);
-
+  const listPages = getNumberOfPages(numberOfPostsOnPage);
 
 
   const arrayOfNumbers = Array.from(Array(listPages + 1).keys())
   const [, ...removeFirstElement] = arrayOfNumbers;
-
-
 
 
   return (<Pagination1 current={Number(pageNumber)} total={Number(listPages)} />)

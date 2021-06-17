@@ -1,7 +1,7 @@
 
 
 
-import { importPostSlugs, importPost } from "../localFunctions/importPosts"
+import { importPostSlugs, importPost, getDataPhotos } from "../localFunctions/importPosts"
 
 import { formatDate } from "../localFunctions/formatdate"
 
@@ -14,7 +14,7 @@ import { PostItem } from "../components/postItem"
 import { importPosts } from "../localFunctions/importPosts";
 import { modifyTags } from "../localFunctions/modifyTags";
 //typescript
-import { PostData } from "../typescript"
+import { PostData, DataPhotos } from "../typescript"
 
 import { BsPencil } from 'react-icons/bs';
 import { BiTimeFive } from 'react-icons/bi';
@@ -25,15 +25,16 @@ type PostProps = {
   attributes: any,
   html: string,
   posts: PostData[]
+  dataPhotos: DataPhotos
 }
 
 
 
 
-const Post: FunctionComponent<PostProps> = ({ attributes, html, posts }) => {
+const Post: FunctionComponent<PostProps> = ({ attributes, html, posts, dataPhotos }) => {
 
+  const image = `${dataPhotos.image}/?nf_resize=fit&w=700`
 
-  const image = `${attributes.headerPhoto}/?nf_resize=fit&w=700`
   const date: string = formatDate(attributes.date)
 
   const tags = modifyTags(attributes.tags)
@@ -44,6 +45,7 @@ const Post: FunctionComponent<PostProps> = ({ attributes, html, posts }) => {
     <Layout title={attributes.title}>
       <div className="md:max-w-6xl  md:mx-auto">
         <div className="relative w-full h-72 md:max-w-4xl md:h-96 md:mt-10 md:mx-auto">
+
           <div className="relative w-full h-full ">
             <img
               src={image}
@@ -51,15 +53,15 @@ const Post: FunctionComponent<PostProps> = ({ attributes, html, posts }) => {
               className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
-
+          <p className="z-10 text-grey text-small text-sm">bron: {dataPhotos.bron}</p>
         </div>
 
 
         <div className="p-4 md:mb-4">
 
-          <h2 className="text-3xl font-bold text-black mb-6 md:text-center md:mt-8 md:text-4xl">{attributes.title}</h2>
+          <h2 className="text-3xl font-bold text-black mb-6 md:text-center mt-4 md:mt-8 md:text-4xl">{attributes.title}</h2>
 
-          <div className="flex mb-2 justify-center md:mb-4">
+          <div className="flex mb-2 md:justify-center md:mb-4">
             <div className="flex mr-4">
 
               <IconContext.Provider value={{ color: "#707070", size: "1.5em", }}>
@@ -90,10 +92,9 @@ const Post: FunctionComponent<PostProps> = ({ attributes, html, posts }) => {
             })}
           </ul>}
 
-
-          <div className="mb-12 text-xl mx-auto"><div className="prose-xl md:prose-2xl mx-auto" dangerouslySetInnerHTML={{ __html: html }}></div>
+          <div className="mb-12 text-xl mx-auto">
+            <div className="prose-xl md:prose-2xl mx-auto" dangerouslySetInnerHTML={{ __html: html }}></div>
           </div>
-
 
           <div>
             <div className="mb-12">
@@ -133,14 +134,20 @@ export async function getStaticProps({ params }: any) {
 
   const posts: PostData = JSON.parse(JSON.stringify(posts1));
 
+  const filePath = post.attributes.headerPhoto
+  const dataPhotos = await getDataPhotos(filePath)
+
+
   return {
     props: {
       html: post.html,
       attributes: post.attributes,
-      posts
-
+      posts,
+      dataPhotos
     },
   };
 }
+
+
 
 export default Post;

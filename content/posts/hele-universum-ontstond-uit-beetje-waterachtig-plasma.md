@@ -2,13 +2,13 @@
 templateKey: post.template
 title: Hele universum ontstond uit beetje waterachtig plasma
 date: 2021-06-11T15:32:23.492Z
-headerPhoto: /img/bol-explosie-rood-geel.jpg
+headerPhoto: map-bron-pixabay-com-mikegi-onderschrift-bol-explosie-rood-geel-image-img-bol-explosie-rood-geel-jpg
 onderwerp: space
 auteur: Monique Siemsen
 tags:
   - Big Bang, Oerknal, QGP, universum, uitdijen, hitte, protonen, hadronen
 photo's:
-  - /img/big-bang-verloop-sterren.jpg
+  - map-bron-pixabay-com-wilkilmages-onderschrift-een-schematische-weergave-van-wat-er-in-het-universum-gebeurde-na-de-oerknal-een-theorie-waarvoor-steeds-meer-bewijs-gevonden-wordt-image-img-big-bang-verloop-sterren-jpg
 ---
 We danken ons bestaan en het heelal aan zogenaamd Quark-Gluon Plasma. Een goedje
 dat zo vloeibaar was als water. En dat slechts een milliseconde bestaan heeft.

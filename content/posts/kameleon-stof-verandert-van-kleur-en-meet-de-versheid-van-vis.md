@@ -2,13 +2,13 @@
 templateKey: post.template
 title: Kameleon-stof verandert van kleur en meet de versheid van vis
 date: 2021-06-11T15:23:04.867Z
-headerPhoto: /img/kameleon-dichtbij-groen.jpg
+headerPhoto: map-bron-pixabay-com-jj01-onderschrift-kameleon-dichtbij-groen-image-img-kameleon-dichtbij-groen-jpg-1
 onderwerp: tech
 auteur: Monique Siemsen
 tags:
   - Robot, nieuwe uitvinding, verandering kleuren
 photo's:
-  - /img/soldaat-vuurwapen-gevecht.jpg
+  - map-bron-pixabay-com-dariuszsankowksi-onderschrift-mogelijk-vervangt-een-robot-met-kameleonhuid-in-de-toekomst-deze-soldaat-image-img-soldaat-vuurwapen-gevecht-jpg
 ---
 Wetenschappers zijn er in geslaagd een materiaal te ontwikkelen dat lijkt op de huid van
 een kameleon. Het spul stelt ook vast of je lekkerbekkie nog wel vers is.

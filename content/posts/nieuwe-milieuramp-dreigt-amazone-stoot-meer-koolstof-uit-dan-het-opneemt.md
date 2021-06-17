@@ -2,7 +2,7 @@
 templateKey: post.template
 title: "Nieuwe milieuramp dreigt: Amazone stoot meer koolstof uit dan het opneemt"
 date: 2021-06-11T15:05:55.934Z
-headerPhoto: /img/regenwoud-bomen-zonlicht.jpg
+headerPhoto: map-onderschrift-regenwoud-bomen-zonlicht-image-img-regenwoud-bomen-zonlicht-jpg
 onderwerp: nature
 auteur: Monique Siemsen
 tags:
@@ -10,7 +10,7 @@ tags:
     onderzoek
   - Amazone, regenwoud, bomenkap, uitstoot koolstof, zuurstof
 photo's:
-  - /img/boomstammen-rivier-houthakkers.jpg
+  - map-onderschrift-de-epigenomen-van-mannen-met-een-gezonde-levensstijl-geven-deze-info-door-tijdens-de-bevruchting-en-dragen-zo-bij-aan-gezond-nageslacht-bron-pixabay-com-publicdomainpictures-image-img-vader-baby-slaap-jpg
 ---
 De regenwouden nemen koolstof op en stoten zuurstof uit. Tenminste, dat is de bedoeling.
 Maar het Amazone-gebied doet het tegenwoordig andersom. En dat is nogal zorgelijk.

@@ -2,13 +2,13 @@
 templateKey: post.template
 title: Langzame wandelaars 4 x zoveel risico op overlijden aan Covid-19
 date: 2021-06-11T15:40:03.903Z
-headerPhoto: /img/bloedvaten-hart-bloedcellen.jpg
+headerPhoto: map-onderschrift-bloedvaten-hart-bloedcellen-bron-pixabay-com-image-img-bloedvaten-hart-bloedcellen-jpg
 onderwerp: human
 auteur: Monique Siemsen
 tags:
   - Covd-19, Corona, hart- en bloedvaten, looptempo, weerstand 3 bijlagen
 photo's:
-  - /img/wandeling-park-herfst.jpg
+  - map-onderschrift-mensen-met-een-langzame-tred-hebben-ongezondere-hart-en-bloedvaten-ze-lopen-meer-risico-op-ernstige-symptomen-van-covid-19-bron-pixabay-com-image-img-wandeling-park-herfst-jpg
 ---
 De Nederlandse taal staat bol van de uitdrukkingen die onze ontspannen levenshouding
 vieren. Maar als je gezond de pandemie wilt doorkomen, is het goed te begrijpen dat

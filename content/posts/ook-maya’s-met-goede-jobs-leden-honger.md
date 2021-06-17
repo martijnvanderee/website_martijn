@@ -2,7 +2,7 @@
 templateKey: post.template
 title: Ook Maya’s met goede jobs leden honger
 date: 2021-06-11T11:34:17.306Z
-headerPhoto: /img/mayamaskers-beschildering-felle-kleuren.jpeg
+headerPhoto: map-onderschrift-mayamaskers-beschildering-felle-kleuren-image-img-mayamaskers-beschildering-felle-kleuren-jpeg
 onderwerp: history
 auteur: Monique Siemsen
 tags:
@@ -12,7 +12,7 @@ tags:
   - gebitsimplantaten
   - jade
 photo's:
-  - /img/muurrelief-el-palmar-ruïne.jpeg
+  - map-onderschrift-muurreliëf-el-palmar-ruïne-image-img-muurrelief-el-palmar-ruïne-jpeg
 ---
 Ontberingen lijden terwijl je een goede functie bekleedt. Een recente vondst in Mexico
 bewijst dat dit bij de Maya’s niet ongebruikelijk was.

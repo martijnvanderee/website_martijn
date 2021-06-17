@@ -2,13 +2,13 @@
 templateKey: post.template
 title: Klimaatverandering modern probleem? Europa warmt al zeker meer dan 2000 jaar op
 date: 2021-06-11T14:49:43.960Z
-headerPhoto: /img/droogte-landschap-gele-bloem.jpg
+headerPhoto: map-onderschrift-droogte-landschap-gele-bloem-image-img-boom-bladeren-groen-jpg
 onderwerp: nature
 auteur: Monique Siemsen
 tags:
   - klimaatverandering, jaarringen, romeinen, opwarming europa
 photo's:
-  - /img/boom-bladeren-groen.jpg
+  - map-onderschrift-droogte-landschap-gele-bloem-image-img-boom-bladeren-groen-jpg
 ---
 Hoe lang denk je dat klimaatverandering al een probleem is? 20 jaar misschien? Of zet je
 in op 100 jaar? Helaas: al duizenden jaren worden onze zomers alsmaar warmer en vooral
