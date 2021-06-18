@@ -84,9 +84,10 @@ const Post: FunctionComponent<PostProps> = ({ attributes, html, dataPhotos, rand
           </div>
 
 
-          {attributes.tags && <ul className="flex mb-6">
+          {attributes.tags && <ul className="flex flex-wrap mb-6 gap-y-2">
             {tags.map((tag: string) => {
-              return (<li className="text-purple font-bold p-2 border-2 border-purple rounded-md mr-4">{tag}</li>)
+              return (
+                <li className="text-purple font-bold p-2 border-2 border-purple rounded-md mr-4 whitespace-nowrap">{tag}</li>)
             })}
           </ul>}
 
