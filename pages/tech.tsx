@@ -54,7 +54,7 @@ const Tech: FunctionComponent<TechProps> = ({ posts, randomPosts }) => {
               <div className="md:h-96 md:overflow-auto">
 
                 <div className="sticky md:static top-72 z-10 border-b-2 border-yellow p-3 md:mx-4 md:pt-0 bg-white">
-                  <h3 className="text-center text-2xl text-black font-bold md:text-2xl ">Het laatste nieuws op het gebied van tech</h3>
+                  <h3 className="text-center text-2xl text-black font-bold md:text-2xl ">Het laatste tech nieuws!</h3>
                 </div>
 
                 <div className="flex flex-wrap overflow-hidden my-4 sm:mx-4">
@@ -64,7 +64,7 @@ const Tech: FunctionComponent<TechProps> = ({ posts, randomPosts }) => {
               </div>
 
               <Link href={`/net-binnen/1`}>
-                <div className="text-2xl md:text-2xl font-semibold leading-tight text-grey ml-4 cursor-pointer" >Meer net binnen <span className="text-2xl md:text-xl font-semibold leading-tight text-purple">{">"}</span>  </div>
+                <div className="text-2xl md:text-2xl font-semibold leading-tight text-grey ml-4 cursor-pointer" >Meer tech nieuws<span className="text-2xl md:text-xl font-semibold leading-tight text-purple">{">"}</span>  </div>
               </Link>
             </div>
 
