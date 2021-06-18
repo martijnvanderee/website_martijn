@@ -28,10 +28,11 @@ type NavProps = {
 const NavItem: FunctionComponent<NavProps> = ({ path, isRoute, name }) => {
   return (
     <Link href={path}>
-      <a className={`relative grid px-4 h-full z-20  ${isRoute && `bg-almostWhite `}`}>
+      {/* <a className={`relative grid px-4 h-full z-20  ${isRoute && `bg-almostWhite `}`}>
         <div className={`self-center md:text-lg ${isRoute && `font-bold `}`}>{name}</div>
         {isRoute && <div className="absolute w-full h-2 bottom-0 bg-purple" />}
-      </a>
+      </a> */}
+      test
     </Link>
   )
 }
