@@ -24,7 +24,6 @@ import { IconContext } from "react-icons";
 type PostProps = {
   attributes: any,
   html: string,
-  posts: PostData[]
   dataPhotos: DataPhotos
   randomPosts: { posts: PostData[], photos: DataPhotosTotal[] }
 }
@@ -32,7 +31,7 @@ type PostProps = {
 
 
 
-const Post: FunctionComponent<PostProps> = ({ attributes, html, posts, dataPhotos, randomPosts }) => {
+const Post: FunctionComponent<PostProps> = ({ attributes, html, dataPhotos, randomPosts }) => {
 
   const image = `${dataPhotos.image}/?nf_resize=fit&w=700`
 
@@ -128,21 +127,17 @@ export async function getStaticProps({ params }: any) {
 
   const slug = `${params.post}.md`
 
-  const post = await importPost(slug);
-  const posts1: PostData[] = await importPosts(5);
-
-  const posts: PostData = JSON.parse(JSON.stringify(posts1));
+  const post: PostData = await importPost(slug);
 
   const filePath = post.attributes.headerPhoto
   const dataPhotos = await getDataPhotos(filePath)
 
-  const randomPosts = await getRandomPostBySubject(4, "human")
+  const randomPosts = await getRandomPostBySubject(4, post.attributes.onderwerp)
 
   return {
     props: {
       html: post.html,
       attributes: post.attributes,
-      posts,
       dataPhotos,
       randomPosts
     },

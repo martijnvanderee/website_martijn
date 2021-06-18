@@ -9,9 +9,6 @@ import { useIsMenuOpen } from '../state/isMenuOpen'
 export const Header = () => {
   const { dispatch, state } = useIsMenuOpen()
 
-
-
-
   const isMenuOpen = state.isMenuOpen
   const menuAction = isMenuOpen ? "close" : "open"
 
@@ -33,7 +30,7 @@ export const Header = () => {
           <div className="flex my-auto justify-end">
             {/* <div className="text-white underline underline-yellow">blijf up to date</div>
         <div className="text-white">stel vragen</div> */}
-            <div className="flex my-auto cursor-pointer">
+            {/* <div className="flex my-auto cursor-pointer">
               <IconContext.Provider value={{ color: "white", className: "mr-1 md:hidden", size: "1.5em", }}>
                 <div className="flex items-center justify-content">
                   <FaSearch />
@@ -47,7 +44,7 @@ export const Header = () => {
               <div className="text-white my-auto text-lg md:text mr-4">Zoeken</div>
 
 
-            </div>
+            </div> */}
 
             <div className="flex my-auto cursor-pointer " onClick={() => dispatch({ type: menuAction })}>
 

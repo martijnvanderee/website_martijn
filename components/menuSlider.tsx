@@ -27,7 +27,7 @@ export const MenuSlider = () => {
 
 
 
-        <Zoeken />
+        {/* <Zoeken /> */}
         <div className="mt-4">
           {navNames.map((navName, index) => {
             const path: string = useRouter().asPath
