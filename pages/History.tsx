@@ -12,17 +12,16 @@ import { PostData, DataPhotosTotal } from "../typescript"
 import { amountOfPostFrontPage } from "../public/variables"
 
 type HistoryProps = {
-  posts: { posts: PostData[], photos: DataPhotosTotal[] },
-  randomPosts: { posts: PostData[], photos: DataPhotosTotal[] }
+  a: 5
 }
 
-const History: FunctionComponent<HistoryProps> = ({ posts, randomPosts }) => {
+const History: FunctionComponent<HistoryProps> = () => {
 
-  const post = posts.posts[0]
-  const photo = posts.photos[0]
-  const url = post.slug
-  const [, ...postOftheRest] = posts.posts;
-  const [, ...photosOftheRest] = posts.photos;
+  // const post = posts.posts[0]
+  // const photo = posts.photos[0]
+  // const url = post.slug
+  // const [, ...postOftheRest] = posts.posts;
+  // const [, ...photosOftheRest] = posts.photos;
 
   return (
     <Layout title="Sciencegeek">
@@ -111,10 +110,10 @@ const History: FunctionComponent<HistoryProps> = ({ posts, randomPosts }) => {
 }
 
 export async function getStaticProps() {
-  const posts = await getPosts(amountOfPostFrontPage, "history")
-  const randomPosts = await getRandomPosts(6)
+  // const posts = await getPosts(amountOfPostFrontPage, "history")
+  // const randomPosts = await getRandomPosts(6)
 
-  return { props: { posts, randomPosts } }
+  return { props: { a: 5 } }
 
 }
 
