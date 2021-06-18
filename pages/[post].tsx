@@ -40,8 +40,6 @@ const Post: FunctionComponent<PostProps> = ({ attributes, html, posts, dataPhoto
 
   const tags = modifyTags(attributes.tags)
 
-
-
   return (
     <Layout title={attributes.title}>
       <div className="md:max-w-6xl  md:mx-auto">
