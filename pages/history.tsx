@@ -117,7 +117,7 @@ const Tech: FunctionComponent<TechProps> = ({ posts, randomPosts }) => {
 }
 
 export async function getStaticProps() {
-  const posts = await getPosts(amountOfPostFrontPage, "tech")
+  const posts = await getPosts(amountOfPostFrontPage, "history")
   const randomPosts = await getRandomPosts(6)
 
   return { props: { posts, randomPosts } }
