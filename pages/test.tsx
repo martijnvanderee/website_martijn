@@ -11,25 +11,26 @@ import { PostData, DataPhotosTotal } from "../typescript"
 //variables
 import { amountOfPostFrontPage } from "../public/variables"
 
-type HistoryProps = {
-  a: 5
+type TechProps = {
+  posts: { posts: PostData[], photos: DataPhotosTotal[] },
+  randomPosts: { posts: PostData[], photos: DataPhotosTotal[] }
 }
 
-const History: FunctionComponent<HistoryProps> = () => {
+const Tech: FunctionComponent<TechProps> = ({ posts, randomPosts }) => {
 
-  // const post = posts.posts[0]
-  // const photo = posts.photos[0]
-  // const url = post.slug
-  // const [, ...postOftheRest] = posts.posts;
-  // const [, ...photosOftheRest] = posts.photos;
+  const post = posts.posts[0]
+  const photo = posts.photos[0]
+  const url = post.slug
+  const [, ...postOftheRest] = posts.posts;
+  const [, ...photosOftheRest] = posts.photos;
 
   return (
-    // <Layout title="Sciencegeek">
-    <main>
-      <div>
+    <Layout title="Sciencegeek">
+      <main>
+        <div>
 
-        <div className="md:grid  md:grid-cols-2 md:mt-10">
-          {/* <Link href={`/${url}`} as={`/${url}`}>
+          <div className="md:grid  md:grid-cols-2 md:mt-10">
+            <Link href={`/${url}`} as={`/${url}`}>
 
               <div className="relative w-full h-72 md:max-w-4xl md:h-96  md:mx-auto cursor-pointer">
                 <div className="relative w-full h-full ">
@@ -45,19 +46,19 @@ const History: FunctionComponent<HistoryProps> = () => {
                 </div>
 
               </div>
-            </Link> */}
+            </Link>
 
-          {/* <div className=" md:hidden h-2 w-full bg-almostWhite"></div> */}
+            <div className=" md:hidden h-2 w-full bg-almostWhite"></div>
 
-          {/* <div className="mb-10 md:mb-0">
+            <div className="mb-10 md:mb-0">
               <div className="md:h-96 md:overflow-auto">
 
                 <div className="sticky md:static top-72 z-10 border-b-2 border-yellow p-3 md:mx-4 md:pt-0 bg-white">
-                  <h3 className="text-center text-2xl text-black font-bold md:text-2xl ">Het laatste nieuws op het gebied van history</h3>
+                  <h3 className="text-center text-2xl text-black font-bold md:text-2xl ">Het laatste nieuws op het gebied van tech</h3>
                 </div>
 
                 <div className="flex flex-wrap overflow-hidden my-4 sm:mx-4">
-                  {postOftheRest.map((post: PostData, index) => <PostItem key={index} post={post} photo={photosOftheRest[index].headerData} />)}
+                  {postOftheRest.map((post: PostData, index) => <PostItem post={post} photo={photosOftheRest[index].headerData} key={index} />)}
                 </div>
 
               </div>
@@ -65,17 +66,22 @@ const History: FunctionComponent<HistoryProps> = () => {
               <Link href={`/net-binnen/1`}>
                 <div className="text-2xl md:text-2xl font-semibold leading-tight text-grey ml-4 cursor-pointer" >Meer net binnen <span className="text-2xl md:text-xl font-semibold leading-tight text-purple">{">"}</span>  </div>
               </Link>
-            </div> */}
-        </div>
+            </div>
 
-        {/* <div className="hidden md:block bg-almostWhite h-0.5 w-full mt-8"></div> */}
 
-        {/* <div className="text-2xl mt-10 ml-4 font-bold text-grey hidden md:block">
+          </div>
+
+          <div className="hidden md:block bg-almostWhite h-0.5 w-full mt-8"></div>
+
+          <div className="text-2xl mt-10 ml-4 font-bold text-grey hidden md:block">
             <h2 className="inline border-b border-almostWhite ">Lees ook één van onze andere verhalen</h2>
-          </div> */}
+          </div>
 
-        {/* <div className="hidden md:block md:grid  md:grid-cols-3 pb-10 mt-2">
+          <div className="hidden md:block md:grid  md:grid-cols-3 pb-10 mt-2">
+
+
             {randomPosts.posts.map((randomPost: PostData, index) => {
+
               const url = randomPost.slug
               return (
                 <Link href={`/${url}`} as={`/${url}`}>
@@ -99,22 +105,23 @@ const History: FunctionComponent<HistoryProps> = () => {
                 </Link>
               )
             })}
-          </div> */}
 
 
 
-      </div>
-    </main>
-    // </Layout>
+
+          </div>
+        </div>
+      </main>
+    </Layout>
   )
 }
 
 export async function getStaticProps() {
-  // const posts = await getPosts(amountOfPostFrontPage, "history")
-  // const randomPosts = await getRandomPosts(6)
+  const posts = await getPosts(amountOfPostFrontPage, "tech")
+  const randomPosts = await getRandomPosts(6)
 
-  return { props: { a: 5 } }
+  return { props: { posts, randomPosts } }
 
 }
 
-export default History;
+export default Tech;
