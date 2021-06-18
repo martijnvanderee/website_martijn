@@ -1,7 +1,7 @@
 
 
 
-import { importPostSlugs, importPost, getDataPhotos } from "../localFunctions/importPosts"
+import { importPostSlugs, importPost, getDataPhotos, getRandomPostBySubject } from "../localFunctions/importPosts"
 
 import { formatDate } from "../localFunctions/formatdate"
 
@@ -14,7 +14,7 @@ import { PostItem } from "../components/postItem"
 import { importPosts } from "../localFunctions/importPosts";
 import { modifyTags } from "../localFunctions/modifyTags";
 //typescript
-import { PostData, DataPhotos } from "../typescript"
+import { PostData, DataPhotos, DataPhotosTotal } from "../typescript"
 
 import { BsPencil } from 'react-icons/bs';
 import { BiTimeFive } from 'react-icons/bi';
@@ -26,12 +26,13 @@ type PostProps = {
   html: string,
   posts: PostData[]
   dataPhotos: DataPhotos
+  randomPosts: { posts: PostData[], photos: DataPhotosTotal[] }
 }
 
 
 
 
-const Post: FunctionComponent<PostProps> = ({ attributes, html, posts, dataPhotos }) => {
+const Post: FunctionComponent<PostProps> = ({ attributes, html, posts, dataPhotos, randomPosts }) => {
 
   const image = `${dataPhotos.image}/?nf_resize=fit&w=700`
 
@@ -102,7 +103,7 @@ const Post: FunctionComponent<PostProps> = ({ attributes, html, posts, dataPhoto
             </div>
 
             <div className="flex flex-wrap overflow-hidden my-4">
-              {posts.map((post: PostData) => <PostItem post={post} photo={dataPhotos} />)}
+              {randomPosts.posts.map((post: PostData, index) => <PostItem post={post} photo={randomPosts.photos[index].headerData} />)}
             </div>
           </div>
 
@@ -137,13 +138,15 @@ export async function getStaticProps({ params }: any) {
   const filePath = post.attributes.headerPhoto
   const dataPhotos = await getDataPhotos(filePath)
 
+  const randomPosts = await getRandomPostBySubject(4, "human")
 
   return {
     props: {
       html: post.html,
       attributes: post.attributes,
       posts,
-      dataPhotos
+      dataPhotos,
+      randomPosts
     },
   };
 }

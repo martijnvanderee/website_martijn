@@ -30,7 +30,7 @@ const History: FunctionComponent<HistoryProps> = ({ posts, randomPosts }) => {
         <div>
 
           <div className="md:grid  md:grid-cols-2 md:mt-10">
-            <Link href={`/${url}`} as={`/${url}`}>
+            {/* <Link href={`/${url}`} as={`/${url}`}>
 
               <div className="relative w-full h-72 md:max-w-4xl md:h-96  md:mx-auto cursor-pointer">
                 <div className="relative w-full h-full ">
@@ -46,7 +46,7 @@ const History: FunctionComponent<HistoryProps> = ({ posts, randomPosts }) => {
                 </div>
 
               </div>
-            </Link>
+            </Link> */}
 
             {/* <div className=" md:hidden h-2 w-full bg-almostWhite"></div> */}
 
