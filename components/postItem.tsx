@@ -19,9 +19,7 @@ export const PostItem: FunctionComponent<postProps> = ({ post, photo }) => {
         <div className="flex h-24 border-b border-almostWhite">
           <div className="relative flex-none h-full w-32">
             <img
-
               src={`${photo.image}/?nf_resize=fit&w=700`}
-
               alt="title van artikel"
               className="absolute inset-0 w-full h-full object-cover"
             />
@@ -30,7 +28,6 @@ export const PostItem: FunctionComponent<postProps> = ({ post, photo }) => {
             <span className="text-sm font-thin text-yellow">
               {post.attributes.onderwerp}
             </span>
-
 
             <h4 className="text-lg font-medium leading-6">
               {post.attributes.title}

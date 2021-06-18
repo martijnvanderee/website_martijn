@@ -32,10 +32,10 @@ export const MenuSlider = () => {
           {navNames.map((navName, index) => {
             const path: string = useRouter().asPath
             const isRoute: boolean = path === navLinks[index]
-            return <NavItem name={navName} path={navLinks[index]} isRoute={isRoute} />
+            return <NavItem name={navName} path={navLinks[index]} isRoute={isRoute} key={index} />
           })}
 
-          <Link href="/over-sciencegeek" >
+          <Link href="/over-sciencegeek">
             <a onClick={() => dispatch({ type: 'close' })} className={` relative`} >
               <div className={`ml-4 text-2xl py-4 border-b border-almostWhite  `}>Over ScienceGeek</div>
 

@@ -58,7 +58,7 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
                 </div>
 
                 <div className="flex flex-wrap overflow-hidden my-4 sm:mx-4">
-                  {postOftheRest.map((post: PostData, index) => <PostItem post={post} photo={photosOftheRest[index].headerData} />)}
+                  {postOftheRest.map((post: PostData, index) => <PostItem key={index} post={post} photo={photosOftheRest[index].headerData} />)}
                 </div>
 
               </div>
@@ -84,7 +84,7 @@ const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
 
               const url = randomPost.slug
               return (
-                <Link href={`/${url}`} as={`/${url}`}>
+                <Link href={`/${url}`} as={`/${url}`} key={index}>
                   <div className="m-4 cursor-pointer">
                     <div className="relative h-64">
                       <img

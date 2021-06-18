@@ -58,7 +58,7 @@ const Human: FunctionComponent<HumanProps> = ({ posts, randomPosts }) => {
                 </div>
 
                 <div className="flex flex-wrap overflow-hidden my-4 sm:mx-4">
-                  {postOftheRest.map((post: PostData, index) => <PostItem post={post} photo={photosOftheRest[index].headerData} />)}
+                  {postOftheRest.map((post: PostData, index) => <PostItem post={post} key={index} photo={photosOftheRest[index].headerData} />)}
                 </div>
 
               </div>
