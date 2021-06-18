@@ -27,7 +27,13 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
     <>
       <Head>
         <title>ScienceGeek</title>
-        <meta name="description" content="Meta descriptions can have a surprisingly large impact on your search marketing campaigns; find out how..." />
+        <meta name="description" content="ScienceGeek brengt internationaal en binnenlands wetenschappelijk nieuws. Deze
+wetenschappelijke feitjes gaan over wetenschappelijk onderzoek gedaan naar
+fossielen, dino’s, oude beschavingen als de maya’s en de inca’s, ruimtevaart, de
+zoektocht naar aliens, sex, psychologie, milieu en geschiedenis. Of het nu gaat om
+onze natuur, technologische innnovaties of ontdekkingen op het gebied van menselijke
+levensverwachting en gezondheid: ScienceGeek brengt het.
+ScienceGeek is een onafhankelijk nieuwsmedium. We publiceren" />
         <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
         <link rel="icon" href="/ico/sciencegeekLogo.ico" />
 
