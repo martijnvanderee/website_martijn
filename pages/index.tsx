@@ -6,6 +6,7 @@ import { Layout } from "../components/layout"
 import { PostItem } from "../components/postItem"
 //functions
 import { getPosts, getRandomPosts } from "../localFunctions/importPosts";
+import { lunrjs } from "../localFunctions/lunrjs";
 //typescript
 import { PostData, DataPhotosTotal } from "../typescript"
 //variables
@@ -120,6 +121,7 @@ export async function getStaticProps() {
   const posts = await getPosts(amountOfPostFrontPage)
   const randomPosts = await getRandomPosts(6)
 
+  const lun = await lunrjs()
   return { props: { posts, randomPosts } }
 
 }
