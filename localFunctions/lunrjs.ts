@@ -3,7 +3,7 @@ import { PostData } from "../typescript"
 export const lunrjs = async (): Promise<PostData[]> => {
   const fileNames = getPostFileNames()
   const posts = await getPosts(fileNames)
-  console.log(posts)
+  console.log("test", posts)
   return posts
 }
 
