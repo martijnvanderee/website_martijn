@@ -1,11 +1,35 @@
-import { PostData } from "../typescript"
+import lunr from "lunr"
+require("lunr-languages/lunr.stemmer.support")(lunr)
+require('lunr-languages/lunr.multi')(lunr)
+require("lunr-languages/lunr.nl")(lunr)
 
-export const lunrjs = async (): Promise<PostData[]> => {
+import React, { useEffect } from "react"
+
+
+type titles = {
+  title: string
+  tags: string[]
+}
+
+export const getAllPosts = async (): Promise<titles[]> => {
   const fileNames = getPostFileNames()
-  const posts = await getPosts(fileNames)
-  console.log("test", posts)
+  const posts = await getPostTitles(fileNames)
+
   return posts
 }
+
+const getPostTitles = async (fileNames: string[]) => {
+  return Promise.all(
+    fileNames.map(async path => {
+      const markdown: any = await import(`../content/posts/${path}`);
+      const title = markdown.attributes.title
+      const tags = markdown.attributes.tags.join(" ");
+      const content = markdown.html
+      return { title, tags, content };
+    })
+  )
+}
+
 
 const getPostFileNames = (): string[] => {
   const Files = require.context('../content/posts', false, /\.md$/).keys()
@@ -14,12 +38,62 @@ const getPostFileNames = (): string[] => {
   return Files
 }
 
-const getPosts = async (fileNames: string[]): Promise<PostData[]> => {
 
-  return Promise.all(
-    fileNames.map(async path => {
-      const markdown = await import(`../content/posts/${path}`);
-      return { ...markdown, slug: path.substring(0, path.length - 3) };
+const putInLunr = (posts: titles[]) => {
+
+  var idx = lunr(function () {
+    this.use(lunr.multiLanguage('en', 'nl'))
+    this.field('tags', {
+      boost: 10
     })
-  )
+    this.field("title", {
+      boost: 10
+    });
+    this.field("content");
+    this.ref('title')
+
+    const datas = posts
+
+    datas.forEach(function (data) {
+      this.add(data)
+    }, this)
+
+  })
+
+  return idx
 }
+
+export const getSearchData = async () => {
+  const posts = await getAllPosts()
+  const searchEngine = putInLunr(posts)
+
+  return searchEngine
+}
+
+
+export const getSearch = (data: any, searchInputUser: string, amountofResults: number): number[] => {
+  const results = data.search(searchInputUser)
+
+  const refs = results.map((result: any) => { return result.ref })
+  const titles = refs.splice(0, amountofResults)
+  return titles
+}
+
+
+
+export const useFetch = () => {
+  const [response, setResponse] = React.useState(null);
+  const [error, setError] = React.useState(null);
+  React.useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const res: any = await getSearchData()
+        setResponse(res)
+      } catch (error) {
+        setError(error);
+      }
+    };
+    fetchData();
+  }, []);
+  return { response, error };
+};

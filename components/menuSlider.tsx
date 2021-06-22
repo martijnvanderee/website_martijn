@@ -9,6 +9,10 @@ import { navNames, navLinks } from "../public/variables"
 import { useRouter } from 'next/router'
 import Link from "next/link";
 
+import { Search } from "./search"
+
+
+
 export const MenuSlider = () => {
   const { state, dispatch } = useIsMenuOpen()
 
@@ -28,6 +32,7 @@ export const MenuSlider = () => {
 
 
         {/* <Zoeken /> */}
+        <Search />
         <div className="mt-4">
           {navNames.map((navName, index) => {
             const path: string = useRouter().asPath
@@ -84,7 +89,7 @@ const Zoeken: FunctionComponent<ButtonProps> = () => {
       <div className="w-full">
         <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold" htmlFor="instantie">
 
-          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 py-3 " id="instantie" type="text" placeholder="  zoek op trefwoord,titel of auteur" name="instantie" />
+          <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500 py-3 " id="instantie" type="text" placeholder="zoek op trefwoord,titel of auteur" name="instantie" />
         </label>
 
       </div>
