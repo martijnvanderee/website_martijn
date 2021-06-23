@@ -60,16 +60,7 @@ const Post: FunctionComponent<PostProps> = ({ attributes, html, dataPhotos, rand
           <h2 className="text-3xl font-bold text-black mb-6 md:text-center mt-4 md:mt-8 md:text-4xl">{attributes.title}</h2>
 
           <div className="flex mb-2 md:justify-center md:mb-4">
-            <div className="flex mr-4">
 
-              <IconContext.Provider value={{ color: "#707070", size: "1.5em", }}>
-                <div>
-                  <BsPencil className="mr-1" />
-                </div>
-              </IconContext.Provider>
-
-              <span className="text text-grey m-auto">{attributes.auteur}</span>
-            </div>
             <div className="flex">
 
               <IconContext.Provider value={{ color: "#707070", size: "1.5em", }}>
@@ -84,16 +75,18 @@ const Post: FunctionComponent<PostProps> = ({ attributes, html, dataPhotos, rand
           </div>
 
 
-          {attributes.tags && <ul className="flex flex-wrap mb-6 gap-y-2">
+
+
+          <div className="mb-6 text-xl mx-auto">
+            <div className="prose-xl md:prose-2xl mx-auto" dangerouslySetInnerHTML={{ __html: html }}></div>
+          </div>
+
+          {attributes.tags && <ul className="flex flex-wrap mb-6 gap-y-2 mb-20">
             {tags.map((tag: string) => {
               return (
                 <li className="text-purple font-bold p-2 border-2 border-purple rounded-md mr-4 whitespace-nowrap">{tag}</li>)
             })}
           </ul>}
-
-          <div className="mb-12 text-xl mx-auto">
-            <div className="prose-xl md:prose-2xl mx-auto" dangerouslySetInnerHTML={{ __html: html }}></div>
-          </div>
 
           <div>
             <div className="mb-12">
