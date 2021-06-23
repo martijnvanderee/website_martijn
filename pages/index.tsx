@@ -12,6 +12,9 @@ import { PostData, DataPhotosTotal } from "../typescript"
 //variables
 import { amountOfPostFrontPage } from "../public/variables"
 
+import axios from 'axios'
+
+
 type HomeProps = {
   posts: { posts: PostData[], photos: DataPhotosTotal[] },
   randomPosts: { posts: PostData[], photos: DataPhotosTotal[] }
@@ -118,6 +121,12 @@ export async function getStaticProps() {
   const posts = await getPosts(amountOfPostFrontPage)
   const randomPosts = await getRandomPosts(6)
 
+
+
+  const data = await axios.get(`https://dennis1.netlify.app/.netlify/functions/test`)
+  const data1 = await axios.get(`https://dennis1.netlify.app/.netlify/functions/getSearch`)
+  console.log(data)
+  console.log(data1)
 
   return { props: { posts, randomPosts } }
 
