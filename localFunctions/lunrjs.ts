@@ -42,7 +42,9 @@ const getPostFileNames = (): string[] => {
 const putInLunr = (posts: titles[]) => {
 
   var idx = lunr(function () {
-    this.use(lunr.multiLanguage('en', 'nl'))
+    const lunrProp: any = lunr
+    const languages = lunrProp.multiLanguage('en', 'nl')
+    this.use(languages)
     this.field('tags', {
       boost: 10
     })
