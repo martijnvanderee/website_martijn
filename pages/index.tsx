@@ -123,10 +123,10 @@ export async function getStaticProps() {
 
 
 
-  const data = await axios.get(`https://monique1.netlify.app/.netlify/functions/test`)
-  const data1 = await axios.get(`https://monique1.netlify.app/.netlify/functions/getSearch`)
-  console.log(data)
-  console.log(data1)
+  // const data = await axios.get(`https://monique1.netlify.app/.netlify/functions/test`)
+  // const data1 = await axios.get(`https://monique1.netlify.app/.netlify/functions/getSearch`)
+  // console.log(data)
+  // console.log(data1)
 
   return { props: { posts, randomPosts } }
 
