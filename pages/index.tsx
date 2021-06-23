@@ -123,8 +123,8 @@ export async function getStaticProps() {
 
 
 
-  const data = await axios.get(`https://dennis1.netlify.app/.netlify/functions/test`)
-  const data1 = await axios.get(`https://dennis1.netlify.app/.netlify/functions/getSearch`)
+  const data = await axios.get(`https://monique1.netlify.app/.netlify/functions/test`)
+  const data1 = await axios.get(`https://monique1.netlify.app/.netlify/functions/getSearch`)
   console.log(data)
   console.log(data1)
 
