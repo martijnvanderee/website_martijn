@@ -1,7 +1,5 @@
 import lunr from "lunr"
-require("lunr-languages/lunr.stemmer.support")(lunr)
-require('lunr-languages/lunr.multi')(lunr)
-require("lunr-languages/lunr.nl")(lunr)
+
 
 import React, { useEffect } from "react"
 
@@ -39,12 +37,10 @@ const getPostFileNames = (): string[] => {
 }
 
 
-const putInLunr = (posts: titles[]) => {
+const createIndex = (posts: titles[]) => {
 
   var idx = lunr(function () {
     const lunrProp: any = lunr
-    const languages = lunrProp.multiLanguage('en', 'nl')
-    this.use(languages)
     this.field('tags', {
       boost: 10
     })
@@ -56,7 +52,8 @@ const putInLunr = (posts: titles[]) => {
 
     const datas = posts
 
-    // datas.forEach(
+
+    // documents.forEach(
     //   function (data) {
     //     this.add(data)
     //   }, this)
@@ -72,19 +69,13 @@ const putInLunr = (posts: titles[]) => {
 
 export const getSearchData = async () => {
   const posts = await getAllPosts()
-  const searchEngine = putInLunr(posts)
+  const index = createIndex(posts)
 
-  return searchEngine
+
+
+  return index
 }
 
-
-export const getSearch = (data: any, searchInputUser: string, amountofResults: number): number[] => {
-  const results = data.search(searchInputUser)
-
-  const refs = results.map((result: any) => { return result.ref })
-  const titles = refs.splice(0, amountofResults)
-  return titles
-}
 
 
 
