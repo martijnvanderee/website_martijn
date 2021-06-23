@@ -1,8 +1,6 @@
 import { useState } from "react"
 
-import { getSearch, useFetch } from "../../localFunctions/lunrjs"
-
-
+import { useFetch } from "../../localFunctions/lunrjs"
 
 export const Search = () => {
   const { response, error } = useFetch()
@@ -13,8 +11,8 @@ export const Search = () => {
   const handleChange = (e: string) => {
     const numberOfResults = 5
 
-    const results = getSearch(response, e, numberOfResults)
-    setSearchResults(results)
+
+
   }
 
   return (<FormInput type={"text"} onChange={handleChange} />)
