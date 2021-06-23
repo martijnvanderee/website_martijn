@@ -56,10 +56,15 @@ const putInLunr = (posts: titles[]) => {
 
     const datas = posts
 
-    datas.forEach(function (data) {
-      this.add(data)
-    }, this)
+    // datas.forEach(
+    //   function (data) {
+    //     this.add(data)
+    //   }, this)
 
+
+    datas.map((data: any) => {
+      this.add(data)
+    })
   })
 
   return idx

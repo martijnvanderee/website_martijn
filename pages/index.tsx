@@ -118,6 +118,7 @@ export async function getStaticProps() {
   const posts = await getPosts(amountOfPostFrontPage)
   const randomPosts = await getRandomPosts(6)
 
+
   return { props: { posts, randomPosts } }
 
 }

@@ -9,7 +9,7 @@ import { navNames, navLinks } from "../public/variables"
 import { useRouter } from 'next/router'
 import Link from "next/link";
 
-import { Search } from "./search"
+import { Search } from "./search/index"
 
 
 
