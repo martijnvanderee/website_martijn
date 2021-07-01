@@ -163,8 +163,6 @@ export const randomPost = async (numberOfPost: number = 1): Promise<PostData[]> 
   );
 }
 
-export const sortBySubject = (sortSubject: string = "all") => {
-}
 
 
 
@@ -324,3 +322,18 @@ export const getPosts = async (amountOfPostFrontPage: number, sortSubject: strin
 
   return { posts, photos: photosData }
 }
+
+
+export const getPostsWithSlug = async (paths: string[]) => {
+
+  // const posts1: PostData[] = await importPosts1(paths);
+  // const posts: PostData[] = await JSON.parse(JSON.stringify(posts1));
+
+
+
+  // const imagePaths = getImagePaths(posts)
+  // const photosData = await getSpecificPhotos(imagePaths)
+
+  return { a: paths }
+}
+

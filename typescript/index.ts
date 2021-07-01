@@ -6,7 +6,7 @@ export interface PostData {
   attributes: {
     templateKey: string;
     title: string;
-    Subtitel: string
+    Subtitel?: string
     date: Date;
     headerPhoto: string;
     onderwerp: string

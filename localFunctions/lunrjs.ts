@@ -3,10 +3,12 @@ import lunr from "lunr"
 
 import React, { useEffect } from "react"
 
+import axios from 'axios'
 
 type titles = {
   title: string
   tags: string[]
+  slug: string
 }
 
 export const getAllPosts = async (): Promise<titles[]> => {
@@ -23,7 +25,7 @@ const getPostTitles = async (fileNames: string[]) => {
       const title = markdown.attributes.title
       const tags = markdown.attributes.tags.join(" ");
       const content = markdown.html
-      return { title, tags, content };
+      return { title, tags, content, slug: path.substring(0, path.length - 3) };
     })
   )
 }
@@ -48,7 +50,7 @@ const createIndex = (posts: titles[]) => {
       boost: 10
     });
     this.field("content");
-    this.ref('title')
+    this.ref('slug')
 
     const datas = posts
 
@@ -73,25 +75,28 @@ export const getSearchData = async () => {
 
 
 
-  return index
+
+  return { index, posts1: posts }
 }
 
 
 
 
-export const useFetch = () => {
+export const useFetch = (url: any) => {
   const [response, setResponse] = React.useState(null);
   const [error, setError] = React.useState(null);
   React.useEffect(() => {
     const fetchData = async () => {
       try {
-        const res: any = await getSearchData()
+        const res: any = await axios.get(url)
+
         setResponse(res)
       } catch (error) {
         setError(error);
       }
     };
     fetchData();
-  }, []);
+  }, [url]);
   return { response, error };
 };
+

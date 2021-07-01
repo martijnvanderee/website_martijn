@@ -1,4 +1,5 @@
 import React from 'react';
+
 // Modules
 import { AppProps } from 'next/app';
 import Head from 'next/head';
@@ -6,6 +7,7 @@ import Head from 'next/head';
 import 'tailwindcss/tailwind.css'
 
 import { IsMenuOpenProvider } from '../state/isMenuOpen'
+import { IsSearchMenuOpenProvider } from '../state/isSearchMenuOpen'
 
 
 // MUI Core
@@ -15,6 +17,7 @@ import { IsMenuOpenProvider } from '../state/isMenuOpen'
 //import theme from '../utils/theme';
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+
   React.useEffect(() => {
     // Remove the server-side injected CSS.
     const jssStyles = document.querySelector('#jss-server-side');
@@ -43,17 +46,18 @@ ScienceGeek is een onafhankelijk nieuwsmedium. We publiceren" />
 
 
       </Head>
-      {/* <ThemeProvider theme={theme}>
-        <CssBaseline /> */}
+
 
       <IsMenuOpenProvider>
+        <IsSearchMenuOpenProvider>
 
-        <Component {...pageProps} />
+          <Component {...pageProps} />
 
+        </IsSearchMenuOpenProvider>
       </IsMenuOpenProvider>
 
 
-      {/* </ThemeProvider> */}
+
 
     </>
   );

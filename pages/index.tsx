@@ -12,9 +12,7 @@ import { PostData, DataPhotosTotal } from "../typescript"
 //variables
 import { amountOfPostFrontPage } from "../public/variables"
 
-import axios from 'axios'
 import fs from "fs"
-
 
 type HomeProps = {
   posts: { posts: PostData[], photos: DataPhotosTotal[] },
@@ -22,7 +20,6 @@ type HomeProps = {
 }
 
 const Home: FunctionComponent<HomeProps> = ({ posts, randomPosts }) => {
-
   const post = posts.posts[0]
   const photo = posts.photos[0]
   const url = post.slug
@@ -123,11 +120,8 @@ export async function getStaticProps() {
   const randomPosts = await getRandomPosts(6)
 
 
-  const index = await getSearchData()
-  // const data = await axios.get(`https://monique1.netlify.app/.netlify/functions/getSearch`)
-  // const data1 = await axios.get(`https://monique1.netlify.app/.netlify/functions/test`)
 
-  fs.writeFileSync('functions/index.json', JSON.stringify(index));
+
 
   return { props: { posts, randomPosts } }
 

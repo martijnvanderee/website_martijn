@@ -1,0 +1,4 @@
+[[plugins]]
+package = "./plugins/netlify-plugin-store-posts-for-search"
+
+

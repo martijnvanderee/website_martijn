@@ -9,9 +9,6 @@ import { navNames, navLinks } from "../public/variables"
 import { useRouter } from 'next/router'
 import Link from "next/link";
 
-import { Search } from "./search/index"
-
-
 
 export const MenuSlider = () => {
   const { state, dispatch } = useIsMenuOpen()
@@ -32,7 +29,7 @@ export const MenuSlider = () => {
 
 
         {/* <Zoeken /> */}
-        <Search />
+
         <div className="mt-4">
           {navNames.map((navName, index) => {
             const path: string = useRouter().asPath

@@ -1,35 +1,30 @@
-import { useState } from "react"
 
-import { useFetch } from "../../localFunctions/lunrjs"
+import React, { FunctionComponent, useState, useEffect } from 'react'
 
-export const Search = () => {
-  const { response, error } = useFetch()
+const debounce = require('debounce');
 
-  const [searchResults, setSearchResults]: any = useState(null);
-  const [value, setValue]: any = useState("");
-
-  const handleChange = (e: string) => {
-    const numberOfResults = 5
-
-
-
-  }
-
-  return (<FormInput type={"text"} onChange={handleChange} />)
-}
-
-function FormInput(props: any) {
+export const FormInput = (props: any) => {
   const [inputType] = useState(props.type)
   const [inputValue, setInputValue] = useState('')
 
   function handleChange(e: React.FormEvent<HTMLInputElement>) {
     const value = e.currentTarget.value
+    console.log(value, "test")
     setInputValue(value);
     if (props.onChange) props.onChange(inputValue)
   }
+
+
+  useEffect(() => {
+    props.onChange(inputValue)
+  }, [inputValue])
+
   return (
-    <>
-      <input type={inputType} value={inputValue} name="input-form" onChange={handleChange} className="inputclass" />
-    </>
+
+
+    <input type={inputType} className="p-2 w-full h-16 rounded border border-gray-200 bg-gray-200 text-3xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-transparent" placeholder="search..." value={inputValue} name="input-form" onChange={handleChange} />
+
   );
 }
+
+

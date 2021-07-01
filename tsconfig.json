@@ -21,7 +21,8 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "plugins/netlify-plugin-store-posts-for-search/index.js"
   ],
   "exclude": [
     "node_modules"
