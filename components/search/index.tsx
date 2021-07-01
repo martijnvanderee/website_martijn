@@ -9,7 +9,6 @@ export const FormInput = (props: any) => {
 
   function handleChange(e: React.FormEvent<HTMLInputElement>) {
     const value = e.currentTarget.value
-    console.log(value, "test")
     setInputValue(value);
     if (props.onChange) props.onChange(inputValue)
   }

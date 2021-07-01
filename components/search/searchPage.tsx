@@ -33,14 +33,19 @@ export const SearchPage = () => {
 
   const [query, setQuery]: any = useState(null)
 
-  const url = query && `http://localhost:8888/.netlify/functions/getSearch/?search=${query}`
+
+  const env = process.env.NODE_ENV
+  const url = query && `https://monique1.netlify.app.netlify/functions/getSearch/?search=${query}`
+
+  // const url = query && env === "development" ? `${process.env.LOCALHOST}.netlify/functions/getSearch/?search=${query}` : `${process.env.LIVE_URL}.netlify/functions/getSearch/?search=${query}`
 
   const { response, error }: any = useFetch(url);
 
   let data = response?.data;
 
+
+
   const handleChange = (e: string) => {
-    console.log(e, "test1")
     if (e) {
       setQuery(e)
     }
