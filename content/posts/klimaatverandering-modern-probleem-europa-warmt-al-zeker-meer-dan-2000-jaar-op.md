@@ -8,7 +8,7 @@ auteur: Monique Siemsen
 tags:
   - klimaatverandering, jaarringen, romeinen, opwarming europa
 photo's:
-  - map-onderschrift-de-snelle-radio-golven-met-gigantische-energie-waren-afkomstig-uit-een-spiraal-vormig-sterrenstelsel-op-miljarden-lichtjaren-afstand-bron-pixabay-com-spirit-111-image-img-spiraal-sterrenstelsel-ruimte-jpg
+  - map-onderschrift-boom-bladeren-groen-image-img-boom-bladeren-groen-jpg
 ---
 
 
