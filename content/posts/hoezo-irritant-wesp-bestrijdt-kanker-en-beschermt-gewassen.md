@@ -2,13 +2,13 @@
 templateKey: post.template
 title: "Hoezo irritant? "
 date: 2021-06-11T15:07:44.488Z
-headerPhoto: map-onderschrift-droogte-landschap-gele-bloem-image-img-boom-bladeren-groen-jpg
+headerPhoto: map-bron-pixabay-com-capri23-auto-onderschrift-wesp-tak-dichtbij-image-img-wesp-tak-dichtbij-jpg
 onderwerp: nature
 auteur: Monique Siemsen
 tags:
   - wesp, bij, bestuiving, gewassen, insectenbestrijding
 photo's:
-  - map-onderschrift-droogte-landschap-gele-bloem-image-img-boom-bladeren-groen-jpg
+  - map-bron-pixabay-com-wal_172619-onderschrift-de-wesp-is-een-superbestuiver-hij-helpt-maar-liefst-meer-dan-1000-plantensoorten-zich-voort-te-planten-image-img-wesp-bloem-paars-jpg
 ---
 
 
