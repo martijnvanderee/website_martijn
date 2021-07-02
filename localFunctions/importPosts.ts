@@ -4,6 +4,11 @@ import { DataPhotosTotal, PostData } from "../typescript"
 //variables
 import { numberOfPostsOnPage } from "../public/variables"
 
+
+
+
+
+
 export const getImagePaths = (posts: PostData[]): GetSpecificPhotos => {
   const imagePaths = posts.map((post) => {
     return { headerPath: post.attributes.headerPhoto, photosPath: post.attributes["photo's"] }
@@ -143,8 +148,21 @@ export const importPostSlugs = async () => {
 export const importPost = async (path: string) => {
   const markdown = await import(`../content/posts/${path}`);
 
+
+
   return markdown
 };
+
+export const importPhoto = async (path: string) => {
+  const markdown = await import(`../content/${"photo's"}/${path}.md`);
+
+
+
+  return markdown
+};
+
+
+
 
 export const randomPost = async (numberOfPost: number = 1): Promise<PostData[]> => {
   const PostPathDateOnderwerp = await getPostPathAndDate()

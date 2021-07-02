@@ -19,7 +19,7 @@ module.exports = {
       offsetHover: "0 7px 7px rgba(0,0,0,0.25), 0 7px 7px rgba(0,0,0,0.22)",
     },
     textShadow: { // defaults to {}
-      'default': '0 2px 5px rgba(0, 0, 0, 0.5)',
+      'default': '0 2px 2px rgba(0, 0, 0, 0.9)',
       'lg': '0 2px 10px rgba(0, 0, 0, 0.5)',
     },
 

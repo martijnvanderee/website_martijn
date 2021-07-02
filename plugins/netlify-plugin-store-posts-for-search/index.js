@@ -12,12 +12,10 @@ module.exports = {
     const PostFileNames = getPostFileNames()
     const postTitles = await getPosts(PostFileNames)
 
-
     const index = createIndex(postTitles)
 
     fs.writeFileSync('./functions/data.json', JSON.stringify(postTitles));
     fs.writeFileSync('./functions/index.json', JSON.stringify(index));
-
 
     try {
 
@@ -26,8 +24,6 @@ module.exports = {
     }
   },
 }
-
-
 
 const getPostFileNames = () => {
   const PostFileNames = fs.readdirSync("./content/posts").map((file) => {

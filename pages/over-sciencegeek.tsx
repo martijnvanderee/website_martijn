@@ -34,7 +34,7 @@ beeldmateriaal en we nemen binnen 24 uur contact met je op.</p>
         <p className="text-xl mb-4">We wensen je een interessante en leuke dag toe!</p >
         <p className="text-xl mb-4">Monique de Leeuw</p>
         <p className="text-xl mb-4">Hoofdredacteur ScienceGeek</p>
-        <p className="text-xl">Sciencegeek is een uitgave van ICS Media, gevestigd te Duiven, Van Goghstraat 4, 6921 NJ</p>
+        <p className="text-xl">ScienceGeek is een uitgave van ICS Media, gevestigd te Duiven, Van Goghstraat 4, 6921 NJ</p>
 
       </div>
     </main>

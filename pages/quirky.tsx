@@ -36,7 +36,7 @@ const Quirky: FunctionComponent<QuirkyProps> = ({ posts, randomPosts }) => {
                 <div className="relative w-full h-full ">
 
                   <div className="absolute z-10 bottom-0 m-4">
-                    <h2 className="text-shadow text-white text-3xl md:text-4xl">{post.attributes.title}</h2>
+                    <h2 className="text-shadow text-white text-4xl md:text-5xl">{post.attributes.title}</h2>
                   </div>
                   <img
                     src={`${photo.headerData.image}/?nf_resize=fit&w=700`}
