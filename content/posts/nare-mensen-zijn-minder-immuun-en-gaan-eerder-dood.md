@@ -12,8 +12,7 @@ tags:
   - SOA's
   - kwik
   - syfilis
-photo's:
-  - map-onderschrift-gelukkige-verantwoordelijke-mensen-beschikken-over-minder-cellen-die-hun-immuunsysteem-aanvallen-bron-pixabay-com-image-img-man-springend-gelukkig-jpg
+photo's: []
 ---
 
 
