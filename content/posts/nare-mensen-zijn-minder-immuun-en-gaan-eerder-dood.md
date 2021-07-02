@@ -2,7 +2,7 @@
 templateKey: post.template
 title: Nare mensen zijn minder immuun en gaan eerder dood
 date: 2021-06-11T15:51:28.448Z
-headerPhoto: map-onderschrift-londen-tekening-big-ben-image-img-londen-tekening-big-ben-jpg
+headerPhoto: map-onderschrift-man-kater-alcohol-bron-pixabay-com-image-img-man-kater-alcohol-jpg
 onderwerp: human
 auteur: Monique Siemsen
 tags:
@@ -12,7 +12,8 @@ tags:
   - SOA's
   - kwik
   - syfilis
-photo's: []
+photo's:
+  - map-onderschrift-gelukkige-verantwoordelijke-mensen-beschikken-over-minder-cellen-die-hun-immuunsysteem-aanvallen-bron-pixabay-com-image-img-man-springend-gelukkig-jpg
 ---
 
 
