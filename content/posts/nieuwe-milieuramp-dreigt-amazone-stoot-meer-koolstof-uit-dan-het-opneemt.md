@@ -9,8 +9,7 @@ tags:
   - tsunami´s, breuklijnen, tektonische platen, zeebeving, aardbeving, risico´s,
     onderzoek
   - Amazone, regenwoud, bomenkap, uitstoot koolstof, zuurstof
-photo's:
-  - map-onderschrift-de-epigenomen-van-mannen-met-een-gezonde-levensstijl-geven-deze-info-door-tijdens-de-bevruchting-en-dragen-zo-bij-aan-gezond-nageslacht-bron-pixabay-com-publicdomainpictures-image-img-vader-baby-slaap-jpg
+photo's: []
 ---
 
 
