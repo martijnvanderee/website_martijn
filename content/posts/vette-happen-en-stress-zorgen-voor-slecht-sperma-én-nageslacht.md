@@ -8,7 +8,7 @@ auteur: Monique Siemsen
 tags:
   - videogames, onderzoek, kids, gamen, depressie, social media 3 bijlagen
 photo's:
-  - map-onderschrift-talentenjachten-geven-jongeren-een-egoïstische-boodschap-mee-zo-blijkt-uit-onderzoek-bron-pixabay-com-image-img-kind-schermtijd-computer-jpg
+  - map-onderschrift-ongens-van-11-jaar-die-meer-gamen-dan-leeftijdsgenoten-worden-later-gelukkiger-dan-andere-mannen-onderzoekers-vermoeden-dat-voor-meisjes-hetzelfde-geldt-bron-pixabay-com-sergiodr74-image-img-jongens-zonnebrillen-game
 ---
 
 
