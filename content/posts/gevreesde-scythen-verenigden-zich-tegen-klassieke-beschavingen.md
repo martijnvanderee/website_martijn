@@ -2,7 +2,7 @@
 templateKey: post.template
 title: Gevreesde Scythen verenigden zich tegen klassieke beschavingen
 date: 2021-06-11T11:14:39.015Z
-headerPhoto: map-onderschrift-pestmeester-tekening-pestmasker-image-img-pestmeester-tekening-pestmasker-png
+headerPhoto: map-onderschrift-strijder-zonsondergang-harnas-image-img-strijder-zonsondergang-harnas-jpg
 onderwerp: history
 auteur: Monique Siemsen
 tags:
@@ -15,7 +15,7 @@ tags:
   - strijders
   - ruiters
 photo's:
-  - map-image-img-skelet-schedel-dood-jpg-onderschrift-skelet-schedel-dood
+  - map-onderschrift-strijder-zonsondergang-harnas-image-img-strijder-zonsondergang-harnas-png
 ---
 
 
