@@ -9,7 +9,8 @@ tags:
   - tsunami´s, breuklijnen, tektonische platen, zeebeving, aardbeving, risico´s,
     onderzoek
   - Amazone, regenwoud, bomenkap, uitstoot koolstof, zuurstof
-photo's: []
+photo's:
+  - map-onderschrift-menselijke-activiteit-in-het-regenwoud-zorgt-niet-alleen-voor-gekapte-bomen-maar-ook-beschadigde-en-stervende-bomen-die-laten-vervolgens-het-opgeslagen-koolstof-los-bron-pixabay-com-dayamay-image-img-boomstammen-ri
 ---
 
 
