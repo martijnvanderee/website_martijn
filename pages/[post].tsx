@@ -44,7 +44,7 @@ const Post: FunctionComponent<PostProps> = ({ attributes, html, dataPhotos, rand
 
   const tags = modifyTags(attributes.tags)
 
-  const index = getPosition(html, "</p>", 4) + 4
+  const index = getPosition(html, "</p>", 3) + 4
 
   const firstHtml = splitAt(index)(html)[0]
   const secondHtml = splitAt(index)(html)[1]

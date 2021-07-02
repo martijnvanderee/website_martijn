@@ -72,10 +72,8 @@ export const SearchPage = () => {
           <FormInput type={"text"} onChange={debounce(handleChange, 1000)} />
         </div>
 
-
-        {data && <div className="mt-8">{response.data.map((post: any, index: any) => {
-          return (<PostItem1
-            slug={post.slug} image={post.image} title={post.title} date={post.date} onderwerp={post.onderwerp} />)
+        {fakeData && <div className="mt-8">{fakeData.posts.map((post: any, index: any) => {
+          return (<PostItem post={post} photo={fakeData.photos[index].headerData} />)
         })} </div>}
 
       </div>
@@ -85,3 +83,5 @@ export const SearchPage = () => {
 
 
 //<PostItem post={post} photo={fakeData.photos[index].headerData} />
+
+//<PostItem1 slug={post.slug} image={post.image} title={post.title} date={post.date} onderwerp={post.onderwerp} />
