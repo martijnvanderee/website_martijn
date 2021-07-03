@@ -2,7 +2,7 @@
 templateKey: post.template
 title: Dieren vermijden incest niet of nauwelijks
 date: 2021-06-11T16:00:43.063Z
-headerPhoto: map-image-img-man-vraagteken-computer-jpg-onderschrift-onze-computers-bevatten-al-onze-belangrijke-en-intieme-data-en-een-inbouwfout-maakt-hen-allemaal-kwetsbaar-bron-pixabay-com-stok-ic
+headerPhoto: map-bron-pixabay-com-sasint-onderschrift-van-bonobos-weten-we-al-langer-dat-zij-niet-aan-incestmijding-doen-wetenschappers-vermoeden-dat-de-bonobo-daarmee-niet-bepaald-de-enige-diersoort-is-image-img-bonobo-sociaal-partner-jpg
 onderwerp: quirky
 auteur: Monique Siemsen
 tags:
@@ -10,7 +10,7 @@ tags:
   - partnerkeuze
   - inteelt
 photo's:
-  - map-bron-pixabay-com-onderschrift-vrouw-bed-computer-image-img-vrouw-bed-computer-jpg
+  - map-bron-pixabay-com-4931604-image-img-wolven-intiem-stel-jpg-onderschrift-van-bonobos-weten-we-al-langer-dat-zij-niet-aan-incestmijding-doen-wetenschappers-vermoeden-dat-de-bonobo-daarmee-niet-bepaald-de-enige-diersoort-is
 ---
 
 
