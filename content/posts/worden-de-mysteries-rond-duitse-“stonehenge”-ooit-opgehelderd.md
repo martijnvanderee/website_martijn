@@ -1,6 +1,6 @@
 ---
 templateKey: post.template
-title: "**Worden de mysteries rond Duitse “Stonehenge” ooit opgehelderd?**"
+title: Worden de mysteries rond Duitse “Stonehenge” ooit opgehelderd?
 date: 2021-07-03T07:06:47.311Z
 headerPhoto: map-bron-pixabay-com-inextremo96-onderschrift-externsteine-zonsopgang-duitsland-image-img-externsteine-zonsopgang-duitsland-jpg
 onderwerp: quirky
