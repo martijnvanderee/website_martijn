@@ -2,13 +2,14 @@
 templateKey: post.template
 title: Luchtvervuiling tast het brein aan, maar een aspirientje helpt
 date: 2021-06-11T15:55:40.549Z
-headerPhoto: map-onderschrift-droogte-landschap-gele-bloem-image-img-boom-bladeren-groen-jpg
+headerPhoto: map-bron-pixabay-com-jwvein-onderschrift-fabriek-schoorstenen-rook-image-img-fabriek-schoorstenen-rook-jpg
 onderwerp: quirky
 auteur: Monique Siemsen
 tags:
-  - wesp, bij, bestuiving, gewassen, insectenbestrijding
+  - brand, vervuiling, rook, luchtvervuiling, aspirine, hersenschade,
+    hersenbeschadiging
 photo's:
-  - map-onderschrift-droogte-landschap-gele-bloem-image-img-boom-bladeren-groen-jpg
+  - map-bron-pixabay-com-12019-onderschrift-bosbranden-kunnen-voor-zoveel-rook-zorgen-dat-het-binnen-de-kortste-keren-de-hersenfuncties-aantast-gelukkig-helpt-een-aspirientje-image-img-brand-brandweermannen-lussen-jpg
 ---
 
 
