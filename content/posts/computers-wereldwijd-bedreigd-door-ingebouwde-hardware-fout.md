@@ -6,7 +6,7 @@ headerPhoto: map-image-img-man-vraagteken-computer-jpg-onderschrift-onze-compute
 onderwerp: tech
 auteur: Monique Siemsen
 tags:
-  - Artemis, maanmissie, maan, zonnevlammen, zonnestormen
+  - computer, hacken, processor, inbouwfout, Spectre
 photo's:
   - map-bron-pixabay-com-onderschrift-vrouw-bed-computer-image-img-vrouw-bed-computer-jpg
 ---
