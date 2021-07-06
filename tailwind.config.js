@@ -25,11 +25,13 @@ module.exports = {
 
     extend: {
       colors: {
-        purple: "#250352",
-        yellow: "#F1B33C",
-        almostWhite: "#EDEDED",
-        grey: "#707070",
-        black: "#222222"
+        green: "#38BA99",
+        yellow: "#EFC01A",
+        blue: "#5CC9DD",
+        red: "#F16D6E",
+        grey: "#f2f2f2",
+        black: "#222222",
+        backgroundBlack: "#707070"
       },
       padding: {
         '1/3': '33.33333%',
@@ -40,14 +42,23 @@ module.exports = {
       height: {
         h128: '32rem',
       },
+      width: {
+        "120": "30rem"
+      },
 
       maxHeight: {
         h128: '32rem',
-      }
+      },
+      transitionProperty: {
+
+      },
     },
   },
   variants: {
     textColor: ["responsive", "hover", "focus", "group-hover"],
+    width: ["responsive", "hover", "focus"],
+    height: ["responsive", "hover", "focus"]
+
   },
   plugins: [require('@tailwindcss/typography'),
   require('tailwindcss-typography')({
