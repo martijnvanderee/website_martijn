@@ -5,15 +5,13 @@ import { useIsMenuOpen } from '../state/isMenuOpen'
 import { CgClose } from 'react-icons/cg';
 import { IconContext } from "react-icons";
 
-import { navNames, navLinks } from "../public/variables"
+
 import { useRouter } from 'next/router'
 import Link from "next/link";
 
 
 export const MenuSlider = () => {
   const { state, dispatch } = useIsMenuOpen()
-
-
 
   const switchClass = state.isMenuOpen ? "w-96 right-0" : "w-96 -right-96"
 
@@ -30,7 +28,7 @@ export const MenuSlider = () => {
 
         {/* <Zoeken /> */}
 
-        <div className="mt-4">
+        {/* <div className="mt-4">
           {navNames.map((navName, index) => {
             const path: string = useRouter().asPath
             const isRoute: boolean = path === navLinks[index]
@@ -44,7 +42,7 @@ export const MenuSlider = () => {
 
             </a>
           </Link>
-        </div>
+        </div> */}
 
 
 
@@ -95,7 +93,7 @@ const Zoeken: FunctionComponent<ButtonProps> = () => {
       <button className="bg-purple text-white text-xl
        font-bold py-1 px-2 rounded ml-1" type="submit">
         Zoek
-</button>
+      </button>
 
     </div>
   )

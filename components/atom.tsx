@@ -1,16 +1,14 @@
-
-
 import React, { FunctionComponent, useState } from 'react'
 
 interface Content {
   title: string, text: string
 }
 
-type Atoms10Props = {
+type AtomsProps = {
   content: Content[]
 }
 
-export const Atoms: FunctionComponent<Atoms10Props> = ({ content }) => {
+export const Atoms: FunctionComponent<AtomsProps> = ({ content }) => {
   const [isClicked, setClicked] = useState([true, false, false, false])
   const [isContent, setContent] = useState(content[0])
 

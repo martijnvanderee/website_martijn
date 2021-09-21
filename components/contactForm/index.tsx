@@ -1,32 +1,36 @@
-import { validate } from "./validate";
-import { Formik } from "formik";
-import { FormConstruct } from "./form";
-import { onSubmit } from "./onSubmit";
-
-const initialValues = {
-  name: "",
-  instantie: "",
-  email: "",
-  message: "",
-  subject: "error",
-};
 
 export const ContactForm = () => {
   return (
-    <Formik
-      onSubmit={onSubmit}
-      initialValues={initialValues}
 
-    >
-
-      {(props: any) => (
-
-        <div>
-          <FormConstruct />
-          <div> </div>
+    <div className="relative bg-white z-10 font-mono shadow-lg max-w-2xl mx-auto p-8 rounded-xl">
+      <h2 className="my-8 font-mono text-2xl md:text-3xl font-bold text-black"> <span className="text-green">Waarmee</span> kan ik je helpen?</h2>
+      <form >
+        <div className="mb-6">
+          <input className="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight text-xl  focus:outline-none focus:shadow-outline" id="naam" type="text" placeholder="Naam" />
         </div>
-      )}
 
-    </Formik>
+        <div className="mb-6">
+          <input className="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight text-xl focus:outline-none focus:shadow-outline" id="naam" type="text" placeholder="Achternaam" />
+        </div>
+
+        <div className="mb-6">
+          <input className="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight text-xl  focus:outline-none focus:shadow-outline" id="naam" type="text" placeholder="Telefoonnummer" />
+        </div>
+
+        <div className="mb-6">
+          <input className="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight text-xl focus:outline-none focus:shadow-outline" id="naam" type="text" placeholder="E-mailadres" />
+        </div>
+
+        <div className="mb-6">
+          <textarea className="w-full px-3 py-2 leading-tight text-gray-700 border rounded-lg focus:outline-none focus:shadow-outline text-xl" rows={6} placeholder="Waarmee kan ik je helpen?"></textarea>
+        </div>
+
+        <div className="flex justify-end  mb-6">
+          <button className="px-4 py-2 mb-6 border-2 border-green text-xl text-green rounded shadow-headerButton hover:shadow-headerButtonHover transition ease-in">Verstuur</button>
+        </div>
+
+      </form>
+
+    </div>
   );
 };

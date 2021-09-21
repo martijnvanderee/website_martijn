@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="255.922" height="45.804" viewBox="0 0 255.922 45.804">
+  <g id="Component_43_1" data-name="Component 43 – 1" transform="translate(0 0.508)">
+    <path id="Icon_metro-profile" data-name="Icon metro-profile" d="M59.961,14.112H55.784V7.844l-8.622-.132.045,6.4H21.3l.177-6.4-8.443.132v6.4l-4.266-.132A4.268,4.268,0,0,0,4.5,18.378V48.242a4.268,4.268,0,0,0,4.266,4.266h51.2a4.268,4.268,0,0,0,4.266-4.266V18.378A4.268,4.268,0,0,0,59.961,14.112ZM49.295,9.845h4.266v8.533H49.295ZM21.564,24.376c2.577,0,4.667,2.745,4.667,6.133s-2.09,6.133-4.667,6.133S16.9,33.9,16.9,30.509s2.09-6.133,4.667-6.133Zm-6.4-14.531h4.266v8.533H15.164ZM12.321,43.865s.506-4.057,1.655-4.823,4.458-1.276,4.458-1.276,2.146,2.293,3.059,2.293,3.057-2.293,3.057-2.293,3.311.508,4.46,1.276c1.35.9,1.687,4.823,1.687,4.823H12.321Zm43.373-2.022H36.5V39.709h19.2Zm0-4.266H36.5V35.443h19.2Zm0-4.266H36.5V31.177h19.2Zm0-4.266H36.5V26.91h19.2Z" transform="translate(93.598 -7.712)" fill="rgba(48,61,63,0)" stroke="#5cc9dd" stroke-width="1"/>
+    <g id="Component_42_1" data-name="Component 42 – 1" transform="translate(0 22.064)">
+      <g id="Component_22_6" data-name="Component 22 – 6">
+        <line id="Line_5" data-name="Line 5" x1="71.424" fill="none" stroke="#5cc9dd" stroke-width="1" stroke-dasharray="10"/>
+        <line id="Line_6" data-name="Line 6" x2="72" transform="translate(183.922 0.334)" fill="none" stroke="#5cc9dd" stroke-width="1" stroke-dasharray="10"/>
+      </g>
+    </g>
+  </g>
+</svg>

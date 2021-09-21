@@ -35,7 +35,7 @@ export const SearchPage = () => {
 
 
   const env = process.env.NODE_ENV
-  const url = query && `https://monique1.netlify.app.netlify/functions/getSearch/?search=${query}`
+  const url = query && `https://sciencegeek.nl/functions/getSearch/?search=${query}`
 
   // const url = query && env === "development" ? `${process.env.LOCALHOST}.netlify/functions/getSearch/?search=${query}` : `${process.env.LIVE_URL}.netlify/functions/getSearch/?search=${query}`
 

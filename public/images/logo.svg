@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="55" height="58.292" viewBox="0 0 55 58.292">
+  <g id="Component_50_1" data-name="Component 50 – 1">
+    <g id="Component_48_1" data-name="Component 48 – 1">
+      <g id="Component_12_12" data-name="Component 12 – 12">
+        <g id="Ellipse_39" data-name="Ellipse 39" fill="#38ba99" stroke="#38ba99" stroke-width="1" opacity="0.25">
+          <circle cx="27.5" cy="27.5" r="27.5" stroke="none"/>
+          <circle cx="27.5" cy="27.5" r="27" fill="none"/>
+        </g>
+      </g>
+      <g id="Component_45_1" data-name="Component 45 – 1" transform="translate(13.134 16.042)">
+        <rect id="Rectangle_128" data-name="Rectangle 128" width="27.5" height="19.25" transform="translate(0.316 0.917)" fill="#fff"/>
+        <g id="Icon_ionic-ios-desktop" data-name="Icon ionic-ios-desktop">
+          <path id="Path_179" data-name="Path 179" d="M23.564,30.831a.327.327,0,0,0-.269-.276l-1.43-.122a2.228,2.228,0,0,1-1.43-1.815l-.077-.494h-5.9l-.077.487a2.239,2.239,0,0,1-1.43,1.815l-1.43.122a.35.35,0,0,0-.269.276.329.329,0,0,0,.327.372h11.66A.324.324,0,0,0,23.564,30.831Z" transform="translate(-3.041 -6.576)" fill="#38ba99"/>
+          <path id="Path_180" data-name="Path 180" d="M30.527,4.949a1.549,1.549,0,0,0-1.09-.449H3.8a1.538,1.538,0,0,0-1.09.449,1.562,1.562,0,0,0-.462,1.09V23.484a1.55,1.55,0,0,0,.462,1.09,1.519,1.519,0,0,0,1.077.449H29.443a1.508,1.508,0,0,0,1.077-.449,1.562,1.562,0,0,0,.462-1.09V6.039A1.529,1.529,0,0,0,30.527,4.949ZM16.616,23.484a.513.513,0,1,1,.513-.513A.515.515,0,0,1,16.616,23.484Zm13.077-2.565H3.546a.257.257,0,0,1-.257-.257V6.3a.772.772,0,0,1,.77-.77H29.18a.772.772,0,0,1,.77.77V20.662A.257.257,0,0,1,29.693,20.918Z" transform="translate(-2.25 -4.5)" fill="#38ba99"/>
+        </g>
+      </g>
+      <g id="Component_46_1" data-name="Component 46 – 1" transform="translate(36.049 28.352)">
+        <rect id="Rectangle_129" data-name="Rectangle 129" width="7.333" height="11" transform="translate(0 0.096)" fill="#fff"/>
+        <g id="Icon_feather-smartphone" data-name="Icon feather-smartphone">
+          <path id="Path_181" data-name="Path 181" d="M8.593,3h5.465a1.106,1.106,0,0,1,1.093,1.119v8.953a1.106,1.106,0,0,1-1.093,1.119H8.593A1.106,1.106,0,0,1,7.5,13.072V4.119A1.106,1.106,0,0,1,8.593,3Z" transform="translate(-7.5 -3)" fill="none" stroke="#38ba99" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+          <path id="Path_182" data-name="Path 182" d="M18,27h0" transform="translate(-14.175 -18.78)" fill="none" stroke="#38ba99" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+        </g>
+      </g>
+      <g id="Component_47_1" data-name="Component 47 – 1" transform="translate(8.223 21.964)">
+        <rect id="Rectangle_130" data-name="Rectangle 130" width="11" height="15" transform="translate(0.777 1.036)" fill="#fff"/>
+        <path id="Icon_material-tablet-android" data-name="Icon material-tablet-android" d="M15.041,0H6.608A2.105,2.105,0,0,0,4.5,2.108V14.758a2.105,2.105,0,0,0,2.108,2.108h8.433a2.105,2.105,0,0,0,2.108-2.108V2.108A2.105,2.105,0,0,0,15.041,0ZM12.23,15.46H9.419v-.7H12.23Zm3.689-2.108H5.73V2.108H15.92Z" transform="translate(-4.5)" fill="#38ba99"/>
+      </g>
+    </g>
+  </g>
+  <text id="Web_Design" data-name="Web Design" transform="translate(6 10)" fill="#303d3f" font-size="6" font-family="Arial-Black, Arial Black" font-weight="800"><tspan x="0" y="0">WEB DESIGN</tspan></text>
+  <g id="Component_54_1" data-name="Component 54 – 1" transform="translate(1.5 37)">
+    <text id="Ampolo" transform="translate(0 13)" fill="#303d3f" font-size="12" font-family="Arial-Black, Arial Black" font-weight="800"><tspan x="0" y="0">Ampolo</tspan></text>
+    <g id="Component_49_4" data-name="Component 49 – 4" transform="translate(0 15.041)">
+      <path id="Path_183" data-name="Path 183" d="M8483-2656.967s6.413,5.176,19.413,5.176c5.952,0,11.344-3.882,19.489-5.176s13.1,0,13.1,0" transform="translate(-8483 2657.542)" fill="none" stroke="#38ba99" stroke-linecap="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

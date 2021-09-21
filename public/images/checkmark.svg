@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33.608" height="30.615" viewBox="0 0 33.608 30.615">
+  <g id="Component_44_2" data-name="Component 44 – 2" transform="translate(0 0.615)">
+    <g id="Ellipse_72" data-name="Ellipse 72" fill="rgba(92,201,221,0.25)" stroke="#5cc9dd" stroke-width="1">
+      <circle cx="15" cy="15" r="15" stroke="none"/>
+      <circle cx="15" cy="15" r="14.5" fill="none"/>
+    </g>
+    <path id="Icon_awesome-check" data-name="Icon awesome-check" d="M9.508,25.042l-9.1-9.1a1.4,1.4,0,0,1,0-1.979l1.979-1.979a1.4,1.4,0,0,1,1.979,0L10.5,18.114,23.624,4.987a1.4,1.4,0,0,1,1.979,0l1.979,1.979a1.4,1.4,0,0,1,0,1.979l-16.1,16.1A1.4,1.4,0,0,1,9.508,25.042Z" transform="translate(5 -4.577)" fill="#fff" stroke="#5cc9dd" stroke-width="1"/>
+  </g>
+</svg>
