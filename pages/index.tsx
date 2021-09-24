@@ -228,19 +228,19 @@ const Footer: FunctionComponent = ({ }) => {
 }
 
 
-const Card: FunctionComponent = ({ }) => {
-  return (
-    <div className="">
-      <div>
+// const Card: FunctionComponent = ({ }) => {
+//   return (
+//     <div className="">
+//       <div>
 
-        <div className="mb-6 md:mb-12" ><img src='/images/tags.svg' alt="" className="mx-auto" /></div>
-        <h4 className="text-3xl md:text-5xl font-bold mb-6 md:mb-12 text-black">{contentHelper.title}</h4>
-        <p className="mx-auto max-w-2xl md:text-xl mb-6 md:mb-12 text-lg text-grey">{contentHelper.subTitle}</p>
+//         <div className="mb-6 md:mb-12" ><img src='/images/tags.svg' alt="" className="mx-auto" /></div>
+//         <h4 className="text-3xl md:text-5xl font-bold mb-6 md:mb-12 text-black">{contentHelper.title}</h4>
+//         <p className="mx-auto max-w-2xl md:text-xl mb-6 md:mb-12 text-lg text-grey">{contentHelper.subTitle}</p>
 
-      </div>
-    </div>
-  )
-}
+//       </div>
+//     </div>
+//   )
+// }
 
 
 export default Home;

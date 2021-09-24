@@ -109,14 +109,14 @@ const HeaderImage1: FunctionComponent<HeaderImageProps> = ({ button1, button2, b
   <svg className="w-full h-auto" width="896" height="793.312" viewBox="0 0 896 793.312">
     <defs>
       <filter id="Path_92" x="122" y="3.053" width="744.072" height="790.258" filterUnits="userSpaceOnUse">
-        <feOffset dx="60" dy="60" input="SourceAlpha" />
+        <feOffset dx="60" dy="60" />
         <feGaussianBlur stdDeviation="30" result="blur" />
         <feFlood flood-color="#38ba99" />
         <feComposite operator="in" in2="blur" />
         <feComposite in="SourceGraphic" />
       </filter>
       <filter id="Path_92-2" x="122" y="3.053" width="744.072" height="790.258" filterUnits="userSpaceOnUse">
-        <feOffset dx="60" dy="60" input="SourceAlpha" />
+        <feOffset dx="60" dy="60" />
         <feGaussianBlur stdDeviation="30" result="blur-2" />
         <feFlood flood-color="#38ba99" result="color" />
         <feComposite operator="out" in="SourceGraphic" in2="blur-2" />
