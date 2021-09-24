@@ -7,22 +7,28 @@ export const ContactForm = () => {
       <form name="contact" action="/success" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
         <div className="mb-6">
+
+          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="naam" />
           <input className="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight text-xl  focus:outline-none focus:shadow-outline" id="naam" type="text" placeholder="Naam" name="naam" />
         </div>
 
         <div className="mb-6">
+          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="achternaam" />
           <input className="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight text-xl focus:outline-none focus:shadow-outline" id="naam" type="text" placeholder="Achternaam" name="achternaam" />
         </div>
 
         <div className="mb-6">
+          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="Telefoonnummer" />
           <input className="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight text-xl  focus:outline-none focus:shadow-outline" id="naam" type="text" placeholder="Telefoonnummer" name="Telefoonnummer" />
         </div>
 
         <div className="mb-6">
+          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="email" />
           <input className="shadow-sm appearance-none border rounded-lg w-full py-3 px-4 text-gray-700 leading-tight text-xl focus:outline-none focus:shadow-outline" id="naam" type="text" placeholder="E-mailadres" name="email" />
         </div>
 
         <div className="mb-6">
+          <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" htmlFor="vraag" />
           <textarea className="w-full px-3 py-2 leading-tight text-gray-700 border rounded-lg focus:outline-none focus:shadow-outline text-xl" rows={6} placeholder="Waarmee kan ik je helpen?" name="vraag"></textarea>
         </div>
 
