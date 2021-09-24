@@ -1,4 +1,4 @@
-export const contentRoutes = [{ name: "Home", path: "/" }, { name: "Services", path: "/" }, { name: "Portfolio", path: "/" }, { name: "Blog", path: "/" }, { name: "over mij", path: "/" }]
+export const contentRoutes = [{ name: "Home", path: "/" }]
 
 export const contentHeader = { title: "Complete website op maat gemaakt voor jou, zonder kosten vooraf", subtitle1: "Geen zin in toren hoge kosten en niet weten waar je aan toe bent. Dan ben je op het juiste adres", subtitle2: ['Ik bied een site volledig naar jouw wensen', "Geen WordPress of andere templates", "Alles op maat met de hand gecodeerd", "Zonder kosten vooraf", "Voor maar €150 per maand"], button: "Heb je interesse? Klik hier" }
 

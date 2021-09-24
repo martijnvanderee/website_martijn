@@ -16,7 +16,7 @@ export const Header = () => {
   const SearchmenuAction = isSearchMenuOpen ? "close" : "open"
 
   return (
-    <header className="max-w-6xl mx-auto md:flex ">
+    <header className="max-w-6xl mx-auto md:flex md:mb-20">
       <HeaderContent />
       <HeaderImage />
     </header >

@@ -189,8 +189,8 @@ const Portfolio: FunctionComponent = ({ }) => {
 
 const Footer: FunctionComponent = ({ }) => {
   return (
-    <div className="relative z-10  font-mono bg-backgroundBlack p-8">
-      <div className="grid grid-rows-2 md:grid-rows-2 md:grid-cols-5">
+    <div className="relative z-10  font-mono bg-backgroundBlack p-8 ">
+      <div className="max-w-6xl mx-auto grid grid-rows-2 md:grid-rows-2 md:grid-cols-5">
 
         <div className="md:col-span-5">
           <div className="text-3xl md:text-3xl font-bold text-white mb-4">Ampolo Web Design</div>
