@@ -4,8 +4,6 @@ import Link from "next/link";
 //components
 import { Layout } from "../components/layout"
 
-
-
 export default function Custom404() {
   return <Layout title="Er ging iets mis">
     <main>

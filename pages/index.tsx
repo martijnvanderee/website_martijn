@@ -2,13 +2,9 @@ import React, { FunctionComponent } from 'react'
 
 //components
 import { Layout } from "../components/layout"
-import { Atoms } from '../components/atom';
-import PriceCard from '../components/cards/priceCard';
-import InfoCard from '../components/cards/infoCard';
 import { Header } from '../components/header';
 //content
-import { content, contentSellingPoint, contentPrijs, contentAbout, contentUniqueSellingPoints } from "../content"
-import { Title } from '../components/title';
+import {  contentSellingPoint, contentPrijs, contentAbout, contentUniqueSellingPoints } from "../content"
 
 type HomeProps = {
 }
@@ -178,15 +174,6 @@ const Portfolio: FunctionComponent = ({ }) => {
   )
 }
 
-
-
-
-
-
-
-
-
-
 const Footer: FunctionComponent = ({ }) => {
   return (
     <div className="relative z-10  font-mono bg-backgroundBlack p-8 ">
@@ -194,7 +181,7 @@ const Footer: FunctionComponent = ({ }) => {
 
         <div className="md:col-span-5">
           <div className="text-3xl md:text-3xl font-bold text-white mb-4">Ampolo Web Design</div>
-          <p className="text-lg md:text-lg text-lightGrey">Premier development hub for planning, building, support and enhancement of top-notch web applications.</p>
+          <p className="text-lg md:text-lg text-lightGrey">Premier development met alle gebruiksgemak voor iedereen</p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 md:col-span-3">
@@ -215,7 +202,7 @@ const Footer: FunctionComponent = ({ }) => {
           <div className=" mb-4 md:mr-4">
             <div className="text-xl md:text-2xl font-bold text-white mb-4" >Contact</div>
             <div className="text-lg  md:text-xl text-lightGrey mb-2">mrtjnvanderee@gmail.com</div>
-            <div className="text-lg  md:text-xl text-lightGrey mb-2">kom in contact</div>
+            <div className="text-lg  md:text-xl text-lightGrey mb-2"></div>
           </div>
         </div>
 
